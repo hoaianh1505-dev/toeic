@@ -275,171 +275,322 @@ export default function PracticePage() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {isFinished && (
             <div className="card" style={{ padding: '24px', background: 'rgba(16,185,129,0.06)', borderColor: 'rgba(16,185,129,0.25)' }}>
-              <h3 style={{ margin: 0, fontSize: '1.35rem' }}>Ket qua</h3>
+              <h3 style={{ margin: 0, fontSize: '1.35rem' }}>Kết quả</h3>
               <p style={{ margin: '8px 0 0', color: 'var(--text-secondary)' }}>
-                Ban dung {score}/{questions.length} cau ({percent}%). Thoi gian lam bai: {formatTime(timeElapsed)}.
+                Bạn đúng {score}/{questions.length} câu ({percent}%). Thời gian làm bài: {formatTime(timeElapsed)}.
               </p>
             </div>
           )}
-          {currentGroup?.passage && (
-            <div className="card" style={{ padding: '24px' }}>
-              <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--primary)', textTransform: 'uppercase', marginBottom: '10px' }}>
-                Passage
-              </div>
-              <pre
+
+          {currentGroup?.passage ? (
+            /* Split Layout: Passage on the Left, Grouped Questions on the Right */
+            <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '24px', alignItems: 'start' }}>
+              {/* Left Column: Passage (Sticky & scrollable) */}
+              <div
+                className="card"
                 style={{
-                  margin: 0,
-                  whiteSpace: 'pre-wrap',
-                  fontFamily: 'inherit',
-                  lineHeight: 1.7,
-                  color: 'var(--text-primary)',
+                  padding: '24px',
+                  position: 'sticky',
+                  top: '20px',
+                  maxHeight: 'calc(100vh - 100px)',
+                  overflowY: 'auto',
+                  border: '1px solid var(--border)',
+                  background: 'var(--bg-card)',
                 }}
               >
-                {currentGroup.passage}
-              </pre>
-            </div>
-          )}
-
-          {currentGroup ? (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div className="card" style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <strong>
-                  {currentGroup.passage ? `Đoạn văn ${currentIdx + 1}/${passageGroups.length}` : `Câu hỏi ${currentIdx + 1}/${passageGroups.length}`}
-                </strong>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                  Nguồn: {currentGroup.sourcePdf || 'pdf/'}
-                </span>
+                <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--primary)', textTransform: 'uppercase', marginBottom: '10px' }}>
+                  Đoạn văn đọc hiểu (Passage)
+                </div>
+                <pre
+                  style={{
+                    margin: 0,
+                    whiteSpace: 'pre-wrap',
+                    fontFamily: 'inherit',
+                    lineHeight: 1.7,
+                    color: 'var(--text-primary)',
+                    fontSize: '0.95rem',
+                  }}
+                >
+                  {currentGroup.passage}
+                </pre>
               </div>
 
-              {currentGroup.questions.map((question: any) => {
-                const globalIdx = questions.findIndex((q) => q._id === question._id)
-                return (
-                  <div key={question._id} id={`q-${question._id}`} className="card animate-fade-up" style={{ padding: '28px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '18px' }}>
-                      <strong>
-                        Câu hỏi {globalIdx + 1}
-                      </strong>
-                    </div>
+              {/* Right Column: Questions */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div className="card" style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <strong>
+                    Đoạn văn {currentIdx + 1}/{passageGroups.length}
+                  </strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                    Nguồn: {currentGroup.sourcePdf || 'pdf/'}
+                  </span>
+                </div>
 
-                    <h3 style={{ margin: '0 0 18px', lineHeight: 1.6, fontSize: '1.05rem' }}>
-                      {question.questionText}
-                    </h3>
+                {currentGroup.questions.map((question: any) => {
+                  const globalIdx = questions.findIndex((q) => q._id === question._id)
+                  return (
+                    <div key={question._id} id={`q-${question._id}`} className="card animate-fade-up" style={{ padding: '24px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '14px' }}>
+                        <strong>
+                          Câu hỏi {globalIdx + 1}
+                        </strong>
+                      </div>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                      {question.choices.map((choice: string, index: number) => {
-                        const label = String.fromCharCode(65 + index)
-                        const selected = answers[question._id] === label
-                        const isCorrect = question.correctAnswer === label
+                      <h3 style={{ margin: '0 0 14px', lineHeight: 1.6, fontSize: '1rem' }}>
+                        {question.questionText}
+                      </h3>
 
-                        let border = '1px solid var(--border)'
-                        let background = 'transparent'
-                        let color = 'var(--text-primary)'
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        {question.choices.map((choice: string, index: number) => {
+                          const label = String.fromCharCode(65 + index)
+                          const selected = answers[question._id] === label
+                          const isCorrect = question.correctAnswer === label
 
-                        if (isFinished) {
-                          if (isCorrect) {
-                            border = '2px solid #10b981'
-                            background = 'rgba(16,185,129,0.08)'
-                            color = '#10b981'
+                          let border = '1px solid var(--border)'
+                          let background = 'transparent'
+                          let color = 'var(--text-primary)'
+
+                          if (isFinished) {
+                            if (isCorrect) {
+                              border = '2px solid #10b981'
+                              background = 'rgba(16,185,129,0.08)'
+                              color = '#10b981'
+                            } else if (selected) {
+                              border = '2px solid #ef4444'
+                              background = 'rgba(239,68,68,0.08)'
+                              color = '#ef4444'
+                            }
                           } else if (selected) {
-                            border = '2px solid #ef4444'
-                            background = 'rgba(239,68,68,0.08)'
-                            color = '#ef4444'
+                            border = '2px solid var(--primary)'
+                            background = 'rgba(108,99,255,0.08)'
+                            color = 'var(--primary)'
                           }
-                        } else if (selected) {
-                          border = '2px solid var(--primary)'
-                          background = 'rgba(108,99,255,0.08)'
-                          color = 'var(--primary)'
-                        }
 
-                        return (
-                          <button
-                            key={label}
-                            type="button"
-                            onClick={() => chooseAnswer(question._id, label)}
-                            disabled={isFinished}
-                            style={{
-                              textAlign: 'left',
-                              padding: '15px 18px',
-                              borderRadius: '10px',
-                              border,
-                              background,
-                              color,
-                              display: 'flex',
-                              alignItems: 'center',
-                              gap: '12px',
-                              cursor: isFinished ? 'default' : 'pointer',
-                            }}
-                          >
-                            <span
+                          return (
+                            <button
+                              key={label}
+                              type="button"
+                              onClick={() => chooseAnswer(question._id, label)}
+                              disabled={isFinished}
                               style={{
-                                width: '28px',
-                                height: '28px',
-                                borderRadius: '50%',
-                                border: '1px solid currentColor',
-                                display: 'inline-flex',
+                                textAlign: 'left',
+                                padding: '12px 15px',
+                                borderRadius: '10px',
+                                border,
+                                background,
+                                color,
+                                display: 'flex',
                                 alignItems: 'center',
-                                justifyContent: 'center',
-                                fontWeight: 800,
-                                flexShrink: 0,
+                                gap: '12px',
+                                cursor: isFinished ? 'default' : 'pointer',
                               }}
                             >
-                              {label}
-                            </span>
-                            <span>{choice}</span>
-                          </button>
-                        )
-                      })}
-                    </div>
-
-                    {isFinished && question.explanation && (
-                      <div
-                        style={{
-                          marginTop: '20px',
-                          padding: '18px',
-                          borderRadius: '10px',
-                          background: 'rgba(14,165,233,0.08)',
-                          borderLeft: '4px solid #0ea5e9',
-                        }}
-                      >
-                        <div style={{ fontWeight: 800, marginBottom: '8px' }}>
-                          Đáp án đúng: {question.correctAnswer}
-                        </div>
-                        <pre style={{ margin: 0, color: 'var(--text-primary)', lineHeight: 1.7, fontFamily: 'inherit', whiteSpace: 'pre-wrap' }}>
-                          {question.explanation}
-                        </pre>
+                              <span
+                                style={{
+                                  width: '28px',
+                                  height: '28px',
+                                  borderRadius: '50%',
+                                  border: '1px solid currentColor',
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'center',
+                                  fontWeight: 800,
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {label}
+                              </span>
+                              <span>{choice}</span>
+                            </button>
+                          )
+                        })}
                       </div>
-                    )}
-                  </div>
-                )
-              })}
 
-              <div className="card" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
-                <button
-                  className="btn btn-ghost"
-                  onClick={() => {
-                    setCurrentIdx((prev) => Math.max(prev - 1, 0))
-                    window.scrollTo({ top: 0, behavior: 'smooth' })
-                  }}
-                  disabled={currentIdx === 0}
-                >
-                  Đoạn trước
-                </button>
-                <button
-                  className="btn btn-ghost"
-                  onClick={() => {
-                    setCurrentIdx((prev) => Math.min(prev + 1, passageGroups.length - 1))
-                    window.scrollTo({ top: 0, behavior: 'smooth' })
-                  }}
-                  disabled={currentIdx === passageGroups.length - 1}
-                >
-                  Đoạn tiếp
-                </button>
+                      {isFinished && question.explanation && (
+                        <div
+                          style={{
+                            marginTop: '15px',
+                            padding: '15px',
+                            borderRadius: '10px',
+                            background: 'rgba(14,165,233,0.08)',
+                            borderLeft: '4px solid #0ea5e9',
+                          }}
+                        >
+                          <div style={{ fontWeight: 800, marginBottom: '6px' }}>
+                            Đáp án đúng: {question.correctAnswer}
+                          </div>
+                          <pre style={{ margin: 0, color: 'var(--text-primary)', lineHeight: 1.7, fontFamily: 'inherit', whiteSpace: 'pre-wrap', fontSize: '0.9rem' }}>
+                            {question.explanation}
+                          </pre>
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+
+                <div className="card" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+                  <button
+                    className="btn btn-ghost"
+                    onClick={() => {
+                      setCurrentIdx((prev) => Math.max(prev - 1, 0))
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }}
+                    disabled={currentIdx === 0}
+                  >
+                    Đoạn trước
+                  </button>
+                  <button
+                    className="btn btn-ghost"
+                    onClick={() => {
+                      setCurrentIdx((prev) => Math.min(prev + 1, passageGroups.length - 1))
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }}
+                    disabled={currentIdx === passageGroups.length - 1}
+                  >
+                    Đoạn tiếp
+                  </button>
+                </div>
               </div>
             </div>
           ) : (
-            <div className="card" style={{ padding: '24px' }}>
-              Không có câu hỏi hợp lệ cho phần này.
-            </div>
+            /* Part 5 Layout: Normal Single vertical list */
+            currentGroup && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div className="card" style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <strong>
+                    Câu hỏi {currentIdx + 1}/{passageGroups.length}
+                  </strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                    Nguồn: {currentGroup.sourcePdf || 'pdf/'}
+                  </span>
+                </div>
+
+                {currentGroup.questions.map((question: any) => {
+                  const globalIdx = questions.findIndex((q) => q._id === question._id)
+                  return (
+                    <div key={question._id} id={`q-${question._id}`} className="card animate-fade-up" style={{ padding: '28px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '18px' }}>
+                        <strong>
+                          Câu hỏi {globalIdx + 1}
+                        </strong>
+                      </div>
+
+                      <h3 style={{ margin: '0 0 18px', lineHeight: 1.6, fontSize: '1.05rem' }}>
+                        {question.questionText}
+                      </h3>
+
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        {question.choices.map((choice: string, index: number) => {
+                          const label = String.fromCharCode(65 + index)
+                          const selected = answers[question._id] === label
+                          const isCorrect = question.correctAnswer === label
+
+                          let border = '1px solid var(--border)'
+                          let background = 'transparent'
+                          let color = 'var(--text-primary)'
+
+                          if (isFinished) {
+                            if (isCorrect) {
+                              border = '2px solid #10b981'
+                              background = 'rgba(16,185,129,0.08)'
+                              color = '#10b981'
+                            } else if (selected) {
+                              border = '2px solid #ef4444'
+                              background = 'rgba(239,68,68,0.08)'
+                              color = '#ef4444'
+                            }
+                          } else if (selected) {
+                            border = '2px solid var(--primary)'
+                            background = 'rgba(108,99,255,0.08)'
+                            color = 'var(--primary)'
+                          }
+
+                          return (
+                            <button
+                              key={label}
+                              type="button"
+                              onClick={() => chooseAnswer(question._id, label)}
+                              disabled={isFinished}
+                              style={{
+                                textAlign: 'left',
+                                padding: '15px 18px',
+                                borderRadius: '10px',
+                                border,
+                                background,
+                                color,
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '12px',
+                                cursor: isFinished ? 'default' : 'pointer',
+                              }}
+                            >
+                              <span
+                                style={{
+                                  width: '28px',
+                                  height: '28px',
+                                  borderRadius: '50%',
+                                  border: '1px solid currentColor',
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'center',
+                                  fontWeight: 800,
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {label}
+                              </span>
+                              <span>{choice}</span>
+                            </button>
+                          )
+                        })}
+                      </div>
+
+                      {isFinished && question.explanation && (
+                        <div
+                          style={{
+                            marginTop: '20px',
+                            padding: '18px',
+                            borderRadius: '10px',
+                            background: 'rgba(14,165,233,0.08)',
+                            borderLeft: '4px solid #0ea5e9',
+                          }}
+                        >
+                          <div style={{ fontWeight: 800, marginBottom: '8px' }}>
+                            Đáp án đúng: {question.correctAnswer}
+                          </div>
+                          <pre style={{ margin: 0, color: 'var(--text-primary)', lineHeight: 1.7, fontFamily: 'inherit', whiteSpace: 'pre-wrap' }}>
+                            {question.explanation}
+                          </pre>
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+
+                <div className="card" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+                  <button
+                    className="btn btn-ghost"
+                    onClick={() => {
+                      setCurrentIdx((prev) => Math.max(prev - 1, 0))
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }}
+                    disabled={currentIdx === 0}
+                  >
+                    Đoạn trước
+                  </button>
+                  <button
+                    className="btn btn-ghost"
+                    onClick={() => {
+                      setCurrentIdx((prev) => Math.min(prev + 1, passageGroups.length - 1))
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }}
+                    disabled={currentIdx === passageGroups.length - 1}
+                  >
+                    Đoạn tiếp
+                  </button>
+                </div>
+              </div>
+            )
           )}
         </div>
 
