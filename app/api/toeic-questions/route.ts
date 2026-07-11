@@ -1,25 +1,28 @@
-﻿import { NextResponse } from 'next/server'
-import { toeicPracticeFromPdf } from '@/data/toeicPracticeFromPdf'
+import { NextResponse } from 'next/server'
+import connectDB from '@/lib/mongodb'
+import ToeicQuestion from '@/models/ToeicQuestion'
 
 export async function GET(request: Request) {
   try {
+    await connectDB()
     const { searchParams } = new URL(request.url)
     const partParam = searchParams.get('part')
     const part = Number(partParam)
 
     if (![5, 6, 7].includes(part)) {
       return NextResponse.json(
-        { error: 'Chi ho tro Part 5, 6, 7 cho che do luyen thi moi.' },
+        { error: 'Chỉ hỗ trợ Part 5, 6, 7 cho chế độ luyện thi.' },
         { status: 400 }
       )
     }
 
-    const questions = toeicPracticeFromPdf.filter((question) => question.part === part)
-
+    // Query questions from MongoDB
+    const questions = await ToeicQuestion.find({ part })
+    
     return NextResponse.json({
       part,
       total: questions.length,
-      source: 'pdf/DA2.pdf',
+      source: 'MongoDB Collection (pdf/ import)',
       questions,
     })
   } catch (error) {

@@ -1,0 +1,331 @@
+const fs = require('fs');
+const path = require('path');
+const mongoose = require('mongoose');
+
+// Define mongoose schema inline to avoid module path issues
+const ToeicQuestionSchema = new mongoose.Schema({
+  part: { type: Number, required: true, min: 1, max: 7 },
+  category: { type: String, required: true, enum: ['Grammar', 'Vocabulary', 'Listening', 'Reading'] },
+  passage: { type: String },
+  imageUrl: { type: String },
+  audioUrl: { type: String },
+  questionText: { type: String, required: true },
+  choices: [{ type: String, required: true }],
+  correctAnswer: { type: String, required: true, enum: ['A', 'B', 'C', 'D'] },
+  explanation: { type: String }
+}, {
+  timestamps: true
+});
+
+const ToeicQuestion = mongoose.models.ToeicQuestion || mongoose.model('ToeicQuestion', ToeicQuestionSchema);
+
+const pdfDir = path.join(__dirname, 'pdf');
+
+// Read .env.local manually
+const envPath = path.join(__dirname, '.env.local');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf8');
+  envContent.split(/\r?\n/).forEach(line => {
+    const match = line.match(/^\s*([^#=\s]+)\s*=\s*(.*)$/);
+    if (match) {
+      const key = match[1].trim();
+      let val = match[2].trim();
+      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        val = val.substring(1, val.length - 1);
+      }
+      process.env[key] = val;
+    }
+  });
+}
+
+const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_DB = process.env.MONGODB_DB || 'toeic_vocabulary';
+
+if (!MONGODB_URI) {
+  console.error('MONGODB_URI not found in .env.local');
+  process.exit(1);
+}
+
+// Spacing cleanup for Vietnamese
+function cleanVietnameseSpacing(text) {
+  let cleaned = text.replace(/ {2,}/g, ' | ');
+  cleaned = cleaned.replace(/([a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđĐ])\s(?=[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđĐ])/g, '$1');
+  cleaned = cleaned.replace(/ \| /g, ' ');
+  return cleaned;
+}
+
+async function parsePdfFile(pdfjs, filePath) {
+  console.log(`Parsing file: ${path.basename(filePath)}...`);
+  const dataBuffer = fs.readFileSync(filePath);
+  const uint8Data = new Uint8Array(dataBuffer);
+  
+  const loadingTask = pdfjs.getDocument({ data: uint8Data });
+  const pdfDoc = await loadingTask.promise;
+  const numPages = pdfDoc.numPages;
+  
+  const ops = pdfjs.OPS || {};
+  const opNames = {};
+  for (const key of Object.keys(ops)) {
+    opNames[ops[key]] = key;
+  }
+  
+  const parsedQuestions = [];
+  
+  for (let pNum = 1; pNum <= numPages; pNum++) {
+    try {
+      const page = await pdfDoc.getPage(pNum);
+      const textContent = await page.getTextContent();
+      
+      // Sort text items
+      const textItems = textContent.items.map(item => ({
+        str: item.str,
+        x: item.transform[4],
+        y: item.transform[5],
+        width: item.width || 0
+      }));
+      textItems.sort((a, b) => {
+        if (Math.abs(a.y - b.y) > 5) return b.y - a.y;
+        return a.x - b.x;
+      });
+      
+      // Reconstruct text
+      let text = '';
+      let currentY = null;
+      let lastX = null;
+      let lastWidth = null;
+      for (const item of textItems) {
+        if (currentY === null) {
+          currentY = item.y;
+          text += item.str;
+        } else if (Math.abs(item.y - currentY) > 5) {
+          currentY = item.y;
+          text += '\n' + item.str;
+        } else {
+          const gap = item.x - (lastX + lastWidth);
+          text += (gap > 3 ? ' ' : '') + item.str;
+        }
+        lastX = item.x;
+        lastWidth = item.width;
+      }
+      
+      // Find constructPath boxes & check colors
+      const opList = await page.getOperatorList();
+      let currentFillColor = '#000000';
+      const rawBoxes = [];
+      
+      for (let i = 0; i < opList.fnArray.length; i++) {
+        const fn = opList.fnArray[i];
+        const args = opList.argsArray[i];
+        const name = opNames[fn] || fn;
+        
+        if (name === 'setFillRGBColor') {
+          currentFillColor = args[0];
+        } else if (name === 'constructPath') {
+          const coords = args[2];
+          if (coords) {
+            const x1 = coords[0] !== undefined ? coords[0] : coords["0"];
+            const y1 = coords[1] !== undefined ? coords[1] : coords["1"];
+            const x2 = coords[2] !== undefined ? coords[2] : coords["2"];
+            const y2 = coords[3] !== undefined ? coords[3] : coords["3"];
+            const width = Math.abs(x2 - x1);
+            const height = Math.abs(y2 - y1);
+            
+            if (width > 600 && width < 700 && height >= 44 && height <= 48) {
+              rawBoxes.push({
+                y: Math.min(y1, y2),
+                height,
+                isGreen: (currentFillColor === '#00b184')
+              });
+            }
+          }
+        }
+      }
+      
+      // Deduplicate choice boxes
+      const uniqueBoxes = [];
+      for (const box of rawBoxes) {
+        let existing = uniqueBoxes.find(b => Math.abs(b.y - box.y) < 3);
+        if (existing) {
+          if (box.isGreen) existing.isGreen = true;
+        } else {
+          uniqueBoxes.push(box);
+        }
+      }
+      uniqueBoxes.sort((a, b) => a.y - b.y);
+      
+      // Cluster boxes into groups of 4
+      const groups = [];
+      for (const box of uniqueBoxes) {
+        let placed = false;
+        for (const g of groups) {
+          if (g.length < 4 && Math.abs(box.y - g[g.length - 1].y) < 100) {
+            g.push(box);
+            placed = true;
+            break;
+          }
+        }
+        if (!placed) {
+          groups.push([box]);
+        }
+      }
+      
+      const pageAnswers = [];
+      groups.forEach(g => {
+        g.sort((a, b) => a.y - b.y);
+        const greenIdx = g.findIndex(b => b.isGreen);
+        if (greenIdx !== -1) {
+          const letter = String.fromCharCode(65 + greenIdx);
+          pageAnswers.push({
+            avgY: g.reduce((sum, b) => sum + b.y, 0) / g.length,
+            answer: letter
+          });
+        }
+      });
+      pageAnswers.sort((a, b) => a.avgY - b.avgY);
+      
+      // Find question headers (e.g. Câu 101)
+      const questionRegex = /Câu\s+(\d+)/gi;
+      const questionMatches = [];
+      let match;
+      while ((match = questionRegex.exec(text)) !== null) {
+        const qNum = parseInt(match[1]);
+        if (qNum >= 101) { // Only Part 5, 6, 7
+          questionMatches.push({
+            qNum,
+            index: match.index,
+            textIndex: questionRegex.lastIndex
+          });
+        }
+      }
+      
+      questionMatches.sort((a, b) => a.index - b.index);
+      
+      // Check if page has any reading passages header (e.g. Câu 131 - 134 or Câu 147 - 149)
+      let passageText = '';
+      const passageHeaderRegex = /Câu\s+(\d+)\s*-\s*(\d+)/i;
+      const passageMatch = passageHeaderRegex.exec(text);
+      if (passageMatch) {
+        // Text between passage match and first question is the passage
+        const firstQIndex = questionMatches.length > 0 ? questionMatches[0].index : text.length;
+        const rawPassage = text.substring(passageMatch.index + passageMatch[0].length, firstQIndex);
+        passageText = cleanVietnameseSpacing(rawPassage.trim());
+      }
+      
+      questionMatches.forEach((q, idx) => {
+        const nextQ = questionMatches[idx + 1];
+        const qContent = text.substring(q.index, nextQ ? nextQ.index : text.length);
+        const ansObj = pageAnswers[idx];
+        
+        if (ansObj) {
+          // Parse choices
+          const choices = [];
+          const choiceARegex = /\(A\)\s*([^\n]+)/i;
+          const choiceBRegex = /\(B\)\s*([^\n]+)/i;
+          const choiceCRegex = /\(C\)\s*([^\n]+)/i;
+          const choiceDRegex = /\(D\)\s*([^\n]+)/i;
+          
+          const matchA = choiceARegex.exec(qContent);
+          const matchB = choiceBRegex.exec(qContent);
+          const matchC = choiceCRegex.exec(qContent);
+          const matchD = choiceDRegex.exec(qContent);
+          
+          if (matchA) choices.push('(A) ' + matchA[1].trim());
+          if (matchB) choices.push('(B) ' + matchB[1].trim());
+          if (matchC) choices.push('(C) ' + matchC[1].trim());
+          if (matchD) choices.push('(D) ' + matchD[1].trim());
+          
+          // Fallback choices if regex fails
+          if (choices.length < 4) {
+            choices.length = 0;
+            choices.push('(A) Option A', '(B) Option B', '(C) Option C', '(D) Option D');
+          }
+          
+          // Parse prompt
+          let prompt = qContent.split(/\(A\)/i)[0].replace(/Câu\s+\d+\s*/i, '').trim();
+          prompt = cleanVietnameseSpacing(prompt);
+          
+          // Parse explanation & translation
+          let explanation = '';
+          const explRegex = /Giải\s*thích:\s*([\s\S]+)/i;
+          const explMatch = explRegex.exec(qContent);
+          if (explMatch) {
+            explanation = cleanVietnameseSpacing(explMatch[1].trim());
+          } else {
+            explanation = 'Xem tài liệu đi kèm để biết chi tiết.';
+          }
+          
+          // Determine Part & Category
+          let part = 5;
+          let category = 'Grammar';
+          if (q.qNum >= 147) {
+            part = 7;
+            category = 'Reading';
+          } else if (q.qNum >= 131) {
+            part = 6;
+            category = 'Reading';
+          }
+          
+          parsedQuestions.push({
+            part,
+            category,
+            questionText: prompt || 'Select the correct choice.',
+            choices,
+            correctAnswer: ansObj.answer,
+            explanation,
+            passage: (part === 6 || part === 7) ? passageText : undefined
+          });
+        }
+      });
+      
+    } catch (pageErr) {
+      console.error(`Error parsing page ${pNum}:`, pageErr.message);
+    }
+  }
+  
+  return parsedQuestions;
+}
+
+async function main() {
+  try {
+    const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
+    
+    // Connect to MongoDB
+    console.log('Connecting to MongoDB...');
+    await mongoose.connect(MONGODB_URI, { dbName: MONGODB_DB });
+    console.log('Connected to MongoDB!');
+    
+    // Find PDF files to parse
+    const files = fs.readdirSync(pdfDir)
+      .filter(f => f.endsWith('.pdf'))
+      // Parse the first 3 files to build a rich initial database
+      .slice(0, 3);
+      
+    console.log(`Will parse ${files.length} files:`, files);
+    
+    let totalImported = 0;
+    // Clear existing collection
+    await ToeicQuestion.deleteMany({});
+    console.log('Cleared existing ToeicQuestion collection.');
+    
+    for (const file of files) {
+      const filePath = path.join(pdfDir, file);
+      const questions = await parsePdfFile(pdfjs, filePath);
+      
+      if (questions.length > 0) {
+        await ToeicQuestion.insertMany(questions);
+        totalImported += questions.length;
+        console.log(`Successfully imported ${questions.length} questions from ${file}`);
+      } else {
+        console.log(`No questions imported from ${file}`);
+      }
+    }
+    
+    console.log(`\n🎉 DONE! Imported a total of ${totalImported} questions for Part 5, 6, 7.`);
+    process.exit(0);
+  } catch (err) {
+    console.error('Fatal error:', err);
+    process.exit(1);
+  }
+}
+
+main();
