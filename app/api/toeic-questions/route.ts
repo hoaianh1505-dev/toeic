@@ -29,35 +29,33 @@ export async function GET(request: Request) {
       ])
     } else {
       // Part 6 & 7 consist of passages, each having multiple sub-questions.
-      // We sample passages first, then retrieve all questions matching those passages.
+      // We sample passages (blocks) first, then retrieve all questions matching those blocks.
       
-      // Determine how many passages to sample based on limit:
-      // Typically: Part 6 has 4 questions per passage. Part 7 has 2-5 questions per passage.
       let passageCount = 4 // Default for 20 questions
       if (limit <= 10) passageCount = 2
       else if (limit <= 30) passageCount = 6
       else if (limit <= 50) passageCount = 10
 
-      // Get random passages
-      const sampledPassages = await ToeicQuestion.aggregate([
-        { $match: { part, passage: { $ne: null, $ne: "" } } },
-        { $group: { _id: "$passage" } },
+      // Get random block IDs
+      const sampledBlocks = await ToeicQuestion.aggregate([
+        { $match: { part, blockId: { $ne: null, $ne: "" } } },
+        { $group: { _id: "$blockId" } },
         { $sample: { size: passageCount } }
       ])
 
-      const passageTexts = sampledPassages.map(p => p._id)
+      const blockIds = sampledBlocks.map(b => b._id)
 
-      // Fetch all questions for these passages, ordered by insertion order (_id)
+      // Fetch all questions for these blocks, ordered by insertion order (_id)
       questions = await ToeicQuestion.find({
         part,
-        passage: { $in: passageTexts }
+        blockId: { $in: blockIds }
       }).sort({ _id: 1 })
     }
     
     return NextResponse.json({
       part,
       total: questions.length,
-      source: 'MongoDB (Grouped Passages)',
+      source: 'MongoDB (Grouped Blocks)',
       questions,
     })
   } catch (error) {

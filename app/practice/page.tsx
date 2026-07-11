@@ -92,22 +92,24 @@ export default function PracticePage() {
       const rawQuestions = data.questions || []
       setQuestions(rawQuestions)
 
-      // Group questions by passage
+      // Group questions by blockId
       const groups: any[] = []
       rawQuestions.forEach((q: any) => {
-        if (q.passage && (part === 6 || part === 7)) {
-          const existing = groups.find((g) => g.passage === q.passage)
+        if (q.blockId && (part === 6 || part === 7)) {
+          const existing = groups.find((g) => g.blockId === q.blockId)
           if (existing) {
             existing.questions.push(q)
           } else {
             groups.push({
-              passage: q.passage,
+              blockId: q.blockId,
+              passage: q.passage || '',
               sourcePdf: q.sourcePdf,
               questions: [q],
             })
           }
         } else {
           groups.push({
+            blockId: '',
             passage: '',
             sourcePdf: q.sourcePdf,
             questions: [q],
