@@ -12,7 +12,9 @@ const ToeicQuestionSchema = new mongoose.Schema({
   questionText: { type: String, required: true },
   choices: [{ type: String, required: true }],
   correctAnswer: { type: String, required: true, enum: ['A', 'B', 'C', 'D'] },
-  explanation: { type: String }
+  explanation: { type: String },
+  blockId: { type: String },
+  sourcePdf: { type: String }
 }, {
   timestamps: true
 });
