@@ -215,6 +215,26 @@ export default function HomePage() {
             Xem từ vựng →
           </div>
         </Link>
+
+        <Link
+          href="/practice"
+          id="practice-link"
+          className="feature-card"
+          style={{ '--glow-color': 'rgba(236,72,153,0.12)' } as React.CSSProperties}
+        >
+          <div className="feature-icon" style={{ background: 'linear-gradient(135deg, rgba(236,72,153,0.3), rgba(236,72,153,0.1))' }}>
+            ⏱️
+          </div>
+          <div>
+            <div className="feature-title">Thi Thử Từng Part</div>
+            <div className="feature-desc">
+              Luyện tập các Part nghe và đọc (Part 1, 2, 5, 6, 7) với hệ thống tính giờ và lời giải chi tiết.
+            </div>
+          </div>
+          <div className="feature-cta" style={{ color: '#ec4899' }}>
+            Luyện tập ngay →
+          </div>
+        </Link>
       </div>
 
       {/* Study tips teaser */}

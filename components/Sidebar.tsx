@@ -11,6 +11,7 @@ export default function Sidebar() {
   const { theme, toggleTheme } = useTheme()
   const { user, logout } = useAuth()
   const [collapsed, setCollapsed] = useState(false)
+  const [grammarExpanded, setGrammarExpanded] = useState(pathname.startsWith('/grammar'))
 
   // Auto-collapse sidebar on smaller screens
   useEffect(() => {
@@ -26,13 +27,24 @@ export default function Sidebar() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  // Auto-expand grammar sub-menu when entering grammar pages
+  useEffect(() => {
+    if (pathname.startsWith('/grammar')) {
+      setGrammarExpanded(true)
+    }
+  }, [pathname])
+
   const menuItems = [
     { href: '/', label: 'Dashboard', icon: '🏠' },
     { href: '/flashcard', label: 'Flash Card', icon: '🃏' },
     { href: '/quiz', label: 'Trắc Nghiệm', icon: '📝' },
     { href: '/vocabulary', label: 'Từ Vựng', icon: '📚' },
+    { href: '/grammar', label: 'Sổ Tay Ngữ Pháp', icon: '📖' },
+    { href: '/practice', label: 'Luyện Thi Từng Part', icon: '⏱️' },
+
     { href: '/tips', label: 'Cấu trúc đề thi', icon: '📊' },
   ]
+
 
 
   return (
@@ -78,21 +90,99 @@ export default function Sidebar() {
           <ul className="sidebar-menu">
             {menuItems.map((item) => {
               const isActive = pathname === item.href
+              const isGrammarActive = item.href === '/grammar' && pathname.startsWith('/grammar')
+
               return (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`sidebar-link ${isActive ? 'active' : ''}`}
-                    title={collapsed ? item.label : ''}
-                  >
-                    <span className="sidebar-icon">{item.icon}</span>
-                    {!collapsed && <span className="sidebar-label">{item.label}</span>}
-                  </Link>
+                  <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                    <Link
+                      href={item.href}
+                      className={`sidebar-link ${isActive || (item.href === '/grammar' && pathname.startsWith('/grammar')) ? 'active' : ''}`}
+                      title={collapsed ? item.label : ''}
+                      style={{ flex: 1, paddingRight: item.href === '/grammar' && !collapsed ? '40px' : '16px' }}
+                    >
+                      <span className="sidebar-icon">{item.icon}</span>
+                      {!collapsed && <span className="sidebar-label">{item.label}</span>}
+                    </Link>
+
+                    {/* Collapse/Expand toggle button for Sổ Tay Ngữ Pháp */}
+                    {item.href === '/grammar' && !collapsed && (
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault()
+                          e.stopPropagation()
+                          setGrammarExpanded(!grammarExpanded)
+                        }}
+                        style={{
+                          position: 'absolute',
+                          right: '12px',
+                          background: 'none',
+                          border: 'none',
+                          color: (isActive || pathname.startsWith('/grammar')) ? '#ffffff' : 'var(--text-secondary)',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '4px',
+                          fontSize: '0.65rem',
+                          zIndex: 10
+                        }}
+                      >
+                        {grammarExpanded ? '▼' : '▶'}
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Dynamic sub-sidebar index for grammar topics, shown only if expanded */}
+                  {item.href === '/grammar' && grammarExpanded && !collapsed && (
+                    <ul style={{ listStyle: 'none', paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '2px', marginTop: '6px', marginBottom: '8px' }}>
+                      {[
+                        { id: 'parts-of-speech', title: 'Từ Loại', icon: '🏷️' },
+                        { id: 'tenses', title: '12 Thì Tiếng Anh', icon: '⏳' },
+                        { id: 'subject-verb-agreement', title: 'Hòa Hợp Chủ-Vị', icon: '🤝' },
+                        { id: 'passive-voice', title: 'Câu Bị Động', icon: '🔄' },
+                        { id: 'gerund-infinitive', title: 'V-ing và To-V', icon: '📝' },
+                        { id: 'conditionals', title: 'Câu Điều Kiện', icon: '🌳' },
+                        { id: 'relative-clauses', title: 'Mệnh Đề Quan Hệ', icon: '📎' },
+                        { id: 'conjunctions-prepositions', title: 'Liên Từ & Giới Từ', icon: '🔗' },
+                        { id: 'comparisons', title: 'Cấu Trúc So Sánh', icon: '📈' },
+                        { id: 'tag-questions', title: 'Câu Hỏi Đuôi', icon: '❓' },
+                      ].map((sub) => {
+                        const isSubActive = pathname === `/grammar/${sub.id}`
+                        return (
+                          <li key={sub.id}>
+                            <Link
+                              href={`/grammar/${sub.id}`}
+                              className="sidebar-sub-link"
+                              style={{
+                                fontSize: '0.8rem',
+                                color: isSubActive ? 'var(--primary)' : 'var(--text-secondary)',
+                                background: isSubActive ? 'var(--bg-card-hover)' : 'transparent',
+                                textDecoration: 'none',
+                                fontWeight: '600',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '6px',
+                                padding: '6px 12px',
+                                borderRadius: '6px',
+                                transition: 'all var(--transition-fast)'
+                              }}
+                            >
+                              <span>{sub.icon}</span>
+                              <span>{sub.title}</span>
+                            </Link>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  )}
                 </li>
+
               );
             })}
           </ul>
         </nav>
+
 
         {/* Footer Area with Profile, Theme Toggle and Collapse Button */}
         <div className="sidebar-footer">
