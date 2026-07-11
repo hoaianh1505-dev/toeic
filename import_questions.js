@@ -65,7 +65,8 @@ async function parsePdfFile(pdfjs, filePath) {
     opNames[ops[key]] = key;
   }
   
-  const parsedQuestions = [];
+  const pageTexts = [];
+  const flatAnswers = [];
   
   for (let pNum = 1; pNum <= numPages; pNum++) {
     try {
@@ -103,6 +104,8 @@ async function parsePdfFile(pdfjs, filePath) {
         lastX = item.x;
         lastWidth = item.width;
       }
+      
+      pageTexts.push(text);
       
       // Find constructPath boxes & check colors
       const opList = await page.getOperatorList();
@@ -179,104 +182,115 @@ async function parsePdfFile(pdfjs, filePath) {
       });
       pageAnswers.sort((a, b) => a.avgY - b.avgY);
       
-      // Find question headers (e.g. Câu 101)
-      const questionRegex = /Câu\s+(\d+)/gi;
-      const questionMatches = [];
-      let match;
-      while ((match = questionRegex.exec(text)) !== null) {
-        const qNum = parseInt(match[1]);
-        if (qNum >= 101) { // Only Part 5, 6, 7
-          questionMatches.push({
-            qNum,
-            index: match.index,
-            textIndex: questionRegex.lastIndex
-          });
-        }
-      }
-      
-      questionMatches.sort((a, b) => a.index - b.index);
-      
-      // Check if page has any reading passages header (e.g. Câu 131 - 134 or Câu 147 - 149)
-      let passageText = '';
-      const passageHeaderRegex = /Câu\s+(\d+)\s*-\s*(\d+)/i;
-      const passageMatch = passageHeaderRegex.exec(text);
-      if (passageMatch) {
-        // Text between passage match and first question is the passage
-        const firstQIndex = questionMatches.length > 0 ? questionMatches[0].index : text.length;
-        const rawPassage = text.substring(passageMatch.index + passageMatch[0].length, firstQIndex);
-        passageText = cleanVietnameseSpacing(rawPassage.trim());
-      }
-      
-      questionMatches.forEach((q, idx) => {
-        const nextQ = questionMatches[idx + 1];
-        const qContent = text.substring(q.index, nextQ ? nextQ.index : text.length);
-        const ansObj = pageAnswers[idx];
-        
-        if (ansObj) {
-          // Parse choices
-          const choices = [];
-          const choiceARegex = /\(A\)\s*([^\n]+)/i;
-          const choiceBRegex = /\(B\)\s*([^\n]+)/i;
-          const choiceCRegex = /\(C\)\s*([^\n]+)/i;
-          const choiceDRegex = /\(D\)\s*([^\n]+)/i;
-          
-          const matchA = choiceARegex.exec(qContent);
-          const matchB = choiceBRegex.exec(qContent);
-          const matchC = choiceCRegex.exec(qContent);
-          const matchD = choiceDRegex.exec(qContent);
-          
-          if (matchA) choices.push('(A) ' + matchA[1].trim());
-          if (matchB) choices.push('(B) ' + matchB[1].trim());
-          if (matchC) choices.push('(C) ' + matchC[1].trim());
-          if (matchD) choices.push('(D) ' + matchD[1].trim());
-          
-          // Fallback choices if regex fails
-          if (choices.length < 4) {
-            choices.length = 0;
-            choices.push('(A) Option A', '(B) Option B', '(C) Option C', '(D) Option D');
-          }
-          
-          // Parse prompt
-          let prompt = qContent.split(/\(A\)/i)[0].replace(/Câu\s+\d+\s*/i, '').trim();
-          prompt = cleanVietnameseSpacing(prompt);
-          
-          // Parse explanation & translation
-          let explanation = '';
-          const explRegex = /Giải\s*thích:\s*([\s\S]+)/i;
-          const explMatch = explRegex.exec(qContent);
-          if (explMatch) {
-            explanation = cleanVietnameseSpacing(explMatch[1].trim());
-          } else {
-            explanation = 'Xem tài liệu đi kèm để biết chi tiết.';
-          }
-          
-          // Determine Part & Category
-          let part = 5;
-          let category = 'Grammar';
-          if (q.qNum >= 147) {
-            part = 7;
-            category = 'Reading';
-          } else if (q.qNum >= 131) {
-            part = 6;
-            category = 'Reading';
-          }
-          
-          parsedQuestions.push({
-            part,
-            category,
-            questionText: prompt || 'Select the correct choice.',
-            choices,
-            correctAnswer: ansObj.answer,
-            explanation,
-            passage: (part === 6 || part === 7) ? passageText : undefined
-          });
-        }
-      });
+      flatAnswers.push(...pageAnswers);
       
     } catch (pageErr) {
       console.error(`Error parsing page ${pNum}:`, pageErr.message);
+      pageTexts.push('');
     }
   }
+  
+  // Concatenate entire document text with page break markers
+  const entireText = pageTexts.join('\n---PAGE-BREAK---\n');
+  const parsedQuestions = [];
+  
+  // Find question headers (e.g. Câu 101) in the entire document
+  const questionRegex = /Câu\s+(\d+)/gi;
+  const questionMatches = [];
+  let match;
+  while ((match = questionRegex.exec(entireText)) !== null) {
+    const qNum = parseInt(match[1]);
+    if (qNum >= 101) { // Only Part 5, 6, 7
+      questionMatches.push({
+        qNum,
+        index: match.index,
+        textIndex: questionRegex.lastIndex
+      });
+    }
+  }
+  
+  questionMatches.sort((a, b) => a.index - b.index);
+  
+  // Parse each question
+  questionMatches.forEach((q, idx) => {
+    const nextQ = questionMatches[idx + 1];
+    // Question content spans from current index to the next question's index
+    const qContent = entireText.substring(q.index, nextQ ? nextQ.index : entireText.length);
+    const ansObj = flatAnswers[idx];
+    
+    if (ansObj) {
+      // Check if there is a reading passage header in this question segment
+      let passageText = '';
+      const passageHeaderRegex = /Câu\s+(\d+)\s*-\s*(\d+)/i;
+      const passageMatch = passageHeaderRegex.exec(qContent);
+      if (passageMatch) {
+        const firstQIndex = qContent.indexOf('Câu', passageMatch.index + passageMatch[0].length);
+        const rawPassage = qContent.substring(
+          passageMatch.index + passageMatch[0].length, 
+          firstQIndex !== -1 ? firstQIndex : qContent.length
+        );
+        passageText = cleanVietnameseSpacing(rawPassage.trim());
+      }
+      
+      // Parse choices
+      const choices = [];
+      const choiceARegex = /\(A\)\s*([^\n]+)/i;
+      const choiceBRegex = /\(B\)\s*([^\n]+)/i;
+      const choiceCRegex = /\(C\)\s*([^\n]+)/i;
+      const choiceDRegex = /\(D\)\s*([^\n]+)/i;
+      
+      const matchA = choiceARegex.exec(qContent);
+      const matchB = choiceBRegex.exec(qContent);
+      const matchC = choiceCRegex.exec(qContent);
+      const matchD = choiceDRegex.exec(qContent);
+      
+      if (matchA) choices.push('(A) ' + matchA[1].trim());
+      if (matchB) choices.push('(B) ' + matchB[1].trim());
+      if (matchC) choices.push('(C) ' + matchC[1].trim());
+      if (matchD) choices.push('(D) ' + matchD[1].trim());
+      
+      // Fallback choices if regex fails
+      if (choices.length < 4) {
+        choices.length = 0;
+        choices.push('(A) Option A', '(B) Option B', '(C) Option C', '(D) Option D');
+      }
+      
+      // Parse prompt
+      let prompt = qContent.split(/\(A\)/i)[0].replace(/Câu\s+\d+\s*/i, '').trim();
+      prompt = cleanVietnameseSpacing(prompt);
+      
+      // Parse explanation & translation
+      let explanation = '';
+      const explRegex = /Giải\s*thích:\s*([\s\S]+)/i;
+      const explMatch = explRegex.exec(qContent);
+      if (explMatch) {
+        explanation = cleanVietnameseSpacing(explMatch[1].trim());
+      } else {
+        explanation = 'Xem tài liệu đi kèm để biết chi tiết.';
+      }
+      
+      // Determine Part & Category
+      let part = 5;
+      let category = 'Grammar';
+      if (q.qNum >= 147) {
+        part = 7;
+        category = 'Reading';
+      } else if (q.qNum >= 131) {
+        part = 6;
+        category = 'Reading';
+      }
+      
+      parsedQuestions.push({
+        part,
+        category,
+        questionText: prompt || 'Select the correct choice.',
+        choices,
+        correctAnswer: ansObj.answer,
+        explanation,
+        passage: (part === 6 || part === 7) ? passageText : undefined
+      });
+    }
+  });
   
   return parsedQuestions;
 }

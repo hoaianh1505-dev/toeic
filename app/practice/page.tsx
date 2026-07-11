@@ -43,6 +43,7 @@ export default function PracticePage() {
 
   const [activePart, setActivePart] = useState<number | null>(null)
   const [questions, setQuestions] = useState<ToeicQuestion[]>([])
+  const [passageGroups, setPassageGroups] = useState<any[]>([])
   const [currentIdx, setCurrentIdx] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(false)
@@ -88,7 +89,33 @@ export default function PracticePage() {
         throw new Error(data.error || 'Khong the tai du lieu luyen thi')
       }
 
-      setQuestions(data.questions || [])
+      const rawQuestions = data.questions || []
+      setQuestions(rawQuestions)
+
+      // Group questions by passage
+      const groups: any[] = []
+      rawQuestions.forEach((q: any) => {
+        if (q.passage && (part === 6 || part === 7)) {
+          const existing = groups.find((g) => g.passage === q.passage)
+          if (existing) {
+            existing.questions.push(q)
+          } else {
+            groups.push({
+              passage: q.passage,
+              sourcePdf: q.sourcePdf,
+              questions: [q],
+            })
+          }
+        } else {
+          groups.push({
+            passage: '',
+            sourcePdf: q.sourcePdf,
+            questions: [q],
+          })
+        }
+      })
+
+      setPassageGroups(groups)
       setIsTesting(true)
     } catch (error) {
       console.error(error)
@@ -117,6 +144,7 @@ export default function PracticePage() {
   function resetPractice() {
     setActivePart(null)
     setQuestions([])
+    setPassageGroups([])
     setCurrentIdx(0)
     setAnswers({})
     setIsTesting(false)
@@ -130,7 +158,7 @@ export default function PracticePage() {
     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
   }
 
-  const currentQuestion = questions[currentIdx]
+  const currentGroup = passageGroups[currentIdx]
 
   const score = useMemo(
     () => questions.filter((question) => answers[question._id] === question.correctAnswer).length,
@@ -251,8 +279,7 @@ export default function PracticePage() {
               </p>
             </div>
           )}
-
-          {currentQuestion?.passage && (
+          {currentGroup?.passage && (
             <div className="card" style={{ padding: '24px' }}>
               <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--primary)', textTransform: 'uppercase', marginBottom: '10px' }}>
                 Passage
@@ -266,140 +293,159 @@ export default function PracticePage() {
                   color: 'var(--text-primary)',
                 }}
               >
-                {currentQuestion.passage}
+                {currentGroup.passage}
               </pre>
             </div>
           )}
 
-          {currentQuestion ? (
-            <div className="card" style={{ padding: '28px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '18px' }}>
+          {currentGroup ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div className="card" style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <strong>
-                  Cau {currentIdx + 1}/{questions.length}
+                  {currentGroup.passage ? `Đoạn văn ${currentIdx + 1}/${passageGroups.length}` : `Câu hỏi ${currentIdx + 1}/${passageGroups.length}`}
                 </strong>
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                  Nguon: {currentQuestion.sourcePdf || 'pdf/'}
+                  Nguồn: {currentGroup.sourcePdf || 'pdf/'}
                 </span>
               </div>
 
-              <h3 style={{ margin: '0 0 18px', lineHeight: 1.6, fontSize: '1.05rem' }}>
-                {currentQuestion.questionText}
-              </h3>
+              {currentGroup.questions.map((question: any) => {
+                const globalIdx = questions.findIndex((q) => q._id === question._id)
+                return (
+                  <div key={question._id} id={`q-${question._id}`} className="card animate-fade-up" style={{ padding: '28px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '18px' }}>
+                      <strong>
+                        Câu hỏi {globalIdx + 1}
+                      </strong>
+                    </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {currentQuestion.choices.map((choice, index) => {
-                  const label = String.fromCharCode(65 + index)
-                  const selected = answers[currentQuestion._id] === label
-                  const isCorrect = currentQuestion.correctAnswer === label
+                    <h3 style={{ margin: '0 0 18px', lineHeight: 1.6, fontSize: '1.05rem' }}>
+                      {question.questionText}
+                    </h3>
 
-                  let border = '1px solid var(--border)'
-                  let background = 'transparent'
-                  let color = 'var(--text-primary)'
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                      {question.choices.map((choice: string, index: number) => {
+                        const label = String.fromCharCode(65 + index)
+                        const selected = answers[question._id] === label
+                        const isCorrect = question.correctAnswer === label
 
-                  if (isFinished) {
-                    if (isCorrect) {
-                      border = '2px solid #10b981'
-                      background = 'rgba(16,185,129,0.08)'
-                      color = '#10b981'
-                    } else if (selected) {
-                      border = '2px solid #ef4444'
-                      background = 'rgba(239,68,68,0.08)'
-                      color = '#ef4444'
-                    }
-                  } else if (selected) {
-                    border = '2px solid var(--primary)'
-                    background = 'rgba(108,99,255,0.08)'
-                    color = 'var(--primary)'
-                  }
+                        let border = '1px solid var(--border)'
+                        let background = 'transparent'
+                        let color = 'var(--text-primary)'
 
-                  return (
-                    <button
-                      key={label}
-                      type="button"
-                      onClick={() => chooseAnswer(currentQuestion._id, label)}
-                      disabled={isFinished}
-                      style={{
-                        textAlign: 'left',
-                        padding: '15px 18px',
-                        borderRadius: '10px',
-                        border,
-                        background,
-                        color,
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '12px',
-                        cursor: isFinished ? 'default' : 'pointer',
-                      }}
-                    >
-                      <span
+                        if (isFinished) {
+                          if (isCorrect) {
+                            border = '2px solid #10b981'
+                            background = 'rgba(16,185,129,0.08)'
+                            color = '#10b981'
+                          } else if (selected) {
+                            border = '2px solid #ef4444'
+                            background = 'rgba(239,68,68,0.08)'
+                            color = '#ef4444'
+                          }
+                        } else if (selected) {
+                          border = '2px solid var(--primary)'
+                          background = 'rgba(108,99,255,0.08)'
+                          color = 'var(--primary)'
+                        }
+
+                        return (
+                          <button
+                            key={label}
+                            type="button"
+                            onClick={() => chooseAnswer(question._id, label)}
+                            disabled={isFinished}
+                            style={{
+                              textAlign: 'left',
+                              padding: '15px 18px',
+                              borderRadius: '10px',
+                              border,
+                              background,
+                              color,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '12px',
+                              cursor: isFinished ? 'default' : 'pointer',
+                            }}
+                          >
+                            <span
+                              style={{
+                                width: '28px',
+                                height: '28px',
+                                borderRadius: '50%',
+                                border: '1px solid currentColor',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                fontWeight: 800,
+                                flexShrink: 0,
+                              }}
+                            >
+                              {label}
+                            </span>
+                            <span>{choice}</span>
+                          </button>
+                        )
+                      })}
+                    </div>
+
+                    {isFinished && question.explanation && (
+                      <div
                         style={{
-                          width: '28px',
-                          height: '28px',
-                          borderRadius: '50%',
-                          border: '1px solid currentColor',
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          fontWeight: 800,
-                          flexShrink: 0,
+                          marginTop: '20px',
+                          padding: '18px',
+                          borderRadius: '10px',
+                          background: 'rgba(14,165,233,0.08)',
+                          borderLeft: '4px solid #0ea5e9',
                         }}
                       >
-                        {label}
-                      </span>
-                      <span>{choice}</span>
-                    </button>
-                  )
-                })}
-              </div>
-
-              {isFinished && currentQuestion.explanation && (
-                <div
-                  style={{
-                    marginTop: '20px',
-                    padding: '18px',
-                    borderRadius: '10px',
-                    background: 'rgba(14,165,233,0.08)',
-                    borderLeft: '4px solid #0ea5e9',
-                  }}
-                >
-                  <div style={{ fontWeight: 800, marginBottom: '8px' }}>
-                    Dap an dung: {currentQuestion.correctAnswer}
+                        <div style={{ fontWeight: 800, marginBottom: '8px' }}>
+                          Đáp án đúng: {question.correctAnswer}
+                        </div>
+                        <pre style={{ margin: 0, color: 'var(--text-primary)', lineHeight: 1.7, fontFamily: 'inherit', whiteSpace: 'pre-wrap' }}>
+                          {question.explanation}
+                        </pre>
+                      </div>
+                    )}
                   </div>
-                  <p style={{ margin: 0, color: 'var(--text-primary)', lineHeight: 1.7 }}>
-                    {currentQuestion.explanation}
-                  </p>
-                </div>
-              )}
+                )
+              })}
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '22px', paddingTop: '18px', borderTop: '1px solid var(--border)' }}>
+              <div className="card" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
                 <button
                   className="btn btn-ghost"
-                  onClick={() => setCurrentIdx((prev) => Math.max(prev - 1, 0))}
+                  onClick={() => {
+                    setCurrentIdx((prev) => Math.max(prev - 1, 0))
+                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                  }}
                   disabled={currentIdx === 0}
                 >
-                  Cau truoc
+                  Đoạn trước
                 </button>
                 <button
                   className="btn btn-ghost"
-                  onClick={() => setCurrentIdx((prev) => Math.min(prev + 1, questions.length - 1))}
-                  disabled={currentIdx === questions.length - 1}
+                  onClick={() => {
+                    setCurrentIdx((prev) => Math.min(prev + 1, passageGroups.length - 1))
+                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                  }}
+                  disabled={currentIdx === passageGroups.length - 1}
                 >
-                  Cau tiep
+                  Đoạn tiếp
                 </button>
               </div>
             </div>
           ) : (
             <div className="card" style={{ padding: '24px' }}>
-              Khong co cau hoi hop le cho part nay.
+              Không có câu hỏi hợp lệ cho phần này.
             </div>
           )}
         </div>
 
         <div className="card" style={{ padding: '20px', position: 'sticky', top: '20px', height: 'fit-content' }}>
-          <h3 style={{ marginTop: 0, fontSize: '1rem' }}>Bang cau hoi</h3>
+          <h3 style={{ marginTop: 0, fontSize: '1rem' }}>Bảng câu hỏi</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px' }}>
             {questions.map((question, index) => {
-              const active = currentIdx === index
+              const active = currentGroup?.questions.some((q: any) => q._id === question._id)
               const answered = Boolean(answers[question._id])
               const correct = answers[question._id] === question.correctAnswer
 
@@ -423,7 +469,16 @@ export default function PracticePage() {
               return (
                 <button
                   key={question._id}
-                  onClick={() => setCurrentIdx(index)}
+                  onClick={() => {
+                    const groupIdx = passageGroups.findIndex((g) => g.questions.some((q) => q._id === question._id))
+                    if (groupIdx !== -1) {
+                      setCurrentIdx(groupIdx)
+                      setTimeout(() => {
+                        const el = document.getElementById(`q-${question._id}`)
+                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                      }, 100)
+                    }
+                  }}
                   style={{
                     height: '42px',
                     borderRadius: '8px',
@@ -442,11 +497,11 @@ export default function PracticePage() {
           <div style={{ marginTop: '18px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {!isFinished ? (
               <button className="btn btn-primary" onClick={submitTest}>
-                Nop bai
+                Nộp bài
               </button>
             ) : (
               <button className="btn btn-primary" onClick={resetPractice}>
-                Lam bo khac
+                Làm bộ khác
               </button>
             )}
           </div>
