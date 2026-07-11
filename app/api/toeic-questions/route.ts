@@ -29,12 +29,10 @@ export async function GET(request: Request) {
       ])
     } else {
       // Part 6 & 7 consist of passages, each having multiple sub-questions.
-      // We sample passages (blocks) first, then retrieve all questions matching those blocks.
-      
-      let passageCount = 4 // Default for 20 questions
-      if (limit <= 10) passageCount = 2
-      else if (limit <= 30) passageCount = 6
-      else if (limit <= 50) passageCount = 10
+      // We sample exactly 1 passage (block) by default for focused practice,
+      // or we can override it using the passageLimit query parameter.
+      const passageLimitParam = searchParams.get('passageLimit')
+      const passageCount = passageLimitParam ? Number(passageLimitParam) : 1
 
       // Get random block IDs
       const sampledBlocks = await ToeicQuestion.aggregate([

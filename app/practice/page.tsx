@@ -83,7 +83,10 @@ export default function PracticePage() {
     setTimeElapsed(0)
 
     try {
-      const res = await fetch(`/api/toeic-questions?part=${part}&limit=${questionLimit}`)
+      const url = (part === 6 || part === 7)
+        ? `/api/toeic-questions?part=${part}&passageLimit=1`
+        : `/api/toeic-questions?part=${part}&limit=${questionLimit}`
+      const res = await fetch(url)
       const data = await res.json()
       if (!res.ok) {
         throw new Error(data.error || 'Khong the tai du lieu luyen thi')
@@ -206,7 +209,7 @@ export default function PracticePage() {
           <div>
             <h3 style={{ margin: 0, fontSize: '1rem' }}>Số lượng câu hỏi mỗi lượt luyện</h3>
             <p style={{ margin: '4px 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-              Chọn số lượng câu hỏi bạn muốn làm trong bài test này.
+              Chọn số lượng câu hỏi bạn muốn làm (chỉ áp dụng cho Part 5. Part 6 & 7 sẽ tự động luyện theo 1 đoạn văn).
             </p>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
