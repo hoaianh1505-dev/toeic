@@ -1,0 +1,8002 @@
+[
+  {
+    "stt": 1,
+    "word": "ability",
+    "type": "n",
+    "phonetic": "/əˈbɪl.ə.t̬i/",
+    "meaning": "năng lực, khả năng",
+    "page": 1
+  },
+  {
+    "stt": 2,
+    "word": "abroad",
+    "type": "adv",
+    "phonetic": "/əˈbrɑːd/",
+    "meaning": "ở nước ngoài",
+    "page": 1
+  },
+  {
+    "stt": 3,
+    "word": "accept",
+    "type": "v",
+    "phonetic": "/əkˈsept/",
+    "meaning": "chấp nhận, chấp thuận",
+    "page": 1
+  },
+  {
+    "stt": 4,
+    "word": "access",
+    "type": "n, v",
+    "phonetic": "/ˈæk.ses/",
+    "meaning": "quyền truy cập, sự tiếp cận; truy cập",
+    "page": 1
+  },
+  {
+    "stt": 5,
+    "word": "accessible",
+    "type": "adj",
+    "phonetic": "/əkˈses.ə.bəl/",
+    "meaning": "khả năng tiếp cận được",
+    "page": 1
+  },
+  {
+    "stt": 6,
+    "word": "accident",
+    "type": "n",
+    "phonetic": "/ˈæk.sə.dənt/",
+    "meaning": "tai nạn, sự tình cờ",
+    "page": 1
+  },
+  {
+    "stt": 7,
+    "word": "accommodate",
+    "type": "v",
+    "phonetic": "/əˈkɑː.mə.deɪt/",
+    "meaning": "dàn xếp, hỗ trợ",
+    "page": 1
+  },
+  {
+    "stt": 8,
+    "word": "accommodation",
+    "type": "n",
+    "phonetic": "/əˌkɑː.məˈdeɪ.ʃən/",
+    "meaning": "chỗ ở, nơi ở; sự điều tiết, hòa giải",
+    "page": 1
+  },
+  {
+    "stt": 9,
+    "word": "accomplish",
+    "type": "v",
+    "phonetic": "/əˈkɑːm.plɪʃ/",
+    "meaning": "hoàn thành, thực hiện",
+    "page": 1
+  },
+  {
+    "stt": 10,
+    "word": "according (to)",
+    "type": "prep",
+    "phonetic": "/əˈkɔːr.dɪŋ ˌtuː/",
+    "meaning": "theo như, dựa vào",
+    "page": 1
+  },
+  {
+    "stt": 11,
+    "word": "accordingly",
+    "type": "adv",
+    "phonetic": "/əˈkɔːr.dɪŋ.li/",
+    "meaning": "theo đó, vì vậy",
+    "page": 1
+  },
+  {
+    "stt": 12,
+    "word": "accounting",
+    "type": "n",
+    "phonetic": "/əˈkaʊn.t̬ɪŋ/",
+    "meaning": "sự tính toán, thanh toán",
+    "page": 1
+  },
+  {
+    "stt": 13,
+    "word": "accurate",
+    "type": "adj",
+    "phonetic": "/ˈæk.jɚ.ət/",
+    "meaning": "đúng đắn, chính xác",
+    "page": 1
+  },
+  {
+    "stt": 14,
+    "word": "achieve",
+    "type": "v",
+    "phonetic": "/əˈtʃiːv/",
+    "meaning": "đạt được, giành được",
+    "page": 1
+  },
+  {
+    "stt": 15,
+    "word": "acquire",
+    "type": "v",
+    "phonetic": "/əˈkwaɪɚ/",
+    "meaning": "thu nạp được, giành được",
+    "page": 1
+  },
+  {
+    "stt": 16,
+    "word": "act",
+    "type": "n, v",
+    "phonetic": "/ækt/",
+    "meaning": "hành động; thực hiện",
+    "page": 1
+  },
+  {
+    "stt": 17,
+    "word": "actually",
+    "type": "adv",
+    "phonetic": "/ˈæk.tʃu.ə.li/",
+    "meaning": "thực sự, trên thực tế",
+    "page": 1
+  },
+  {
+    "stt": 18,
+    "word": "adapt",
+    "type": "v",
+    "phonetic": "/əˈdæpt/",
+    "meaning": "thích nghi, thích ứng",
+    "page": 1
+  },
+  {
+    "stt": 19,
+    "word": "adapter",
+    "type": "n",
+    "phonetic": "/əˈdæp.tɚ/",
+    "meaning": "thiết bị chuyển đổi, người điều chỉnh tác phẩm (để phù hợp hơn)",
+    "page": 1
+  },
+  {
+    "stt": 20,
+    "word": "additional",
+    "type": "adj",
+    "phonetic": "/əˈdɪʃ.ən.əl/",
+    "meaning": "thêm vào, phụ thêm",
+    "page": 1
+  },
+  {
+    "stt": 21,
+    "word": "adjust",
+    "type": "v",
+    "phonetic": "/əˈdʒʌst/",
+    "meaning": "điều chỉnh",
+    "page": 1
+  },
+  {
+    "stt": 22,
+    "word": "adjustment",
+    "type": "n",
+    "phonetic": "/əˈdʒʌst.mənt/",
+    "meaning": "sự điều chỉnh, sự thay đổi",
+    "page": 1
+  },
+  {
+    "stt": 23,
+    "word": "administration",
+    "type": "n",
+    "phonetic": "/ədˌmɪn.əˈstreɪ.ʃən/",
+    "meaning": "sự quản lý, quản trị",
+    "page": 1
+  },
+  {
+    "stt": 24,
+    "word": "admire",
+    "type": "v",
+    "phonetic": "/ədˈmaɪr/",
+    "meaning": "ngưỡng mộ, thán phục",
+    "page": 1
+  },
+  {
+    "stt": 25,
+    "word": "admit",
+    "type": "v",
+    "phonetic": "/ədˈmɪt/",
+    "meaning": "thừa nhận; tiếp nhận",
+    "page": 1
+  },
+  {
+    "stt": 26,
+    "word": "admittance",
+    "type": "n",
+    "phonetic": "/ədˈmɪt̬.əns/",
+    "meaning": "sự thu nạp, đón nhận",
+    "page": 1
+  },
+  {
+    "stt": 27,
+    "word": "adopt",
+    "type": "v",
+    "phonetic": "/əˈdɑːpt/",
+    "meaning": "nhân nuôilàm theo, áp dụng",
+    "page": 1
+  },
+  {
+    "stt": 28,
+    "word": "advance",
+    "type": "n, v",
+    "phonetic": "/ədˈvæns/",
+    "meaning": "sự tiến lên; tiến lên phía trước",
+    "page": 1
+  },
+  {
+    "stt": 29,
+    "word": "advanced",
+    "type": "adj",
+    "phonetic": "/ədˈvænst/",
+    "meaning": "tiến bộ, cấp tiến",
+    "page": 1
+  },
+  {
+    "stt": 30,
+    "word": "advantage",
+    "type": "n",
+    "phonetic": "/ədˈvæn.t̬ɪdʒ/",
+    "meaning": "lợi thế",
+    "page": 1
+  },
+  {
+    "stt": 31,
+    "word": "advantageous",
+    "type": "adj",
+    "phonetic": "/ˌæd.vænˈteɪ.dʒəs/",
+    "meaning": "có lợi, thuận lợi",
+    "page": 1
+  },
+  {
+    "stt": 32,
+    "word": "advertise",
+    "type": "v",
+    "phonetic": "/ˈæd.vɚ.taɪz/",
+    "meaning": "quảng cáo, thông báo",
+    "page": 1
+  },
+  {
+    "stt": 33,
+    "word": "advertisement",
+    "type": "n",
+    "phonetic": "/æd.vɝːˈtaɪz.mənt/",
+    "meaning": "bản tin quảng cáo",
+    "page": 1
+  },
+  {
+    "stt": 34,
+    "word": "advice",
+    "type": "n",
+    "phonetic": "/ədˈvaɪs/",
+    "meaning": "lời khuyên, lời chỉ bảo",
+    "page": 1
+  },
+  {
+    "stt": 35,
+    "word": "advise",
+    "type": "v",
+    "phonetic": "/ədˈvaɪz/",
+    "meaning": "đưa ra lời khuyên",
+    "page": 1
+  },
+  {
+    "stt": 36,
+    "word": "affect",
+    "type": "v",
+    "phonetic": "/əˈfekt/",
+    "meaning": "ảnh hưởng, tác động",
+    "page": 1
+  },
+  {
+    "stt": 37,
+    "word": "afford",
+    "type": "v",
+    "phonetic": "/əˈfɔːrd/",
+    "meaning": "có khả năng, đủ điều kiện; ban phát, cấp phát",
+    "page": 1
+  },
+  {
+    "stt": 38,
+    "word": "affordable",
+    "type": "adj",
+    "phonetic": "/əˈfɔːr.də.bəl/",
+    "meaning": "có khả năng chi trả, vừa túi tiền",
+    "page": 1
+  },
+  {
+    "stt": 39,
+    "word": "agency",
+    "type": "n",
+    "phonetic": "/ˈeɪ.dʒən.si/",
+    "meaning": "đại lý, bên môi giới trung gian",
+    "page": 1
+  },
+  {
+    "stt": 40,
+    "word": "agenda",
+    "type": "n",
+    "phonetic": "/əˈdʒen.də/",
+    "meaning": "chương trình nghị sự, kế hoạch chương trình",
+    "page": 1
+  },
+  {
+    "stt": 41,
+    "word": "agree",
+    "type": "v",
+    "phonetic": "/əˈɡriː/",
+    "meaning": "đồng ý, tán thành",
+    "page": 1
+  },
+  {
+    "stt": 42,
+    "word": "agreeable",
+    "type": "adj",
+    "phonetic": "/əˈɡriː.ə.bəl/",
+    "meaning": "dễ chịu; thích hợp với",
+    "page": 1
+  },
+  {
+    "stt": 43,
+    "word": "agreement",
+    "type": "n",
+    "phonetic": "/əˈɡriː.mənt/",
+    "meaning": "hợp đồng, giao kèo",
+    "page": 1
+  },
+  {
+    "stt": 44,
+    "word": "agricultural",
+    "type": "adj",
+    "phonetic": "/ˌæɡ.rəˈkʌl.tʃɚ.əl/",
+    "meaning": "(thuộc) nông nghiệp",
+    "page": 1
+  },
+  {
+    "stt": 45,
+    "word": "aid",
+    "type": "n, v",
+    "phonetic": "/eɪd/",
+    "meaning": "sự giúp đỡ; cứu trợ, viện trợ",
+    "page": 1
+  },
+  {
+    "stt": 46,
+    "word": "aim",
+    "type": "n, v",
+    "phonetic": "/eɪm/",
+    "meaning": "mục tiêu; nhắm đến, hướng đến",
+    "page": 1
+  },
+  {
+    "stt": 47,
+    "word": "airline",
+    "type": "n",
+    "phonetic": "/ˈer.laɪn/",
+    "meaning": "công ty hàng không",
+    "page": 2
+  },
+  {
+    "stt": 48,
+    "word": "aisle",
+    "type": "n",
+    "phonetic": "/aɪl/",
+    "meaning": "gian hàng, lối đi giữa các dãy ghế",
+    "page": 2
+  },
+  {
+    "stt": 49,
+    "word": "alarm",
+    "type": "n",
+    "phonetic": "/əˈlɑːrm/",
+    "meaning": "sự báo động; báo động",
+    "page": 2
+  },
+  {
+    "stt": 50,
+    "word": "allow",
+    "type": "v",
+    "phonetic": "/əˈlaʊ/",
+    "meaning": "cho phép, để cho",
+    "page": 2
+  },
+  {
+    "stt": 51,
+    "word": "alternative",
+    "type": "adj",
+    "phonetic": "/ɑːlˈtɝː.nə.t̬ɪv/",
+    "meaning": "xen kẽ, luân phiên",
+    "page": 2
+  },
+  {
+    "stt": 52,
+    "word": "ambitious",
+    "type": "adj",
+    "phonetic": "/æmˈbɪʃ.əs/",
+    "meaning": "tham vọng",
+    "page": 2
+  },
+  {
+    "stt": 53,
+    "word": "amend",
+    "type": "v",
+    "phonetic": "/əˈmend/",
+    "meaning": "sửa chữa, cải tạo",
+    "page": 2
+  },
+  {
+    "stt": 54,
+    "word": "amount",
+    "type": "n, v",
+    "phonetic": "/əˈmaʊnt/",
+    "meaning": "số lượng; cộng dồn lên tới",
+    "page": 2
+  },
+  {
+    "stt": 55,
+    "word": "amusing",
+    "type": "adj",
+    "phonetic": "/əˈmjuː.zɪŋ/",
+    "meaning": "vui, có tính hài hước",
+    "page": 2
+  },
+  {
+    "stt": 56,
+    "word": "analysis",
+    "type": "n",
+    "phonetic": "/əˈnæl.ə.sɪs/",
+    "meaning": "sự phân tích, bản phân tích",
+    "page": 2
+  },
+  {
+    "stt": 57,
+    "word": "analyze",
+    "type": "v",
+    "phonetic": "/ˈæn.əl.aɪz/",
+    "meaning": "phân tích",
+    "page": 2
+  },
+  {
+    "stt": 58,
+    "word": "annual",
+    "type": "adj",
+    "phonetic": "/ˈæn.ju.əl/",
+    "meaning": "hằng năm",
+    "page": 2
+  },
+  {
+    "stt": 59,
+    "word": "anticipate",
+    "type": "v",
+    "phonetic": "/ænˈtɪs.ə.peɪt/",
+    "meaning": "phỏng đoán, dự đoán",
+    "page": 2
+  },
+  {
+    "stt": 60,
+    "word": "anxious",
+    "type": "adj",
+    "phonetic": "/ˈæŋk.ʃəs/",
+    "meaning": "bồn chồn, lo lắng",
+    "page": 2
+  },
+  {
+    "stt": 61,
+    "word": "apologize",
+    "type": "v",
+    "phonetic": "/əˈpɑː.lə.dʒaɪz/",
+    "meaning": "xin lỗi",
+    "page": 2
+  },
+  {
+    "stt": 62,
+    "word": "appeal",
+    "type": "n, v",
+    "phonetic": "/əˈpiːl/",
+    "meaning": "lời thỉnh cầu, sức lôi cuốn; kêu gọi, hấp dẫn",
+    "page": 2
+  },
+  {
+    "stt": 63,
+    "word": "appetizer",
+    "type": "n",
+    "phonetic": "/ˈæp.ə.taɪ.zɚ/",
+    "meaning": "món khai vị",
+    "page": 2
+  },
+  {
+    "stt": 64,
+    "word": "appliance",
+    "type": "n",
+    "phonetic": "/əˈplaɪ.əns/",
+    "meaning": "thiết bị, dụng cụ",
+    "page": 2
+  },
+  {
+    "stt": 65,
+    "word": "applicant",
+    "type": "n",
+    "phonetic": "/ˈæp.lə.kənt/",
+    "meaning": "người ứng tuyển, nguyên cáo",
+    "page": 2
+  },
+  {
+    "stt": 66,
+    "word": "application",
+    "type": "n",
+    "phonetic": "/ˌæp.ləˈkeɪ.ʃən/",
+    "meaning": "ứng dụng, sự áp dụng",
+    "page": 2
+  },
+  {
+    "stt": 67,
+    "word": "apply",
+    "type": "v",
+    "phonetic": "/əˈplaɪ/",
+    "meaning": "áp dụng, ứng tuyển",
+    "page": 2
+  },
+  {
+    "stt": 68,
+    "word": "appoint",
+    "type": "v",
+    "phonetic": "/əˈpɔɪnt/",
+    "meaning": "bổ nhiệm, chỉ định",
+    "page": 2
+  },
+  {
+    "stt": 69,
+    "word": "appointment",
+    "type": "n",
+    "phonetic": "/əˈpɔɪnt.mənt/",
+    "meaning": "sự bổ nhiệm, cuộc hẹn gặp",
+    "page": 2
+  },
+  {
+    "stt": 70,
+    "word": "appreciable",
+    "type": "adj",
+    "phonetic": "/əˈpriː.ʃə.bəl/",
+    "meaning": "đáng kể",
+    "page": 2
+  },
+  {
+    "stt": 71,
+    "word": "appreciate",
+    "type": "v",
+    "phonetic": "/əˈpriː.ʃi.eɪt/",
+    "meaning": "đánh giá cao, cảm kích",
+    "page": 2
+  },
+  {
+    "stt": 72,
+    "word": "appreciation",
+    "type": "n",
+    "phonetic": "/əˌpriː.ʃiˈeɪ.ʃən/",
+    "meaning": "sự đánh giá cao, sự cảm kích",
+    "page": 2
+  },
+  {
+    "stt": 73,
+    "word": "appreciative of",
+    "type": "adj",
+    "phonetic": "/əˈpriː.ʃə.t̬ɪv/",
+    "meaning": "đánh giá cao, ghi nhận",
+    "page": 2
+  },
+  {
+    "stt": 74,
+    "word": "apprentice",
+    "type": "n",
+    "phonetic": "/əˈpren.t̬ɪs/",
+    "meaning": "người học việc",
+    "page": 2
+  },
+  {
+    "stt": 75,
+    "word": "approve",
+    "type": "v",
+    "phonetic": "/əˈpruːv/",
+    "meaning": "tán thành, phê chuẩn",
+    "page": 2
+  },
+  {
+    "stt": 76,
+    "word": "approximate",
+    "type": "adj",
+    "phonetic": "/əˈprɑːk.sə.mət/",
+    "meaning": "xấp xỉ, gần đúng",
+    "page": 2
+  },
+  {
+    "stt": 77,
+    "word": "arbitrate",
+    "type": "v",
+    "phonetic": "/ˈɑːr.bə.treɪt/",
+    "meaning": "phân xử, làm trọng tài",
+    "page": 2
+  },
+  {
+    "stt": 78,
+    "word": "area",
+    "type": "n",
+    "phonetic": "/ˈer.i.ə/",
+    "meaning": "khu vực, lĩnh vực, diện tích",
+    "page": 2
+  },
+  {
+    "stt": 79,
+    "word": "argue",
+    "type": "v",
+    "phonetic": "/ˈɑːrɡ.juː/",
+    "meaning": "tranh cãi, tranh luận",
+    "page": 2
+  },
+  {
+    "stt": 80,
+    "word": "argument",
+    "type": "n",
+    "phonetic": "/ˈɑːrɡ.jə.mənt/",
+    "meaning": "cuộc tranh luận",
+    "page": 2
+  },
+  {
+    "stt": 81,
+    "word": "arrange",
+    "type": "v",
+    "phonetic": "/əˈreɪndʒ/",
+    "meaning": "dàn xếp, sắp đặt",
+    "page": 2
+  },
+  {
+    "stt": 82,
+    "word": "arrangement",
+    "type": "n",
+    "phonetic": "/əˈreɪndʒ.mənt/",
+    "meaning": "sự sắp đặt",
+    "page": 2
+  },
+  {
+    "stt": 83,
+    "word": "assemble",
+    "type": "v",
+    "phonetic": "/əˈsem.bəl/",
+    "meaning": "lắp ráp, thu thập",
+    "page": 2
+  },
+  {
+    "stt": 84,
+    "word": "assess",
+    "type": "v",
+    "phonetic": "/əˈses/",
+    "meaning": "đánh giá, định giá",
+    "page": 2
+  },
+  {
+    "stt": 85,
+    "word": "asset",
+    "type": "n",
+    "phonetic": "/ˈæs.et/",
+    "meaning": "của cải, tài sản, vốn quý",
+    "page": 2
+  },
+  {
+    "stt": 86,
+    "word": "assign",
+    "type": "v",
+    "phonetic": "/əˈsaɪn/",
+    "meaning": "phân công, chia việc",
+    "page": 2
+  },
+  {
+    "stt": 87,
+    "word": "assignment",
+    "type": "n",
+    "phonetic": "/əˈsaɪn.mənt/",
+    "meaning": "sự phân việc, bài tập tiểu luận",
+    "page": 2
+  },
+  {
+    "stt": 88,
+    "word": "assist",
+    "type": "v",
+    "phonetic": "/əˈsɪst/",
+    "meaning": "hỗ trợ, giúp đỡ",
+    "page": 2
+  },
+  {
+    "stt": 89,
+    "word": "assistance",
+    "type": "n",
+    "phonetic": "/əˈsɪs.təns/",
+    "meaning": "sự giúp đỡ, hỗ trợ",
+    "page": 2
+  },
+  {
+    "stt": 90,
+    "word": "assume",
+    "type": "v",
+    "phonetic": "/əˈsuːm/",
+    "meaning": "cho rằng, làm ra vẻ",
+    "page": 2
+  },
+  {
+    "stt": 91,
+    "word": "attach",
+    "type": "v",
+    "phonetic": "/əˈtætʃ/",
+    "meaning": "gán thêm, kèm thêm",
+    "page": 2
+  },
+  {
+    "stt": 92,
+    "word": "attachment",
+    "type": "n",
+    "phonetic": "/əˈtætʃ.mənt/",
+    "meaning": "sự gắn thêm; phần kèm thêm",
+    "page": 2
+  },
+  {
+    "stt": 93,
+    "word": "attend",
+    "type": "v",
+    "phonetic": "/əˈtend/",
+    "meaning": "tham dự",
+    "page": 2
+  },
+  {
+    "stt": 94,
+    "word": "attendance",
+    "type": "n",
+    "phonetic": "/əˈten.dəns/",
+    "meaning": "sự tham gia, có mặt",
+    "page": 3
+  },
+  {
+    "stt": 95,
+    "word": "attract",
+    "type": "v",
+    "phonetic": "/əˈtrækt/",
+    "meaning": "thu hút, hấp dẫn",
+    "page": 3
+  },
+  {
+    "stt": 96,
+    "word": "audience",
+    "type": "n",
+    "phonetic": "/ˈɑː.di.əns/",
+    "meaning": "khán thính giả",
+    "page": 3
+  },
+  {
+    "stt": 97,
+    "word": "audit",
+    "type": "n, v",
+    "phonetic": "/ˈɑː.dɪt/",
+    "meaning": "kiểm toán",
+    "page": 3
+  },
+  {
+    "stt": 98,
+    "word": "authority",
+    "type": "n",
+    "phonetic": "/əˈθɔːr.ə.t̬i/",
+    "meaning": "quyền thế, nhà chức trách, chính quyền",
+    "page": 3
+  },
+  {
+    "stt": 99,
+    "word": "authorize",
+    "type": "v",
+    "phonetic": "/ˈɑː.θɚ.aɪz/",
+    "meaning": "ủy quyền, cấp quyền",
+    "page": 3
+  },
+  {
+    "stt": 100,
+    "word": "availability",
+    "type": "n",
+    "phonetic": "/əˌveɪ.ləˈbɪl.ə.t̬i/",
+    "meaning": "tính sẵn có",
+    "page": 3
+  },
+  {
+    "stt": 101,
+    "word": "available",
+    "type": "adj",
+    "phonetic": "/əˈveɪ.lə.bəl/",
+    "meaning": "có sẵn để dùng",
+    "page": 3
+  },
+  {
+    "stt": 102,
+    "word": "avoid",
+    "type": "v",
+    "phonetic": "/əˈvɔɪd/",
+    "meaning": "tránh xa, ngăn ngừa",
+    "page": 3
+  },
+  {
+    "stt": 103,
+    "word": "avid",
+    "type": "adj",
+    "phonetic": "/ˈæv.ɪd/",
+    "meaning": "khao khát, thèm khát",
+    "page": 3
+  },
+  {
+    "stt": 104,
+    "word": "awareness",
+    "type": "n",
+    "phonetic": "/əˈwer.nəs/",
+    "meaning": "sự nhận thức, ý thức",
+    "page": 3
+  },
+  {
+    "stt": 105,
+    "word": "awkward",
+    "type": "adj",
+    "phonetic": "/ˈɑː.kwɚd/",
+    "meaning": "ngại ngùng, khó xử",
+    "page": 3
+  },
+  {
+    "stt": 106,
+    "word": "background",
+    "type": "n",
+    "phonetic": "/ˈbæk.ɡraʊnd/",
+    "meaning": "phông nền, gia cảnh, quá trình học tập",
+    "page": 3
+  },
+  {
+    "stt": 107,
+    "word": "backpack",
+    "type": "n",
+    "phonetic": "/ˈbæk.pæk/",
+    "meaning": "ba lô đeo sau lưng",
+    "page": 3
+  },
+  {
+    "stt": 108,
+    "word": "baggage claim",
+    "type": "n",
+    "phonetic": "/ˈbæɡ.ɪdʒ kleɪm/",
+    "meaning": "chỗ nhận hành lý",
+    "page": 3
+  },
+  {
+    "stt": 109,
+    "word": "balance",
+    "type": "n",
+    "phonetic": "/ˈbæl.əns/",
+    "meaning": "sự cân bằng, trạng thái cân bằng",
+    "page": 3
+  },
+  {
+    "stt": 110,
+    "word": "bank",
+    "type": "n",
+    "phonetic": "/bæŋk/",
+    "meaning": "ngân hàng, bãi sông",
+    "page": 3
+  },
+  {
+    "stt": 111,
+    "word": "bankrupt",
+    "type": "n, adj",
+    "phonetic": "/ˈbæŋ.krʌpt/",
+    "meaning": "người phá sản; vỡ nợ, phá sản",
+    "page": 3
+  },
+  {
+    "stt": 112,
+    "word": "bar code",
+    "type": "n",
+    "phonetic": "/ˈbɑːr ˌkoʊd/",
+    "meaning": "mã vạch",
+    "page": 3
+  },
+  {
+    "stt": 113,
+    "word": "bargain",
+    "type": "n, v",
+    "phonetic": "/ˈbɑːr.ɡɪn/",
+    "meaning": "sự mặc cả, món hời; mặc cả, thương lượng",
+    "page": 3
+  },
+  {
+    "stt": 114,
+    "word": "beautiful",
+    "type": "adj",
+    "phonetic": "/ˈbjuː.t̬ə.fəl/",
+    "meaning": "xinh đẹp, tốt đẹp",
+    "page": 3
+  },
+  {
+    "stt": 115,
+    "word": "behave",
+    "type": "v",
+    "phonetic": "/bɪˈheɪv/",
+    "meaning": "hành xử, cư xử",
+    "page": 3
+  },
+  {
+    "stt": 116,
+    "word": "belongings",
+    "type": "n",
+    "phonetic": "/bɪˈlɑːŋ.ɪŋz/",
+    "meaning": "tài sản, đồ dùng cá nhân",
+    "page": 3
+  },
+  {
+    "stt": 117,
+    "word": "beneficial",
+    "type": "adj",
+    "phonetic": "/ˌben.əˈfɪʃ.əl/",
+    "meaning": "có ích, có lợi",
+    "page": 3
+  },
+  {
+    "stt": 118,
+    "word": "benefit",
+    "type": "n",
+    "phonetic": "/ˈben.ə.fɪt/",
+    "meaning": "ích lợi",
+    "page": 3
+  },
+  {
+    "stt": 119,
+    "word": "beverage",
+    "type": "n",
+    "phonetic": "/ˈbev.ɚ.ɪdʒ/",
+    "meaning": "đồ uống, đồ giải khát",
+    "page": 3
+  },
+  {
+    "stt": 120,
+    "word": "bill",
+    "type": "n",
+    "phonetic": "/bɪl/",
+    "meaning": "hóa đơn",
+    "page": 3
+  },
+  {
+    "stt": 121,
+    "word": "binder",
+    "type": "n",
+    "phonetic": "/ˈbaɪn.dɚ/",
+    "meaning": "bìa ôm, bìa rời",
+    "page": 3
+  },
+  {
+    "stt": 122,
+    "word": "blanket",
+    "type": "n",
+    "phonetic": "/ˈblæŋ.kɪt/",
+    "meaning": "chăn, mền",
+    "page": 3
+  },
+  {
+    "stt": 123,
+    "word": "block",
+    "type": "n, v",
+    "phonetic": "/blɑːk/",
+    "meaning": "khối, tảng, trướng ngại vật; làm cản trở, phong tỏa",
+    "page": 3
+  },
+  {
+    "stt": 124,
+    "word": "board",
+    "type": "n",
+    "phonetic": "/bɔːrd/",
+    "meaning": "tấm ván, bảng, mạn thuyền",
+    "page": 3
+  },
+  {
+    "stt": 125,
+    "word": "boardroom",
+    "type": "n",
+    "phonetic": "/ˈbɔːrd.ruːm/",
+    "meaning": "/ˈbɔːrd.rʊm/ phòng họp ban giám đốc",
+    "page": 3
+  },
+  {
+    "stt": 126,
+    "word": "boast",
+    "type": "n, v",
+    "phonetic": "/boʊst/",
+    "meaning": "sự khoe khoang; khoác lác",
+    "page": 3
+  },
+  {
+    "stt": 127,
+    "word": "book",
+    "type": "n, v",
+    "phonetic": "/bʊk/",
+    "meaning": "cuốn sách; đặt phòng, đặt vé",
+    "page": 3
+  },
+  {
+    "stt": 128,
+    "word": "boost",
+    "type": "v, n",
+    "phonetic": "/buːst/",
+    "meaning": "đẩy mạnh, kích thích; sự tăng lên",
+    "page": 3
+  },
+  {
+    "stt": 129,
+    "word": "bored",
+    "type": "adj",
+    "phonetic": "/bɔːrd/",
+    "meaning": "buồn chán, tẻ nhạt",
+    "page": 3
+  },
+  {
+    "stt": 130,
+    "word": "bother",
+    "type": "n, v",
+    "phonetic": "/ˈbɑː.ðɚ/",
+    "meaning": "điều gây khó chịu; làm phiền, bận tâm",
+    "page": 3
+  },
+  {
+    "stt": 131,
+    "word": "bottom line",
+    "type": "n",
+    "phonetic": "/ˌbɑː.t̬əm ˈlaɪn/",
+    "meaning": "điểm mấu chốt, cốt yếu",
+    "page": 3
+  },
+  {
+    "stt": 132,
+    "word": "branch",
+    "type": "n",
+    "phonetic": "/bræntʃ/",
+    "meaning": "cành cây, chi nhánh",
+    "page": 3
+  },
+  {
+    "stt": 133,
+    "word": "brand",
+    "type": "n",
+    "phonetic": "/brænd/",
+    "meaning": "nhãn hàng, thương hiệu",
+    "page": 3
+  },
+  {
+    "stt": 134,
+    "word": "briefcase",
+    "type": "n",
+    "phonetic": "/ˈbriːf.keɪs/",
+    "meaning": "cặp tài liệu",
+    "page": 3
+  },
+  {
+    "stt": 135,
+    "word": "briefing",
+    "type": "n",
+    "phonetic": "/ˈbriː.fɪŋ/",
+    "meaning": "sự chỉ dẫn, hướng dẫn",
+    "page": 3
+  },
+  {
+    "stt": 136,
+    "word": "broadcast",
+    "type": "n, v",
+    "phonetic": "/ˈbrɑːd.kæst/",
+    "meaning": "chương trình phát thanh; truyền bá, phát thanh",
+    "page": 3
+  },
+  {
+    "stt": 137,
+    "word": "broaden",
+    "type": "v",
+    "phonetic": "/ˈbrɑː.dən/",
+    "meaning": "mở rộng, nới rộng",
+    "page": 3
+  },
+  {
+    "stt": 138,
+    "word": "browser",
+    "type": "n",
+    "phonetic": "/ˈbraʊ.zɚ/",
+    "meaning": "trình duyệt",
+    "page": 3
+  },
+  {
+    "stt": 139,
+    "word": "brush",
+    "type": "n, v",
+    "phonetic": "/brʌʃ/",
+    "meaning": "lược, bàn chải; chải, quét",
+    "page": 3
+  },
+  {
+    "stt": 140,
+    "word": "budget",
+    "type": "n, v",
+    "phonetic": "/ˈbʌdʒ.ɪt/",
+    "meaning": "ngân sách; dự thảo ngân sách",
+    "page": 4
+  },
+  {
+    "stt": 141,
+    "word": "bulletin",
+    "type": "n",
+    "phonetic": "/ˈbʊl.ə.t̬ɪn/",
+    "meaning": "bảng thông báo, tập san",
+    "page": 4
+  },
+  {
+    "stt": 142,
+    "word": "cabin crew",
+    "type": "n",
+    "phonetic": "/ˈkæb.ɪn ˌkruː/",
+    "meaning": "đội bay, tiếp viên hàng không",
+    "page": 4
+  },
+  {
+    "stt": 143,
+    "word": "cafeteria",
+    "type": "n",
+    "phonetic": "/ˌkæf.əˈtɪr.i.ə/",
+    "meaning": "quán ăn tự phục vụ, phòng cà phê",
+    "page": 4
+  },
+  {
+    "stt": 144,
+    "word": "calculate",
+    "type": "v",
+    "phonetic": "/ˈkæl.kjə.leɪt/",
+    "meaning": "tính toán, suy tính",
+    "page": 4
+  },
+  {
+    "stt": 145,
+    "word": "calculation",
+    "type": "n",
+    "phonetic": "/ˌkæl.kjəˈleɪ.ʃən/",
+    "meaning": "sự tính toán",
+    "page": 4
+  },
+  {
+    "stt": 146,
+    "word": "calculator",
+    "type": "n",
+    "phonetic": "/ˈkæl.kjə.leɪ.t̬ɚ/",
+    "meaning": "máy tính bỏ túi",
+    "page": 4
+  },
+  {
+    "stt": 147,
+    "word": "campaign",
+    "type": "n",
+    "phonetic": "/kæmˈpeɪn/",
+    "meaning": "chiến dịch, cuộc vận động",
+    "page": 4
+  },
+  {
+    "stt": 148,
+    "word": "cancel",
+    "type": "v",
+    "phonetic": "/ˈkæn.səl/",
+    "meaning": "hủy bỏ, xóa",
+    "page": 4
+  },
+  {
+    "stt": 149,
+    "word": "cancellation",
+    "type": "n",
+    "phonetic": "/ˌkæn.səlˈeɪ.ʃən/",
+    "meaning": "sự xóa bỏ, bãi bỏ",
+    "page": 4
+  },
+  {
+    "stt": 150,
+    "word": "candidacy",
+    "type": "n",
+    "phonetic": "/ˈkæn.dɪ.də.si/",
+    "meaning": "sự ứng cử",
+    "page": 4
+  },
+  {
+    "stt": 151,
+    "word": "candidate",
+    "type": "n",
+    "phonetic": "/ˈkæn.dɪ.dət/",
+    "meaning": "/ˈkæn.dɪ.deɪt/ ứng cử viên",
+    "page": 4
+  },
+  {
+    "stt": 152,
+    "word": "capacity",
+    "type": "n",
+    "phonetic": "/kəˈpæs.ə.t̬i/",
+    "meaning": "năng lực, sức chứa",
+    "page": 4
+  },
+  {
+    "stt": 153,
+    "word": "capital",
+    "type": "n",
+    "phonetic": "/ˈkæp.ə.t̬əl/",
+    "meaning": "thủ đô, nguồn vốn, chữ viết hoa",
+    "page": 4
+  },
+  {
+    "stt": 154,
+    "word": "career",
+    "type": "n",
+    "phonetic": "/kəˈrɪr/",
+    "meaning": "sự nghiệp",
+    "page": 4
+  },
+  {
+    "stt": 155,
+    "word": "careless",
+    "type": "adj",
+    "phonetic": "/ˈker.ləs/",
+    "meaning": "bất cẩn, cẩu thả",
+    "page": 4
+  },
+  {
+    "stt": 156,
+    "word": "cash",
+    "type": "n",
+    "phonetic": "/kæʃ/",
+    "meaning": "tiền mặt",
+    "page": 4
+  },
+  {
+    "stt": 157,
+    "word": "cashier",
+    "type": "n",
+    "phonetic": "/kæʃˈɪr/",
+    "meaning": "nhân viên thu ngân",
+    "page": 4
+  },
+  {
+    "stt": 158,
+    "word": "cause",
+    "type": "n, v",
+    "phonetic": "/kɑːz/",
+    "meaning": "nguyên nhân, lý do; gây ra",
+    "page": 4
+  },
+  {
+    "stt": 159,
+    "word": "cautious",
+    "type": "adj",
+    "phonetic": "/ˈkɑː.ʃəs/",
+    "meaning": "thận trọng, cẩn thận",
+    "page": 4
+  },
+  {
+    "stt": 160,
+    "word": "celebrate",
+    "type": "v",
+    "phonetic": "/ˈsel.ə.breɪt/",
+    "meaning": "kỉ niệm, tán dương",
+    "page": 4
+  },
+  {
+    "stt": 161,
+    "word": "celebration",
+    "type": "n",
+    "phonetic": "/ˌsel.əˈbreɪ.ʃən/",
+    "meaning": "lễ kỉ niệm",
+    "page": 4
+  },
+  {
+    "stt": 162,
+    "word": "certificate",
+    "type": "n",
+    "phonetic": "/sɚˈtɪf.ə.kət/",
+    "meaning": "giấy chứng nhận",
+    "page": 4
+  },
+  {
+    "stt": 163,
+    "word": "certification",
+    "type": "n",
+    "phonetic": "/ˌsɜ˞ ː.t̬ə.fɪˈkeɪ.ʃən/",
+    "meaning": "sự cấp giấy chứng nhận",
+    "page": 4
+  },
+  {
+    "stt": 164,
+    "word": "chain",
+    "type": "n",
+    "phonetic": "/tʃeɪn/",
+    "meaning": "dây xích, chuỗi",
+    "page": 4
+  },
+  {
+    "stt": 165,
+    "word": "chain store",
+    "type": "n",
+    "phonetic": "/ˈtʃeɪn ˌstɔːr/",
+    "meaning": "cửa hàng theo chuỗi, hệ thống cửa hàng",
+    "page": 4
+  },
+  {
+    "stt": 166,
+    "word": "chair",
+    "type": "n",
+    "phonetic": "/tʃer/",
+    "meaning": "ghế ngồi",
+    "page": 4
+  },
+  {
+    "stt": 167,
+    "word": "chairperson",
+    "type": "n",
+    "phonetic": "/ˈtʃerˌpɝː.sən/",
+    "meaning": "chủ tịch",
+    "page": 4
+  },
+  {
+    "stt": 168,
+    "word": "characteristic",
+    "type": "n",
+    "phonetic": "/ˌker.ək.təˈrɪs.tɪk/",
+    "meaning": "đặc điểm, tính cách",
+    "page": 4
+  },
+  {
+    "stt": 169,
+    "word": "characterize",
+    "type": "v",
+    "phonetic": "/ˈker.ək.tɚ.aɪz/",
+    "meaning": "biểu thị đặc điểm, mô tả đặc điểm",
+    "page": 4
+  },
+  {
+    "stt": 170,
+    "word": "charge",
+    "type": "n, v",
+    "phonetic": "/tʃɑːrdʒ/",
+    "meaning": "chi phí, tiền công; tính giá, đòi trả",
+    "page": 4
+  },
+  {
+    "stt": 171,
+    "word": "charity",
+    "type": "n",
+    "phonetic": "/ˈtʃer.ə.t̬i/",
+    "meaning": "lòng từ bi, tổ chức từ thiện",
+    "page": 4
+  },
+  {
+    "stt": 172,
+    "word": "cheap",
+    "type": "adj",
+    "phonetic": "/tʃiːp/",
+    "meaning": "rẻ tiền, xấu",
+    "page": 4
+  },
+  {
+    "stt": 173,
+    "word": "check in",
+    "type": "v",
+    "phonetic": "/tʃek ɪn/",
+    "meaning": "đăng ký phòng, vé máy bay...",
+    "page": 4
+  },
+  {
+    "stt": 174,
+    "word": "check out",
+    "type": "v",
+    "phonetic": "/tʃek aʊt/",
+    "meaning": "trả phòng, thanh toán",
+    "page": 4
+  },
+  {
+    "stt": 175,
+    "word": "chef",
+    "type": "n",
+    "phonetic": "/ʃef/",
+    "meaning": "đầu bếp",
+    "page": 4
+  },
+  {
+    "stt": 176,
+    "word": "circumstances",
+    "type": "n",
+    "phonetic": "/ˈsɝː.kəm.stæns/",
+    "meaning": "hoàn cảnh, tình huống",
+    "page": 4
+  },
+  {
+    "stt": 177,
+    "word": "claim",
+    "type": "n, v",
+    "phonetic": "/kleɪm/",
+    "meaning": "quyền đòi sở hữu; đòi hỏi, nhận",
+    "page": 4
+  },
+  {
+    "stt": 178,
+    "word": "claimant",
+    "type": "n",
+    "phonetic": "/ˈkleɪ.mənt/",
+    "meaning": "người thỉnh cầu, người đòi hỏi",
+    "page": 4
+  },
+  {
+    "stt": 179,
+    "word": "classify",
+    "type": "v",
+    "phonetic": "/ˈklæs.ə.faɪ/",
+    "meaning": "phân loại",
+    "page": 4
+  },
+  {
+    "stt": 180,
+    "word": "client",
+    "type": "n",
+    "phonetic": "/ˈklaɪ.ənt/",
+    "meaning": "khách hàng (của luật sư, cửa hàng...)",
+    "page": 4
+  },
+  {
+    "stt": 181,
+    "word": "climate",
+    "type": "n",
+    "phonetic": "/ˈklaɪ.mət/",
+    "meaning": "khí hậu, thời tiết",
+    "page": 4
+  },
+  {
+    "stt": 182,
+    "word": "commence",
+    "type": "v",
+    "phonetic": "/kəˈmens/",
+    "meaning": "bắt đầu, mở đầu, khởi đầu",
+    "page": 4
+  },
+  {
+    "stt": 183,
+    "word": "commission",
+    "type": "n",
+    "phonetic": "/kəˈmɪʃ.ən/",
+    "meaning": "hội đồng, ủy ban, tiền hoa hồng",
+    "page": 4
+  },
+  {
+    "stt": 184,
+    "word": "committee",
+    "type": "n",
+    "phonetic": "/kəˈmɪt̬.i/",
+    "meaning": "ủy ban",
+    "page": 4
+  },
+  {
+    "stt": 185,
+    "word": "commonly",
+    "type": "adv",
+    "phonetic": "/ˈkɑː.mən.li/",
+    "meaning": "thông thường, bình thường",
+    "page": 4
+  },
+  {
+    "stt": 186,
+    "word": "commute",
+    "type": "v",
+    "phonetic": "/kəˈmjuːt/",
+    "meaning": "thay đổi cho nhau, di chuyển đều đặn bằng tàu, xe...",
+    "page": 5
+  },
+  {
+    "stt": 187,
+    "word": "commuter",
+    "type": "n",
+    "phonetic": "/kəˈmjuː.t̬ɚ/",
+    "meaning": "người đi lại bằng vé tháng trên tàu, xe...",
+    "page": 5
+  },
+  {
+    "stt": 188,
+    "word": "company",
+    "type": "n",
+    "phonetic": "/ˈkʌm.pə.ni/",
+    "meaning": "công ty, bạn bè, bằng hữu",
+    "page": 5
+  },
+  {
+    "stt": 189,
+    "word": "compare",
+    "type": "v",
+    "phonetic": "/kəmˈper/",
+    "meaning": "so sánh, đối chiếu",
+    "page": 5
+  },
+  {
+    "stt": 190,
+    "word": "compatible",
+    "type": "adj",
+    "phonetic": "/kəmˈpæt̬.ə.bəl/",
+    "meaning": "tương thích, phù hợp",
+    "page": 5
+  },
+  {
+    "stt": 191,
+    "word": "compensate",
+    "type": "v",
+    "phonetic": "/ˈkɑːm.pən.seɪt/",
+    "meaning": "đền bù, bồi thường",
+    "page": 5
+  },
+  {
+    "stt": 192,
+    "word": "compensation",
+    "type": "n",
+    "phonetic": "/ˌkɑːm.penˈseɪ.ʃən/",
+    "meaning": "sự đền bù, vật bồi thường",
+    "page": 5
+  },
+  {
+    "stt": 193,
+    "word": "competent",
+    "type": "adj",
+    "phonetic": "/ˈkɑːm.pə.t̬ənt/",
+    "meaning": "có khả năng, đủ trình độ",
+    "page": 5
+  },
+  {
+    "stt": 194,
+    "word": "competitive",
+    "type": "adj",
+    "phonetic": "/kəmˈpet̬.ə.t̬ɪv/",
+    "meaning": "có tính cạnh tranh, ganh đua",
+    "page": 5
+  },
+  {
+    "stt": 195,
+    "word": "competitor",
+    "type": "n",
+    "phonetic": "/kəmˈpet̬.ə.t̬ɚ/",
+    "meaning": "người cạnh tranh, đối thủ",
+    "page": 5
+  },
+  {
+    "stt": 196,
+    "word": "complain",
+    "type": "v",
+    "phonetic": "/kəmˈpleɪn/",
+    "meaning": "kêu ca, phàn nàn, oán trách",
+    "page": 5
+  },
+  {
+    "stt": 197,
+    "word": "complaint",
+    "type": "n",
+    "phonetic": "/kəmˈpleɪnt/",
+    "meaning": "lời than phiền, lời phàn nàn",
+    "page": 5
+  },
+  {
+    "stt": 198,
+    "word": "complete",
+    "type": "adj",
+    "phonetic": "/kəmˈpliːt/",
+    "meaning": "đầy đủ, hoàn thiện",
+    "page": 5
+  },
+  {
+    "stt": 199,
+    "word": "complex",
+    "type": "n, adj",
+    "phonetic": "/ˈkɑːm.pleks/",
+    "meaning": "/kɑːmˈpleks/ khu phức hợp; phức tạp",
+    "page": 5
+  },
+  {
+    "stt": 200,
+    "word": "complexity",
+    "type": "n",
+    "phonetic": "/kəmˈplek.sə.t̬i/",
+    "meaning": "sự phức tạp",
+    "page": 5
+  },
+  {
+    "stt": 201,
+    "word": "compliment",
+    "type": "n",
+    "phonetic": "/ˈkɑːm.plə.mənt/",
+    "meaning": "lời khen, sự ca tụng",
+    "page": 5
+  },
+  {
+    "stt": 202,
+    "word": "complimentary",
+    "type": "adj",
+    "phonetic": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+    "meaning": "ngợi khen, đánh giá cao",
+    "page": 5
+  },
+  {
+    "stt": 203,
+    "word": "comply",
+    "type": "v",
+    "phonetic": "/kəmˈplaɪ/",
+    "meaning": "tuân theo, làm theo",
+    "page": 5
+  },
+  {
+    "stt": 204,
+    "word": "comprehensive",
+    "type": "adj",
+    "phonetic": "/ˌkɑːm.prəˈhen.sɪv/",
+    "meaning": "toàn diện, thông minh",
+    "page": 5
+  },
+  {
+    "stt": 205,
+    "word": "compromise",
+    "type": "n, v",
+    "phonetic": "/ˈkɑːm.prə.maɪz/",
+    "meaning": "sự thỏa hiệp; dàn xếp, thỏa hiệp",
+    "page": 5
+  },
+  {
+    "stt": 206,
+    "word": "compulsory",
+    "type": "adj",
+    "phonetic": "/kəmˈpʌl.sɚ.i/",
+    "meaning": "bắt buộc, ép buộc",
+    "page": 5
+  },
+  {
+    "stt": 207,
+    "word": "concede",
+    "type": "v",
+    "phonetic": "/kənˈsiːd/",
+    "meaning": "thừa nhận",
+    "page": 5
+  },
+  {
+    "stt": 208,
+    "word": "concern",
+    "type": "n, v",
+    "phonetic": "/kənˈsɝːn/",
+    "meaning": "mối bận tâm, chuyện đáng lo; liên quan, dính líu tới",
+    "page": 5
+  },
+  {
+    "stt": 209,
+    "word": "conclude",
+    "type": "v",
+    "phonetic": "/kənˈkluːd/",
+    "meaning": "kết thúc, chấm dứt, kết luận",
+    "page": 5
+  },
+  {
+    "stt": 210,
+    "word": "conclusion",
+    "type": "n",
+    "phonetic": "/kənˈkluː.ʒən/",
+    "meaning": "kết luận",
+    "page": 5
+  },
+  {
+    "stt": 211,
+    "word": "concourse",
+    "type": "n",
+    "phonetic": "/ˈkɑːn.kɔːrs/",
+    "meaning": "đám đông, sự tụ họp",
+    "page": 5
+  },
+  {
+    "stt": 212,
+    "word": "condition",
+    "type": "n, v",
+    "phonetic": "/kənˈdɪʃ.ən/",
+    "meaning": "điều kiện, tình cảnh, tình trạng; là điều kiện của, tùy thuộc vào",
+    "page": 5
+  },
+  {
+    "stt": 213,
+    "word": "conduct",
+    "type": "n, v",
+    "phonetic": "/ˈkɑːn.dʌkt/",
+    "meaning": "/kənˈdʌkt/ hạnh kiểm, đạo đức; tiến hành, chỉ đạo",
+    "page": 5
+  },
+  {
+    "stt": 214,
+    "word": "confirmation",
+    "type": "n",
+    "phonetic": "/ˌkɑːn.fɚˈmeɪ.ʃən/",
+    "meaning": "sự xác nhận, chứng thực",
+    "page": 5
+  },
+  {
+    "stt": 215,
+    "word": "confusion",
+    "type": "n",
+    "phonetic": "/kənˈfjuː.ʒən/",
+    "meaning": "sự bối rối, khó hiểu",
+    "page": 5
+  },
+  {
+    "stt": 216,
+    "word": "connect",
+    "type": "v",
+    "phonetic": "/kəˈnekt/",
+    "meaning": "nối lại, kết nối",
+    "page": 5
+  },
+  {
+    "stt": 217,
+    "word": "consequence",
+    "type": "n",
+    "phonetic": "/ˈkɑːn.sə.kwəns/",
+    "meaning": "hậu quả, kết quả",
+    "page": 5
+  },
+  {
+    "stt": 218,
+    "word": "considerable",
+    "type": "adj",
+    "phonetic": "/kənˈsɪd.ɚ.ə.bəl/",
+    "meaning": "đáng kể, lớn lao",
+    "page": 5
+  },
+  {
+    "stt": 219,
+    "word": "consignment",
+    "type": "n",
+    "phonetic": "/kənˈsaɪn.mənt/",
+    "meaning": "hoạt động gửi hàng để bán",
+    "page": 5
+  },
+  {
+    "stt": 220,
+    "word": "consistently",
+    "type": "adv",
+    "phonetic": "/kənˈsɪs.tənt.li/",
+    "meaning": "kiên định, trước sau như một, đồng nhất",
+    "page": 5
+  },
+  {
+    "stt": 221,
+    "word": "constant",
+    "type": "adj",
+    "phonetic": "/ˈkɑːn.stənt/",
+    "meaning": "liên tục, liên tiếp, kiên trì",
+    "page": 5
+  },
+  {
+    "stt": 222,
+    "word": "consultant",
+    "type": "n",
+    "phonetic": "/kənˈsʌl.tənt/",
+    "meaning": "tư vấn viên, cố vấn",
+    "page": 5
+  },
+  {
+    "stt": 223,
+    "word": "consume",
+    "type": "v",
+    "phonetic": "/kənˈsuːm/",
+    "meaning": "sử dụng, tiêu dùng, tiêu thụ",
+    "page": 5
+  },
+  {
+    "stt": 224,
+    "word": "consumer",
+    "type": "n",
+    "phonetic": "/kənˈsuː.mɚ/",
+    "meaning": "người tiêu dùng",
+    "page": 5
+  },
+  {
+    "stt": 225,
+    "word": "continual",
+    "type": "adj",
+    "phonetic": "/kənˈtɪn.ju.əl/",
+    "meaning": "liên tục, liên miên",
+    "page": 5
+  },
+  {
+    "stt": 226,
+    "word": "continue",
+    "type": "v",
+    "phonetic": "/kənˈtɪn.juː/",
+    "meaning": "tiếp tục, duy trì",
+    "page": 5
+  },
+  {
+    "stt": 227,
+    "word": "contribute",
+    "type": "v",
+    "phonetic": "/kənˈtrɪb.juːt/",
+    "meaning": "đóng góp, góp phần",
+    "page": 5
+  },
+  {
+    "stt": 228,
+    "word": "control",
+    "type": "n, v",
+    "phonetic": "/kənˈtroʊl/",
+    "meaning": "sự điều khiển, cầm lái; điều khiển, chỉ huy, kiểm soát",
+    "page": 5
+  },
+  {
+    "stt": 229,
+    "word": "control panel",
+    "type": "n",
+    "phonetic": "/kənˈtroʊl ˌpæn.əl/",
+    "meaning": "bảng điều khiển",
+    "page": 6
+  },
+  {
+    "stt": 230,
+    "word": "conveniently",
+    "type": "adv",
+    "phonetic": "/kənˈviː.ni.ənt.li/",
+    "meaning": "thuận tiện, tiện lợi",
+    "page": 6
+  },
+  {
+    "stt": 231,
+    "word": "convince",
+    "type": "v",
+    "phonetic": "/kənˈvɪns/",
+    "meaning": "thuyết phục",
+    "page": 6
+  },
+  {
+    "stt": 232,
+    "word": "corporate",
+    "type": "n, v",
+    "phonetic": "/ˈkɔːr.pɚ.ət/",
+    "meaning": "công ty, tập đoàn; (thuộc) đoàn thể",
+    "page": 6
+  },
+  {
+    "stt": 233,
+    "word": "corporation",
+    "type": "n",
+    "phonetic": "/ˌkɔːr.pəˈreɪ.ʃən/",
+    "meaning": "đoàn thể, tập đoàn",
+    "page": 6
+  },
+  {
+    "stt": 234,
+    "word": "cost",
+    "type": "n, v",
+    "phonetic": "/kɑːst/",
+    "meaning": "giá, chi phí; định giá, trả giá",
+    "page": 6
+  },
+  {
+    "stt": 235,
+    "word": "counter",
+    "type": "n, v",
+    "phonetic": "/ˈkaʊn.t̬ɚ/",
+    "meaning": "quầy hàng, quầy thu ngân; phản đối, chống lại",
+    "page": 6
+  },
+  {
+    "stt": 236,
+    "word": "courier",
+    "type": "n",
+    "phonetic": "/ˈkʊr.i.ɚ/",
+    "meaning": "người đưa thư, đưa tin",
+    "page": 6
+  },
+  {
+    "stt": 237,
+    "word": "cover letter",
+    "type": "n",
+    "phonetic": "/ˈkʌv.ə ˌlet.ər/",
+    "meaning": "thư trình bày thông tin, nguyện vọng",
+    "page": 6
+  },
+  {
+    "stt": 238,
+    "word": "coverage",
+    "type": "n",
+    "phonetic": "/ˈkʌv.ɚ.ɪdʒ/",
+    "meaning": "mức độ bao phủ, che phủbản tin sự kiện",
+    "page": 6
+  },
+  {
+    "stt": 239,
+    "word": "coworker",
+    "type": "n",
+    "phonetic": "/ˌkoʊˈwɝː.kɚ/",
+    "meaning": "đồng nghiệp",
+    "page": 6
+  },
+  {
+    "stt": 240,
+    "word": "crash",
+    "type": "n, v",
+    "phonetic": "/kræʃ/",
+    "meaning": "sự va đập, sụp đổ; rơi vỡ, va đập",
+    "page": 6
+  },
+  {
+    "stt": 241,
+    "word": "credentials",
+    "type": "n",
+    "phonetic": "/krɪˈden·ʃəlz/",
+    "meaning": "giấy ủy nhiệm, chứng chỉ",
+    "page": 6
+  },
+  {
+    "stt": 242,
+    "word": "credit",
+    "type": "n",
+    "phonetic": "/ˈkred.ɪt/",
+    "meaning": "danh tiếng, tín dụng, tín chỉ",
+    "page": 6
+  },
+  {
+    "stt": 243,
+    "word": "criterion",
+    "type": "n",
+    "phonetic": "/kraɪˈtɪr.i.ən/",
+    "meaning": "tiêu chí đánh giá",
+    "page": 6
+  },
+  {
+    "stt": 244,
+    "word": "critical",
+    "type": "adj",
+    "phonetic": "/ˈkrɪt̬.ɪ.kəl/",
+    "meaning": "phê bình, phê phánnguy kịch",
+    "page": 6
+  },
+  {
+    "stt": 245,
+    "word": "criticize",
+    "type": "v",
+    "phonetic": "/ˈkrɪt̬.ɪ.saɪz/",
+    "meaning": "phê bình, chỉ trích",
+    "page": 6
+  },
+  {
+    "stt": 246,
+    "word": "crowd",
+    "type": "n, v",
+    "phonetic": "/kraʊd/",
+    "meaning": "đám đông, đống; xúm lại, tụ tập",
+    "page": 6
+  },
+  {
+    "stt": 247,
+    "word": "crowded",
+    "type": "adj",
+    "phonetic": "/ˈkraʊ.dɪd/",
+    "meaning": "đông đúcnhiều, đầy",
+    "page": 6
+  },
+  {
+    "stt": 248,
+    "word": "crucial",
+    "type": "adj",
+    "phonetic": "/ˈkruː.ʃəl/",
+    "meaning": "có tính quyết định, trọng yếu",
+    "page": 6
+  },
+  {
+    "stt": 249,
+    "word": "cruise",
+    "type": "n, v",
+    "phonetic": "/kruːz/",
+    "meaning": "chuyến du lịch, đi chơi trên biển; đi chơi bằng tàu thủy",
+    "page": 6
+  },
+  {
+    "stt": 250,
+    "word": "currency",
+    "type": "n",
+    "phonetic": "/ˈkɝː.ən.si/",
+    "meaning": "tiền tệ",
+    "page": 6
+  },
+  {
+    "stt": 251,
+    "word": "current",
+    "type": "n, adj",
+    "phonetic": "/ˈkɝː.ənt/",
+    "meaning": "dòng, luồng; hiện tại, hiện thời",
+    "page": 6
+  },
+  {
+    "stt": 252,
+    "word": "custom",
+    "type": "n",
+    "phonetic": "/ˈkʌs.təm/",
+    "meaning": "phong tục, tục lệ",
+    "page": 6
+  },
+  {
+    "stt": 253,
+    "word": "customer",
+    "type": "n",
+    "phonetic": "/ˈkʌs.tə.mɚ/",
+    "meaning": "khách hàng",
+    "page": 6
+  },
+  {
+    "stt": 254,
+    "word": "cutting edge",
+    "type": "adj",
+    "phonetic": "/ˌkʌt̬.ɪŋ ˈedʒ/",
+    "meaning": "đột phá, vượt trội",
+    "page": 6
+  },
+  {
+    "stt": 255,
+    "word": "cycle",
+    "type": "n",
+    "phonetic": "/ˈsaɪ.kəl/",
+    "meaning": "chu kỳ, chu trình",
+    "page": 6
+  },
+  {
+    "stt": 256,
+    "word": "daily",
+    "type": "adj",
+    "phonetic": "/ˈdeɪ.li/",
+    "meaning": "hằng ngày",
+    "page": 6
+  },
+  {
+    "stt": 257,
+    "word": "damage",
+    "type": "n",
+    "phonetic": "/ˈdæm.ɪdʒ/",
+    "meaning": "mối gây hại; làm hại, hư hỏng",
+    "page": 6
+  },
+  {
+    "stt": 258,
+    "word": "deadline",
+    "type": "n",
+    "phonetic": "/ˈded.laɪn/",
+    "meaning": "hạn cuối, hạn hoàn thành",
+    "page": 6
+  },
+  {
+    "stt": 259,
+    "word": "deal",
+    "type": "n, v",
+    "phonetic": "/diːl/",
+    "meaning": "thỏa thuận mua bán; giải quyết, đối phó",
+    "page": 6
+  },
+  {
+    "stt": 260,
+    "word": "debit",
+    "type": "n",
+    "phonetic": "/ˈdeb.ɪt/",
+    "meaning": "món nợ; ghi nợ",
+    "page": 6
+  },
+  {
+    "stt": 261,
+    "word": "debt",
+    "type": "n",
+    "phonetic": "/det/",
+    "meaning": "khoản nợ",
+    "page": 6
+  },
+  {
+    "stt": 262,
+    "word": "decision",
+    "type": "n",
+    "phonetic": "/dɪˈsɪʒ.ən/",
+    "meaning": "quyết định",
+    "page": 6
+  },
+  {
+    "stt": 263,
+    "word": "decorate",
+    "type": "v",
+    "phonetic": "/ˈdek.ər.eɪt/",
+    "meaning": "trang trí, trang hoàng",
+    "page": 6
+  },
+  {
+    "stt": 264,
+    "word": "decrease",
+    "type": "n",
+    "phonetic": "/ˈdiː.kriːs/",
+    "meaning": "sự sụt giảm; làm giảm đi",
+    "page": 6
+  },
+  {
+    "stt": 265,
+    "word": "dedicate",
+    "type": "v",
+    "phonetic": "/ˈded.ə.keɪt/",
+    "meaning": "cống hiến, tận hiến",
+    "page": 6
+  },
+  {
+    "stt": 266,
+    "word": "deduct",
+    "type": "v",
+    "phonetic": "/dɪˈdʌkt/",
+    "meaning": "khấu trừ, trừ đi",
+    "page": 6
+  },
+  {
+    "stt": 267,
+    "word": "definite",
+    "type": "adj",
+    "phonetic": "/ˈdef.ən.ət/",
+    "meaning": "xác định rõ, rõ ràng",
+    "page": 6
+  },
+  {
+    "stt": 268,
+    "word": "definitely",
+    "type": "adv",
+    "phonetic": "/ˈdef.ən.ət.li/",
+    "meaning": "rõ ràng, dứt khoát, chắc chắn",
+    "page": 6
+  },
+  {
+    "stt": 269,
+    "word": "degree",
+    "type": "n",
+    "phonetic": "/dɪˈɡriː/",
+    "meaning": "mức độ, trình độ, cấp bậcđộ, nhiệt độ",
+    "page": 6
+  },
+  {
+    "stt": 270,
+    "word": "delay",
+    "type": "n, v",
+    "phonetic": "/dɪˈleɪ/",
+    "meaning": "sự chậm trễ, trì hoãn; làm chậm, hoãn lại",
+    "page": 6
+  },
+  {
+    "stt": 271,
+    "word": "delighted",
+    "type": "adj",
+    "phonetic": "/dɪˈlaɪ.t̬ɪd/",
+    "meaning": "hài lòng, vui mừng",
+    "page": 6
+  },
+  {
+    "stt": 272,
+    "word": "deliver",
+    "type": "v",
+    "phonetic": "/dɪˈlɪv.ɚ/",
+    "meaning": "phân phối, giao hàng, đem tớiphát biểu",
+    "page": 7
+  },
+  {
+    "stt": 273,
+    "word": "delivery",
+    "type": "n",
+    "phonetic": "/dɪˈlɪv.ɚ.i/",
+    "meaning": "sự phân phát, giao hàngsự phát biểu",
+    "page": 7
+  },
+  {
+    "stt": 274,
+    "word": "demand",
+    "type": "n, v",
+    "phonetic": "/dɪˈmænd/",
+    "meaning": "sự đòi hỏi; yêu cầu",
+    "page": 7
+  },
+  {
+    "stt": 275,
+    "word": "demanding",
+    "type": "adj",
+    "phonetic": "/dɪˈmæn.dɪŋ/",
+    "meaning": "yêu cầu cao, đòi hỏi khắt khe",
+    "page": 7
+  },
+  {
+    "stt": 276,
+    "word": "demonstrate",
+    "type": "v",
+    "phonetic": "/ˈdem.ən.streɪt/",
+    "meaning": "làm mẫu, giải thíchbiểu tình",
+    "page": 7
+  },
+  {
+    "stt": 277,
+    "word": "depart",
+    "type": "v",
+    "phonetic": "/dɪˈpɑːrt/",
+    "meaning": "rời đitừ giã",
+    "page": 7
+  },
+  {
+    "stt": 278,
+    "word": "department",
+    "type": "n",
+    "phonetic": "/dɪˈpɑːrt.mənt/",
+    "meaning": "khoa, bộ",
+    "page": 7
+  },
+  {
+    "stt": 279,
+    "word": "depend",
+    "type": "v",
+    "phonetic": "/dɪˈpend/",
+    "meaning": "phụ thuộc, lệ thuộc",
+    "page": 7
+  },
+  {
+    "stt": 280,
+    "word": "dependence",
+    "type": "n",
+    "phonetic": "/dɪˈpen.dəns/",
+    "meaning": "sự phụ thuộc",
+    "page": 7
+  },
+  {
+    "stt": 281,
+    "word": "deposit",
+    "type": "n, v",
+    "phonetic": "/dɪˈpɑː.zɪt/",
+    "meaning": "tiền cọc; đặt cọc",
+    "page": 7
+  },
+  {
+    "stt": 282,
+    "word": "description",
+    "type": "n",
+    "phonetic": "/dɪˈskrɪp.ʃən/",
+    "meaning": "bản mô tả, sự mô tả",
+    "page": 7
+  },
+  {
+    "stt": 283,
+    "word": "designate",
+    "type": "v",
+    "phonetic": "/ˈdez.ɪɡ.neɪt/",
+    "meaning": "chỉ định, bổ nhiệm",
+    "page": 7
+  },
+  {
+    "stt": 284,
+    "word": "dessert",
+    "type": "n",
+    "phonetic": "/dɪˈzɝːt/",
+    "meaning": "món tráng miệng",
+    "page": 7
+  },
+  {
+    "stt": 285,
+    "word": "destination",
+    "type": "n",
+    "phonetic": "/ˌdes.təˈneɪ.ʃən/",
+    "meaning": "đích đến, điểm đếndự định",
+    "page": 7
+  },
+  {
+    "stt": 286,
+    "word": "detail",
+    "type": "n, v",
+    "phonetic": "/ˈdiː.teɪl/",
+    "meaning": "chi tiết, tiểu tiết; trình bày chi tiết, làm rõ",
+    "page": 7
+  },
+  {
+    "stt": 287,
+    "word": "detailed",
+    "type": "adj",
+    "phonetic": "/ˈdiː.teɪld/",
+    "meaning": "chi tiết, cụ thể",
+    "page": 7
+  },
+  {
+    "stt": 288,
+    "word": "detect",
+    "type": "v",
+    "phonetic": "/dɪˈtekt/",
+    "meaning": "dò ra, tìm ra, phát hiện",
+    "page": 7
+  },
+  {
+    "stt": 289,
+    "word": "deterioration",
+    "type": "n",
+    "phonetic": "/dɪˌtɪr.i.əˈreɪ.ʃən/",
+    "meaning": "sự hư hại, xuống cấp, sa đọa",
+    "page": 7
+  },
+  {
+    "stt": 290,
+    "word": "determine",
+    "type": "v",
+    "phonetic": "/dɪˈtɝː.mɪn/",
+    "meaning": "xác định rõ, định rõquyết định, quyết tâm",
+    "page": 7
+  },
+  {
+    "stt": 291,
+    "word": "determined",
+    "type": "adj",
+    "phonetic": "/dɪˈtɝː.mɪnd/",
+    "meaning": "quyết tâm, kiên quyết",
+    "page": 7
+  },
+  {
+    "stt": 292,
+    "word": "develop",
+    "type": "v",
+    "phonetic": "/dɪˈvel.əp/",
+    "meaning": "phát triển, tiến triển",
+    "page": 7
+  },
+  {
+    "stt": 293,
+    "word": "developer",
+    "type": "n",
+    "phonetic": "/dɪˈvel.ə.pɚ/",
+    "meaning": "người phát triển, lập trình viên",
+    "page": 7
+  },
+  {
+    "stt": 294,
+    "word": "development",
+    "type": "n",
+    "phonetic": "/dɪˈvel.əp.mənt/",
+    "meaning": "sự phát triển",
+    "page": 7
+  },
+  {
+    "stt": 295,
+    "word": "device",
+    "type": "n",
+    "phonetic": "/dɪˈvaɪs/",
+    "meaning": "thiết bị, máy mócphương sách",
+    "page": 7
+  },
+  {
+    "stt": 296,
+    "word": "diagnose",
+    "type": "v",
+    "phonetic": "/ˌdaɪ.əɡˈnoʊz/",
+    "meaning": "chẩn đoán",
+    "page": 7
+  },
+  {
+    "stt": 297,
+    "word": "differential",
+    "type": "adj",
+    "phonetic": "/ˌdɪf.əˈren.ʃəl/",
+    "meaning": "khác biệt, chênh lệch",
+    "page": 7
+  },
+  {
+    "stt": 298,
+    "word": "diligent",
+    "type": "adj",
+    "phonetic": "/ˈdɪl.ə.dʒənt/",
+    "meaning": "chăm chỉ, cần cù",
+    "page": 7
+  },
+  {
+    "stt": 299,
+    "word": "director",
+    "type": "n",
+    "phonetic": "/daɪˈrek.tɚ/",
+    "meaning": "/dɪˈrek.tɚ/ giám đốc, người điều hành, đạo diễn",
+    "page": 7
+  },
+  {
+    "stt": 300,
+    "word": "disagree",
+    "type": "v",
+    "phonetic": "/ˌdɪs.əˈɡriː/",
+    "meaning": "bất đồng, không khớp với nhau",
+    "page": 7
+  },
+  {
+    "stt": 301,
+    "word": "disagreement",
+    "type": "n",
+    "phonetic": "/ˌdɪs.əˈɡriː.mənt/",
+    "meaning": "sự bất đồng, mối bất hòa, mâu thuẫn",
+    "page": 7
+  },
+  {
+    "stt": 302,
+    "word": "disappointing",
+    "type": "adj",
+    "phonetic": "/ˌdɪs.əˈpɔɪn.t̬ɪŋ/",
+    "meaning": "đáng thất vọng",
+    "page": 7
+  },
+  {
+    "stt": 303,
+    "word": "disconnect",
+    "type": "v",
+    "phonetic": "/ˌdɪs.kəˈnekt/",
+    "meaning": "ngắt kết nối",
+    "page": 7
+  },
+  {
+    "stt": 304,
+    "word": "discount",
+    "type": "n, v",
+    "phonetic": "/ˈdɪs.kaʊnt/",
+    "meaning": "sự giảm giá, chiết khấu; giảm giá, bớt giá",
+    "page": 7
+  },
+  {
+    "stt": 305,
+    "word": "discrepancy",
+    "type": "n",
+    "phonetic": "/dɪˈskrep.ən.si/",
+    "meaning": "khác biệt, chênh lệch, điểm không đồng nhất",
+    "page": 7
+  },
+  {
+    "stt": 306,
+    "word": "discrimination",
+    "type": "n",
+    "phonetic": "/dɪˌskrɪm.əˈneɪ.ʃən/",
+    "meaning": "sự phân biệt đối xử",
+    "page": 7
+  },
+  {
+    "stt": 307,
+    "word": "discuss",
+    "type": "v",
+    "phonetic": "/dɪˈskʌs/",
+    "meaning": "thảo luận, tranh luận",
+    "page": 7
+  },
+  {
+    "stt": 308,
+    "word": "discussion",
+    "type": "n",
+    "phonetic": "/dɪˈskʌʃ.ən/",
+    "meaning": "cuộc tranh luận, thảo luận",
+    "page": 7
+  },
+  {
+    "stt": 309,
+    "word": "dish",
+    "type": "n",
+    "phonetic": "/dɪʃ/",
+    "meaning": "đĩa đựng thức ăn, món ăn",
+    "page": 7
+  },
+  {
+    "stt": 310,
+    "word": "dismiss",
+    "type": "v",
+    "phonetic": "/dɪˈsmɪs/",
+    "meaning": "giải tán, thải hồi",
+    "page": 7
+  },
+  {
+    "stt": 311,
+    "word": "dismissive",
+    "type": "adj",
+    "phonetic": "/dɪˈsmɪs.ɪv/",
+    "meaning": "thô bạo, tùy tiện",
+    "page": 7
+  },
+  {
+    "stt": 312,
+    "word": "display",
+    "type": "n, v",
+    "phonetic": "/dɪˈspleɪ/",
+    "meaning": "sự bày biện; trưng bày, phô diễn",
+    "page": 7
+  },
+  {
+    "stt": 313,
+    "word": "disposable",
+    "type": "adj",
+    "phonetic": "/dɪˈspoʊ.zə.bəl/",
+    "meaning": "dùng một lần, sẵn có để dùng",
+    "page": 8
+  },
+  {
+    "stt": 314,
+    "word": "dispose",
+    "type": "v",
+    "phonetic": "/dɪˈspoʊz/",
+    "meaning": "vứt bỏ, giải quyết",
+    "page": 8
+  },
+  {
+    "stt": 315,
+    "word": "dispute",
+    "type": "n, v",
+    "phonetic": "/dɪˈspjuːt/",
+    "meaning": "/ˈdɪs.pjuːt/ cuộc bàn cãi, cuộc tranh luận; tranh luận",
+    "page": 8
+  },
+  {
+    "stt": 316,
+    "word": "disruption",
+    "type": "n",
+    "phonetic": "/dɪsˈrʌp.ʃən/",
+    "meaning": "sự phá vỡ, đập gãy",
+    "page": 8
+  },
+  {
+    "stt": 317,
+    "word": "distinctive",
+    "type": "adj",
+    "phonetic": "/dɪˈstɪŋk.tɪv/",
+    "meaning": "đặc biệt, độc đáo",
+    "page": 8
+  },
+  {
+    "stt": 318,
+    "word": "distinguish",
+    "type": "v",
+    "phonetic": "/dɪˈstɪŋ.ɡwɪʃ/",
+    "meaning": "phân biệt, nhận ra",
+    "page": 8
+  },
+  {
+    "stt": 319,
+    "word": "distribute",
+    "type": "v",
+    "phonetic": "/dɪˈstrɪb.juːt/",
+    "meaning": "phân phát, phân bổ",
+    "page": 8
+  },
+  {
+    "stt": 320,
+    "word": "distribution",
+    "type": "n",
+    "phonetic": "/ˌdɪs.trɪˈbjuː.ʃən/",
+    "meaning": "sự phân phát",
+    "page": 8
+  },
+  {
+    "stt": 321,
+    "word": "dividend",
+    "type": "n",
+    "phonetic": "/ˈdɪv.ə.dend/",
+    "meaning": "/ˈdɪv.ə.dənd/ số bị chia",
+    "page": 8
+  },
+  {
+    "stt": 322,
+    "word": "document",
+    "type": "n",
+    "phonetic": "/ˈdɑː.kjə.mənt/",
+    "meaning": "văn kiện, tài liệu; dẫn chứng tư liệu",
+    "page": 8
+  },
+  {
+    "stt": 323,
+    "word": "donate",
+    "type": "v",
+    "phonetic": "/ˈdoʊ.neɪt/",
+    "meaning": "quyên góp, đóng góp",
+    "page": 8
+  },
+  {
+    "stt": 324,
+    "word": "donation",
+    "type": "n",
+    "phonetic": "/doʊˈneɪ.ʃən/",
+    "meaning": "sự quyên góp, sự hiến tặng",
+    "page": 8
+  },
+  {
+    "stt": 325,
+    "word": "double n,",
+    "type": "adj, adv",
+    "phonetic": "/ˈdʌb.əl/",
+    "meaning": "nhân đôi, gấp dôi",
+    "page": 8
+  },
+  {
+    "stt": 326,
+    "word": "download",
+    "type": "v",
+    "phonetic": "/ˈdaʊn.loʊd/",
+    "meaning": "tải xuống",
+    "page": 8
+  },
+  {
+    "stt": 327,
+    "word": "downsize",
+    "type": "v",
+    "phonetic": "/ˈdaʊn.saɪz/",
+    "meaning": "cắt giảm",
+    "page": 8
+  },
+  {
+    "stt": 328,
+    "word": "downturn",
+    "type": "n",
+    "phonetic": "/ˈdaʊn.tɝːn/",
+    "meaning": "sự suy sụp",
+    "page": 8
+  },
+  {
+    "stt": 329,
+    "word": "downward",
+    "type": "adv",
+    "phonetic": "/ˈdaʊn.wɚd/",
+    "meaning": "trở xuống, trở về sau",
+    "page": 8
+  },
+  {
+    "stt": 330,
+    "word": "drastically",
+    "type": "adv",
+    "phonetic": "/ˈdræs.tɪ.kəl.i/",
+    "meaning": "mạnh mẽ, quyết liệt",
+    "page": 8
+  },
+  {
+    "stt": 331,
+    "word": "draw",
+    "type": "v",
+    "phonetic": "/drɑː/",
+    "meaning": "kéo, lôi, thu hútvẽ",
+    "page": 8
+  },
+  {
+    "stt": 332,
+    "word": "drawer",
+    "type": "n",
+    "phonetic": "/drɑː/",
+    "meaning": "ngăn kéo",
+    "page": 8
+  },
+  {
+    "stt": 333,
+    "word": "drive",
+    "type": "n, v",
+    "phonetic": "/draɪv/",
+    "meaning": "cuộc đua; lái xe",
+    "page": 8
+  },
+  {
+    "stt": 334,
+    "word": "dull",
+    "type": "adj",
+    "phonetic": "/dʌl/",
+    "meaning": "chậm hiểu, đần độncùn",
+    "page": 8
+  },
+  {
+    "stt": 335,
+    "word": "duration",
+    "type": "n",
+    "phonetic": "/djʊəˈreɪ.ʃən/",
+    "meaning": "khoảng thời gian, thời hạn",
+    "page": 8
+  },
+  {
+    "stt": 336,
+    "word": "duty-free",
+    "type": "adj, adv",
+    "phonetic": "/ˌduː.t̬iˈfriː/",
+    "meaning": "miễn thuế",
+    "page": 8
+  },
+  {
+    "stt": 337,
+    "word": "earn",
+    "type": "v",
+    "phonetic": "/ɝːn/",
+    "meaning": "kiếm được, giành được",
+    "page": 8
+  },
+  {
+    "stt": 338,
+    "word": "earnings",
+    "type": "n",
+    "phonetic": "/ˈɝː.nɪŋz/",
+    "meaning": "số tiền kiếm được",
+    "page": 8
+  },
+  {
+    "stt": 339,
+    "word": "economical",
+    "type": "adj",
+    "phonetic": "/ˌiː.kəˈnɑː.mɪ.kəl/",
+    "meaning": "/ek.əˈnɑː.mɪ.kəl/tiết kiệm, kinh tế",
+    "page": 8
+  },
+  {
+    "stt": 340,
+    "word": "economize",
+    "type": "v",
+    "phonetic": "/iˈkɑː.nə.maɪz/",
+    "meaning": "tiết kiệm",
+    "page": 8
+  },
+  {
+    "stt": 341,
+    "word": "economy",
+    "type": "n",
+    "phonetic": "/iˈkɑː.nə.mi/",
+    "meaning": "nền kinh tế",
+    "page": 8
+  },
+  {
+    "stt": 342,
+    "word": "effective",
+    "type": "adj",
+    "phonetic": "/əˈfek.tɪv/",
+    "meaning": "hiệu quả, có hiệu lực",
+    "page": 8
+  },
+  {
+    "stt": 343,
+    "word": "effectively",
+    "type": "adv",
+    "phonetic": "/əˈfek.tɪv.li/",
+    "meaning": "có hiệu quả",
+    "page": 8
+  },
+  {
+    "stt": 344,
+    "word": "effectiveness",
+    "type": "n",
+    "phonetic": "/əˈfek.tɪv.nəs/",
+    "meaning": "sự hiệu quả",
+    "page": 8
+  },
+  {
+    "stt": 345,
+    "word": "efficiency",
+    "type": "n",
+    "phonetic": "/ɪˈfɪʃ.ən.si/",
+    "meaning": "năng lực, hiệu suất, năng suất",
+    "page": 8
+  },
+  {
+    "stt": 346,
+    "word": "efficient",
+    "type": "adj",
+    "phonetic": "/ɪˈfɪʃ.ənt/",
+    "meaning": "năng suất cao, hiệu suất tốt",
+    "page": 8
+  },
+  {
+    "stt": 347,
+    "word": "efficiently",
+    "type": "adv",
+    "phonetic": "/ɪˈfɪʃ.ənt.li/",
+    "meaning": "có hiệu nghiệm",
+    "page": 8
+  },
+  {
+    "stt": 348,
+    "word": "elderly",
+    "type": "adj",
+    "phonetic": "/ˈel.dɚ.li/",
+    "meaning": "có tuổi, lớn tuổi",
+    "page": 8
+  },
+  {
+    "stt": 349,
+    "word": "elevator",
+    "type": "n",
+    "phonetic": "/ˈel.ə.veɪ.t̬ɚ/",
+    "meaning": "thang máy, máy nâng",
+    "page": 8
+  },
+  {
+    "stt": 350,
+    "word": "embark",
+    "type": "v",
+    "phonetic": "/ɪmˈbɑːrk/",
+    "meaning": "bắt đầu, lên đường, dấn thân vào",
+    "page": 8
+  },
+  {
+    "stt": 351,
+    "word": "emergency",
+    "type": "n",
+    "phonetic": "/ɪˈmɝː.dʒən.si/",
+    "meaning": "trường hợp khẩn cấp",
+    "page": 8
+  },
+  {
+    "stt": 352,
+    "word": "emphasize",
+    "type": "v",
+    "phonetic": "/ˈem.fə.saɪz/",
+    "meaning": "nhấn mạnh",
+    "page": 8
+  },
+  {
+    "stt": 353,
+    "word": "employer",
+    "type": "n",
+    "phonetic": "/ɪmˈplɔɪ.ɚ/",
+    "meaning": "người làm chủ, người sử dụng lao động",
+    "page": 8
+  },
+  {
+    "stt": 354,
+    "word": "employment",
+    "type": "n",
+    "phonetic": "/ɪmˈplɔɪ.mənt/",
+    "meaning": "việc làm, sự thuê người làm",
+    "page": 8
+  },
+  {
+    "stt": 355,
+    "word": "enable",
+    "type": "v",
+    "phonetic": "/ɪˈneɪ.bəl/",
+    "meaning": "cho phép, làm cho có khả năng làm gì đó",
+    "page": 8
+  },
+  {
+    "stt": 356,
+    "word": "enclose",
+    "type": "v",
+    "phonetic": "/ɪnˈkloʊz/",
+    "meaning": "vây quanh, rào quanh, gửi kèm",
+    "page": 9
+  },
+  {
+    "stt": 357,
+    "word": "encourage",
+    "type": "v",
+    "phonetic": "/ɪnˈkɝː.ɪdʒ/",
+    "meaning": "động viên, cổ vũ",
+    "page": 9
+  },
+  {
+    "stt": 358,
+    "word": "endure",
+    "type": "v",
+    "phonetic": "/ɪnˈdʊr/",
+    "meaning": "chịu đựng, cam chịu",
+    "page": 9
+  },
+  {
+    "stt": 359,
+    "word": "engineer",
+    "type": "n",
+    "phonetic": "/ˌen.dʒɪˈnɪr/",
+    "meaning": "kỹ sư",
+    "page": 9
+  },
+  {
+    "stt": 360,
+    "word": "engineering",
+    "type": "n",
+    "phonetic": "/ˌen.dʒɪˈnɪr.ɪŋ/",
+    "meaning": "công việc kỹ sư",
+    "page": 9
+  },
+  {
+    "stt": 361,
+    "word": "enhance",
+    "type": "v",
+    "phonetic": "/ɪnˈhæns/",
+    "meaning": "làm tăng thêm, đề cao, đẩy mạnh",
+    "page": 9
+  },
+  {
+    "stt": 362,
+    "word": "enlighten",
+    "type": "v",
+    "phonetic": "/ɪnˈlaɪ.t̬ən/",
+    "meaning": "làm sáng tỏ, khai sáng",
+    "page": 9
+  },
+  {
+    "stt": 363,
+    "word": "enroll",
+    "type": "v",
+    "phonetic": "/ɪnˈrəʊl/",
+    "meaning": "đăng ký, ghi tên",
+    "page": 9
+  },
+  {
+    "stt": 364,
+    "word": "ensure",
+    "type": "v",
+    "phonetic": "/ɪnˈʃʊr/",
+    "meaning": "bảo đảm, chắc chắn",
+    "page": 9
+  },
+  {
+    "stt": 365,
+    "word": "enterprise",
+    "type": "n",
+    "phonetic": "/ˈen.t̬ɚ.praɪz/",
+    "meaning": "xí nghiệp, doanh nghiệp",
+    "page": 9
+  },
+  {
+    "stt": 366,
+    "word": "enthusiastic",
+    "type": "adj",
+    "phonetic": "/ɪnˌθuː.ziˈæs.tɪk/",
+    "meaning": "nhiệt tình, hứng khởi",
+    "page": 9
+  },
+  {
+    "stt": 367,
+    "word": "enthusiastically",
+    "type": "adv",
+    "phonetic": "/ɪnˌθuː.ziˈæs.tɪ.kəl.i/",
+    "meaning": "hăng say, nhiệt tình",
+    "page": 9
+  },
+  {
+    "stt": 368,
+    "word": "entitlement",
+    "type": "n",
+    "phonetic": "/ɪnˈtaɪ.t̬əl.mənt/",
+    "meaning": "quyền hạn, sự được phép làm",
+    "page": 9
+  },
+  {
+    "stt": 369,
+    "word": "entrée",
+    "type": "n",
+    "phonetic": "/ˈɑːn.treɪ/",
+    "meaning": "món chính sự gia nhập, thâm nhập, tiến vào",
+    "page": 9
+  },
+  {
+    "stt": 370,
+    "word": "environment",
+    "type": "n",
+    "phonetic": "/ɪnˈvaɪ.rən.mənt/",
+    "meaning": "môi trường",
+    "page": 9
+  },
+  {
+    "stt": 371,
+    "word": "environmental",
+    "type": "adj",
+    "phonetic": "/ɪnˌvaɪ.rənˈmen.t̬əl/",
+    "meaning": "(thuộc) môi trường",
+    "page": 9
+  },
+  {
+    "stt": 372,
+    "word": "equivalent",
+    "type": "adj, n",
+    "phonetic": "/ɪˈkwɪv.əl.ənt/",
+    "meaning": "tương đương; vật tương đương",
+    "page": 9
+  },
+  {
+    "stt": 373,
+    "word": "essential",
+    "type": "adj",
+    "phonetic": "/ɪˈsen.ʃəl/",
+    "meaning": "(thuộc) bản chất, cốt lõi",
+    "page": 9
+  },
+  {
+    "stt": 374,
+    "word": "estimate",
+    "type": "v",
+    "phonetic": "/ˈes.tə.meɪt/",
+    "meaning": "ước tính, dự đoán",
+    "page": 9
+  },
+  {
+    "stt": 375,
+    "word": "evaluate",
+    "type": "v",
+    "phonetic": "/ɪˈvæl.ju.eɪt/",
+    "meaning": "ước lượng, đánh giá",
+    "page": 9
+  },
+  {
+    "stt": 376,
+    "word": "evolve",
+    "type": "v",
+    "phonetic": "/ɪˈvɑːlv/",
+    "meaning": "tiến hóa",
+    "page": 9
+  },
+  {
+    "stt": 377,
+    "word": "event",
+    "type": "n",
+    "phonetic": "/ɪˈvent/",
+    "meaning": "sự kiện, sự việc",
+    "page": 9
+  },
+  {
+    "stt": 378,
+    "word": "evidence",
+    "type": "n",
+    "phonetic": "/ˈev.ə.dəns/",
+    "meaning": "bằng chứng, chứng cớ",
+    "page": 9
+  },
+  {
+    "stt": 379,
+    "word": "exact",
+    "type": "adj",
+    "phonetic": "/ɪɡˈzækt/",
+    "meaning": "chính xác, đúng",
+    "page": 9
+  },
+  {
+    "stt": 380,
+    "word": "examination",
+    "type": "n",
+    "phonetic": "/ɪɡˌzæm.əˈneɪ.ʃən/",
+    "meaning": "sự khám xét, kỳ thi",
+    "page": 9
+  },
+  {
+    "stt": 381,
+    "word": "examine",
+    "type": "v",
+    "phonetic": "/ɪɡˈzæm.ɪn/",
+    "meaning": "khảo sát, kiểm tra",
+    "page": 9
+  },
+  {
+    "stt": 382,
+    "word": "excel",
+    "type": "v",
+    "phonetic": "/ɪkˈsel/",
+    "meaning": "hơn, vượt trội",
+    "page": 9
+  },
+  {
+    "stt": 383,
+    "word": "excellent",
+    "type": "adj",
+    "phonetic": "/ˈek.səl.ənt/",
+    "meaning": "xuất sắc, ưu tú",
+    "page": 9
+  },
+  {
+    "stt": 384,
+    "word": "executive",
+    "type": "adj, n",
+    "phonetic": "/ɪɡˈzek.jə.t̬ɪv/",
+    "meaning": "(thuộc) chấp hành, sự thi hành; tổ chức hành pháp",
+    "page": 9
+  },
+  {
+    "stt": 385,
+    "word": "exhibit",
+    "type": "v",
+    "phonetic": "/ɪɡˈzɪb.ɪt/",
+    "meaning": "trưng bày, triển lãm",
+    "page": 9
+  },
+  {
+    "stt": 386,
+    "word": "expand",
+    "type": "v",
+    "phonetic": "/ɪkˈspænd/",
+    "meaning": "mở rộng, nở phồng",
+    "page": 9
+  },
+  {
+    "stt": 387,
+    "word": "expansion",
+    "type": "n",
+    "phonetic": "/ɪkˈspæn.ʃən/",
+    "meaning": "sử mở rộng, giãn nở",
+    "page": 9
+  },
+  {
+    "stt": 388,
+    "word": "expect",
+    "type": "v",
+    "phonetic": "/ɪkˈspekt/",
+    "meaning": "chờ đợi, trông chờ",
+    "page": 9
+  },
+  {
+    "stt": 389,
+    "word": "expectation",
+    "type": "n",
+    "phonetic": "/ˌek.spekˈteɪ.ʃən/",
+    "meaning": "sự mong chờ, ngóng đợi",
+    "page": 9
+  },
+  {
+    "stt": 390,
+    "word": "expenditure",
+    "type": "n",
+    "phonetic": "/ɪkˈspen.də.tʃɚ/",
+    "meaning": "sự tiêu dùng, phí tổn",
+    "page": 9
+  },
+  {
+    "stt": 391,
+    "word": "expense",
+    "type": "n",
+    "phonetic": "/ɪkˈspens/",
+    "meaning": "chi phí, sự tiêu dùng",
+    "page": 9
+  },
+  {
+    "stt": 392,
+    "word": "expensive",
+    "type": "adj",
+    "phonetic": "/ɪkˈspen.sɪv/",
+    "meaning": "đắt tiền, đắt đỏ",
+    "page": 9
+  },
+  {
+    "stt": 393,
+    "word": "experience",
+    "type": "n",
+    "phonetic": "/ɪkˈspɪr.i.əns/",
+    "meaning": "trải nghiệm, kinh nghiệm",
+    "page": 9
+  },
+  {
+    "stt": 394,
+    "word": "experienced",
+    "type": "adj",
+    "phonetic": "/ɪkˈspɪə.ri.ənst/",
+    "meaning": "người từng trải, người có kinh nghiệm",
+    "page": 9
+  },
+  {
+    "stt": 395,
+    "word": "experiment",
+    "type": "n, v",
+    "phonetic": "/ɪkˈsper.ə.mənt/",
+    "meaning": "thí nghiệm, thử nghiệm",
+    "page": 9
+  },
+  {
+    "stt": 396,
+    "word": "exploration",
+    "type": "n",
+    "phonetic": "/ˌek.spləˈreɪ.ʃən/",
+    "meaning": "cuộc thăm dò, thám hiểm",
+    "page": 9
+  },
+  {
+    "stt": 397,
+    "word": "express",
+    "type": "n, v",
+    "phonetic": "/ɪkˈspres/",
+    "meaning": "công văn hỏa tốc; trình bày, diễn đạt",
+    "page": 9
+  },
+  {
+    "stt": 398,
+    "word": "extend",
+    "type": "v",
+    "phonetic": "/ɪkˈstend/",
+    "meaning": "duỗi thẳng, nới rộng, gia hạn",
+    "page": 9
+  },
+  {
+    "stt": 399,
+    "word": "extension",
+    "type": "n",
+    "phonetic": "/ɪkˈsten.ʃən/",
+    "meaning": "sự mở rộng, gia hạn",
+    "page": 9
+  },
+  {
+    "stt": 400,
+    "word": "external",
+    "type": "adj",
+    "phonetic": "/ɪkˈstɝː.nəl/",
+    "meaning": "bên ngoài, đối ngoại",
+    "page": 9
+  },
+  {
+    "stt": 401,
+    "word": "facility",
+    "type": "n",
+    "phonetic": "/fəˈsɪl.ə.t̬i/",
+    "meaning": "điều kiện thuận lợi, sự dễ dàng, thuận lợi",
+    "page": 9
+  },
+  {
+    "stt": 402,
+    "word": "factor",
+    "type": "n",
+    "phonetic": "/ˈfæk.tɚ/",
+    "meaning": "nhân tố",
+    "page": 10
+  },
+  {
+    "stt": 403,
+    "word": "factory",
+    "type": "n",
+    "phonetic": "/ˈfæk.tɚ.i/",
+    "meaning": "nhà máy, xí nghiệp",
+    "page": 10
+  },
+  {
+    "stt": 404,
+    "word": "fail",
+    "type": "v",
+    "phonetic": "/feɪl/",
+    "meaning": "thất bại, trượt (kì thi)",
+    "page": 10
+  },
+  {
+    "stt": 405,
+    "word": "failure",
+    "type": "n",
+    "phonetic": "/ˈfeɪ.ljɚ/",
+    "meaning": "sự thất bại",
+    "page": 10
+  },
+  {
+    "stt": 406,
+    "word": "fair",
+    "type": "n, adj",
+    "phonetic": "/fer/",
+    "meaning": "hội chợ, phiên chợ; công bằng, không thiên vị",
+    "page": 10
+  },
+  {
+    "stt": 407,
+    "word": "famed",
+    "type": "adj",
+    "phonetic": "/feɪmd/",
+    "meaning": "nổi tiếng, lừng danh",
+    "page": 10
+  },
+  {
+    "stt": 408,
+    "word": "fare",
+    "type": "n, v",
+    "phonetic": "/fer/",
+    "meaning": "tiền xe, tiền véđi đường, đi du lịch",
+    "page": 10
+  },
+  {
+    "stt": 409,
+    "word": "fault",
+    "type": "n",
+    "phonetic": "/fɑːlt/",
+    "meaning": "lỗi, sai lầm",
+    "page": 10
+  },
+  {
+    "stt": 410,
+    "word": "faulty",
+    "type": "adj",
+    "phonetic": "/ˈfɑːl.t̬i/",
+    "meaning": "có thiếu sót, mắc khuyết điểm",
+    "page": 10
+  },
+  {
+    "stt": 411,
+    "word": "favor",
+    "type": "n, v",
+    "phonetic": "/ˈfeɪ.vɚ/",
+    "meaning": "thiện ý, sự yêu mến; ưu đãi, thiên vị",
+    "page": 10
+  },
+  {
+    "stt": 412,
+    "word": "fax",
+    "type": "n",
+    "phonetic": "/fæks/",
+    "meaning": "bản fax",
+    "page": 10
+  },
+  {
+    "stt": 413,
+    "word": "feature",
+    "type": "n",
+    "phonetic": "/ˈfiː.tʃɚ/",
+    "meaning": "nét, đặc điểm",
+    "page": 10
+  },
+  {
+    "stt": 414,
+    "word": "fee",
+    "type": "n",
+    "phonetic": "/fiː/",
+    "meaning": "lệ phí, tiền thù lao",
+    "page": 10
+  },
+  {
+    "stt": 415,
+    "word": "feedback",
+    "type": "n, v",
+    "phonetic": "/ˈfiːd.bæk/",
+    "meaning": "phản hồi, góp ý",
+    "page": 10
+  },
+  {
+    "stt": 416,
+    "word": "figure",
+    "type": "n, v",
+    "phonetic": "/ˈfɪɡ.jɚ/",
+    "meaning": "hình dáng, nhân vật; đánh giá, tính toán",
+    "page": 10
+  },
+  {
+    "stt": 417,
+    "word": "file",
+    "type": "n",
+    "phonetic": "/faɪl/",
+    "meaning": "hồ sơ, túi đựng tài liệu",
+    "page": 10
+  },
+  {
+    "stt": 418,
+    "word": "fill",
+    "type": "v",
+    "phonetic": "/fɪl/",
+    "meaning": "làm đầy, nhồi nhét",
+    "page": 10
+  },
+  {
+    "stt": 419,
+    "word": "final",
+    "type": "adj",
+    "phonetic": "/ˈfaɪ.nəl/",
+    "meaning": "cuối cùng",
+    "page": 10
+  },
+  {
+    "stt": 420,
+    "word": "finance",
+    "type": "n, v",
+    "phonetic": "/ˈfaɪ.næns/",
+    "meaning": "tài chính; hỗ trợ tài chính",
+    "page": 10
+  },
+  {
+    "stt": 421,
+    "word": "financial",
+    "type": "adj",
+    "phonetic": "/faɪˈnæn.ʃəl/",
+    "meaning": "/fəˈnæn.ʃəl/ (thuộc) tài chính",
+    "page": 10
+  },
+  {
+    "stt": 422,
+    "word": "fix",
+    "type": "n, v",
+    "phonetic": "/fɪks/",
+    "meaning": "sửa chữagắn chặt, cố định",
+    "page": 10
+  },
+  {
+    "stt": 423,
+    "word": "flexible",
+    "type": "adj",
+    "phonetic": "/ˈflek.sə.bəl/",
+    "meaning": "linh hoạt, không cố định",
+    "page": 10
+  },
+  {
+    "stt": 424,
+    "word": "flight",
+    "type": "n",
+    "phonetic": "/flaɪt/",
+    "meaning": "chuyến bay, sự rút chạy",
+    "page": 10
+  },
+  {
+    "stt": 425,
+    "word": "flight attendant",
+    "type": "n",
+    "phonetic": "/ˈflaɪt əˌten.dənt/",
+    "meaning": "tiếp viên hàng không",
+    "page": 10
+  },
+  {
+    "stt": 426,
+    "word": "fluctuate",
+    "type": "v",
+    "phonetic": "/ˈflʌk.tʃu.eɪt/",
+    "meaning": "dao động, lên xuống",
+    "page": 10
+  },
+  {
+    "stt": 427,
+    "word": "fluctuation",
+    "type": "n",
+    "phonetic": "/ˌflʌk.tʃuˈeɪ.ʃən/",
+    "meaning": "sự dao động",
+    "page": 10
+  },
+  {
+    "stt": 428,
+    "word": "focus",
+    "type": "v, n",
+    "phonetic": "/ˈfoʊ.kəs/",
+    "meaning": "tập trung",
+    "page": 10
+  },
+  {
+    "stt": 429,
+    "word": "focused",
+    "type": "adj",
+    "phonetic": "/ˈfoʊ.kəst/",
+    "meaning": "tập trung, chú ý",
+    "page": 10
+  },
+  {
+    "stt": 430,
+    "word": "fold",
+    "type": "v, n",
+    "phonetic": "/foʊld/",
+    "meaning": "gấp, vén; nếp gấp",
+    "page": 10
+  },
+  {
+    "stt": 431,
+    "word": "folder",
+    "type": "n",
+    "phonetic": "/ˈfoʊl.dɚ/",
+    "meaning": "bìa cứng, xấp tài liệu",
+    "page": 10
+  },
+  {
+    "stt": 432,
+    "word": "force",
+    "type": "n",
+    "phonetic": "/fɔːrs/",
+    "meaning": "sức mạnh, quyền lực",
+    "page": 10
+  },
+  {
+    "stt": 433,
+    "word": "forecast",
+    "type": "n, v",
+    "phonetic": "/ˈfɔːr.kæst/",
+    "meaning": "dự đoán, tiên đoán",
+    "page": 10
+  },
+  {
+    "stt": 434,
+    "word": "foreign",
+    "type": "adj",
+    "phonetic": "/ˈfɔːr.ən/",
+    "meaning": "nước ngoài, ngoại quốc",
+    "page": 10
+  },
+  {
+    "stt": 435,
+    "word": "forget",
+    "type": "v",
+    "phonetic": "/fɚˈɡet/",
+    "meaning": "quên",
+    "page": 10
+  },
+  {
+    "stt": 436,
+    "word": "forgetful",
+    "type": "adj",
+    "phonetic": "/fɚˈɡet.fəl/",
+    "meaning": "tính hay quên, có trí nhớ tồi",
+    "page": 10
+  },
+  {
+    "stt": 437,
+    "word": "form",
+    "type": "n",
+    "phonetic": "/fɔːrm/",
+    "meaning": "dáng hình; tạo hình",
+    "page": 10
+  },
+  {
+    "stt": 438,
+    "word": "forward",
+    "type": "adv",
+    "phonetic": "/ˈfɔːr.wɚd/",
+    "meaning": "về phía trước, tiến lên",
+    "page": 10
+  },
+  {
+    "stt": 439,
+    "word": "frank",
+    "type": "adj",
+    "phonetic": "/fræŋk/",
+    "meaning": "ngay thẳng, bộc trực",
+    "page": 10
+  },
+  {
+    "stt": 440,
+    "word": "frankly",
+    "type": "adv",
+    "phonetic": "/ˈfræŋ.kli/",
+    "meaning": "thẳng thắn",
+    "page": 10
+  },
+  {
+    "stt": 441,
+    "word": "fuel",
+    "type": "n",
+    "phonetic": "/ˈfjuː.əl/",
+    "meaning": "chất đốt, nhiên liệu",
+    "page": 10
+  },
+  {
+    "stt": 442,
+    "word": "fulfill",
+    "type": "v",
+    "phonetic": "/fʊlˈfɪl/",
+    "meaning": "làm đầy",
+    "page": 10
+  },
+  {
+    "stt": 443,
+    "word": "function",
+    "type": "v, n",
+    "phonetic": "/ˈfʌŋk.ʃən/",
+    "meaning": "hoạt động; chức năng",
+    "page": 10
+  },
+  {
+    "stt": 444,
+    "word": "functional",
+    "type": "adj",
+    "phonetic": "/ˈfʌŋk.ʃən.əl/",
+    "meaning": "(thuộc) chức năng",
+    "page": 10
+  },
+  {
+    "stt": 445,
+    "word": "fundraising",
+    "type": "n",
+    "phonetic": "/ˈfʌndˌreɪ.zɪŋ/",
+    "meaning": "sự huy động vốn",
+    "page": 10
+  },
+  {
+    "stt": 446,
+    "word": "furniture",
+    "type": "n",
+    "phonetic": "/ˈfɝː.nɪ.tʃɚ/",
+    "meaning": "đồ đạc",
+    "page": 10
+  },
+  {
+    "stt": 447,
+    "word": "further",
+    "type": "adj, adv",
+    "phonetic": "/ˈfɝː.ðɚ/",
+    "meaning": "xa hơn, kỹ hơn",
+    "page": 11
+  },
+  {
+    "stt": 448,
+    "word": "gesture",
+    "type": "n",
+    "phonetic": "/ˈdʒes.tʃɚ/",
+    "meaning": "điệu bộ, cử chỉ",
+    "page": 11
+  },
+  {
+    "stt": 449,
+    "word": "goal",
+    "type": "n",
+    "phonetic": "/ɡoʊl/",
+    "meaning": "khung thành, cầu mônmục tiêu",
+    "page": 11
+  },
+  {
+    "stt": 450,
+    "word": "goods",
+    "type": "n",
+    "phonetic": "/ɡʊdz/",
+    "meaning": "của cải, hàng hóa",
+    "page": 11
+  },
+  {
+    "stt": 451,
+    "word": "gradually",
+    "type": "adv",
+    "phonetic": "/ˈɡrædʒ.u.ə.li/",
+    "meaning": "dần dần, từ từ",
+    "page": 11
+  },
+  {
+    "stt": 452,
+    "word": "grievance",
+    "type": "n",
+    "phonetic": "/ˈɡriː.vəns/",
+    "meaning": "lời than trách",
+    "page": 11
+  },
+  {
+    "stt": 453,
+    "word": "grill",
+    "type": "n, v",
+    "phonetic": "/ɡrɪl/",
+    "meaning": "chả nướng; nướng, thiêu đốt",
+    "page": 11
+  },
+  {
+    "stt": 454,
+    "word": "growth",
+    "type": "n",
+    "phonetic": "/ɡroʊθ/",
+    "meaning": "sự tăng trưởng, mức độ tăng trưởng",
+    "page": 11
+  },
+  {
+    "stt": 455,
+    "word": "guarantee",
+    "type": "n, v",
+    "phonetic": "/ˌɡer.ənˈtiː/",
+    "meaning": "sự đảm bảo; cam kết",
+    "page": 11
+  },
+  {
+    "stt": 456,
+    "word": "guideline",
+    "type": "n",
+    "phonetic": "/ˈɡaɪd.laɪn/",
+    "meaning": "quy tắc, nguyên tắc",
+    "page": 11
+  },
+  {
+    "stt": 457,
+    "word": "haggle",
+    "type": "n, v",
+    "phonetic": "/ˈhæɡ.əl/",
+    "meaning": "sự mặc cả; tranh cãi",
+    "page": 11
+  },
+  {
+    "stt": 458,
+    "word": "handle",
+    "type": "n, v",
+    "phonetic": "/ˈhæn.dəl/",
+    "meaning": "cán cầm, tay cầm; xử lý",
+    "page": 11
+  },
+  {
+    "stt": 459,
+    "word": "handy",
+    "type": "adj",
+    "phonetic": "/ˈhæn.di/",
+    "meaning": "thuận tiện, sẵn tiện",
+    "page": 11
+  },
+  {
+    "stt": 460,
+    "word": "harbor",
+    "type": "n, v",
+    "phonetic": "/ˈhɑː.bər/",
+    "meaning": "bến cảng; che giấu nuôi dưỡng",
+    "page": 11
+  },
+  {
+    "stt": 461,
+    "word": "harmful",
+    "type": "adj",
+    "phonetic": "/ˈhɑːrm.fəl/",
+    "meaning": "gây tai hại, có hại",
+    "page": 11
+  },
+  {
+    "stt": 462,
+    "word": "hazardous",
+    "type": "adj",
+    "phonetic": "/ˈhæz.ɚ.dəs/",
+    "meaning": "mạo hiểm, nguy hiểm",
+    "page": 11
+  },
+  {
+    "stt": 463,
+    "word": "head office",
+    "type": "n",
+    "phonetic": "/ˌhed ˈɑː.fɪs/",
+    "meaning": "cơ quan đầu não, tổng công ty",
+    "page": 11
+  },
+  {
+    "stt": 464,
+    "word": "headquarters",
+    "type": "n",
+    "phonetic": "/ˈhedˌkwɔːr.t̬ɚz/",
+    "meaning": "sở chỉ huy, bộ chỉ huy",
+    "page": 11
+  },
+  {
+    "stt": 465,
+    "word": "hesitate",
+    "type": "v",
+    "phonetic": "/ˈhez.ə.teɪt/",
+    "meaning": "do dự, ngập ngừng",
+    "page": 11
+  },
+  {
+    "stt": 466,
+    "word": "hesitation",
+    "type": "n",
+    "phonetic": "/ˌhez.əˈteɪ.ʃən/",
+    "meaning": "sự ngập ngừng, do dự",
+    "page": 11
+  },
+  {
+    "stt": 467,
+    "word": "hide",
+    "type": "n, v",
+    "phonetic": "/haɪd/",
+    "meaning": "che giấu, che đậy",
+    "page": 11
+  },
+  {
+    "stt": 468,
+    "word": "highlight",
+    "type": "n, v",
+    "phonetic": "/ˈhaɪ.laɪt/",
+    "meaning": "điểm nổi bật; làm nổi bật",
+    "page": 11
+  },
+  {
+    "stt": 469,
+    "word": "highly",
+    "type": "adv",
+    "phonetic": "/ˈhaɪ.li/",
+    "meaning": "rất, lắm, tốt",
+    "page": 11
+  },
+  {
+    "stt": 470,
+    "word": "hike",
+    "type": "n",
+    "phonetic": "/haɪk/",
+    "meaning": "cuộc đi bộ, cuộc hành quân; đi bộ đường dài",
+    "page": 11
+  },
+  {
+    "stt": 471,
+    "word": "hire",
+    "type": "n, v",
+    "phonetic": "/haɪr/",
+    "meaning": "sự thuê; thuê, mướn",
+    "page": 11
+  },
+  {
+    "stt": 472,
+    "word": "hold",
+    "type": "n, v",
+    "phonetic": "/hoʊld/",
+    "meaning": "sự cầm, nắm; cầm, giữ",
+    "page": 11
+  },
+  {
+    "stt": 473,
+    "word": "host",
+    "type": "n, v",
+    "phonetic": "/hoʊst/",
+    "meaning": "chủ nhà, người chủ trì; tổ chức, đăng cai",
+    "page": 11
+  },
+  {
+    "stt": 474,
+    "word": "identification",
+    "type": "n",
+    "phonetic": "/aɪˌden.t̬ə.fəˈkeɪ.ʃən/",
+    "meaning": "sự phát hiện, nhận diện",
+    "page": 11
+  },
+  {
+    "stt": 475,
+    "word": "identify",
+    "type": "v",
+    "phonetic": "/aɪˈden.t̬ə.faɪ/",
+    "meaning": "nhận diện, nhận biết",
+    "page": 11
+  },
+  {
+    "stt": 476,
+    "word": "imaginative",
+    "type": "adj",
+    "phonetic": "/ɪˈmædʒ.ə.nə.t̬ɪv/",
+    "meaning": "tưởng tượng, không có thực",
+    "page": 11
+  },
+  {
+    "stt": 477,
+    "word": "immediate",
+    "type": "adj",
+    "phonetic": "/ɪˈmiː.di.ət/",
+    "meaning": "ngay lập tức, trực tiếp",
+    "page": 11
+  },
+  {
+    "stt": 478,
+    "word": "immediately",
+    "type": "adv",
+    "phonetic": "/ɪˈmiː.di.ət.li/",
+    "meaning": "ngay lập tức, tức thì",
+    "page": 11
+  },
+  {
+    "stt": 479,
+    "word": "impact",
+    "type": "n, v",
+    "phonetic": "/ˈɪm.pækt/",
+    "meaning": "tác động, ảnh hưởng",
+    "page": 11
+  },
+  {
+    "stt": 480,
+    "word": "impatient",
+    "type": "adj",
+    "phonetic": "/ɪmˈpeɪ.ʃənt/",
+    "meaning": "thiếu kiên nhẫn",
+    "page": 11
+  },
+  {
+    "stt": 481,
+    "word": "impersonate",
+    "type": "v",
+    "phonetic": "/ɪmˈpɝː.sən.eɪt/",
+    "meaning": "mạo danh, đóng vai, nhại lại",
+    "page": 11
+  },
+  {
+    "stt": 482,
+    "word": "implement",
+    "type": "n, v",
+    "phonetic": "/ˈɪm.plə.ment/",
+    "meaning": "dụng cụ, phương tiện; thi hành, thực hiện, áp dụng",
+    "page": 11
+  },
+  {
+    "stt": 483,
+    "word": "imply",
+    "type": "v",
+    "phonetic": "/ɪmˈplaɪ/",
+    "meaning": "ngụ ý, ý nói",
+    "page": 11
+  },
+  {
+    "stt": 484,
+    "word": "impression",
+    "type": "n",
+    "phonetic": "/ɪmˈpreʃ.ən/",
+    "meaning": "ấn tượngdấu vết",
+    "page": 11
+  },
+  {
+    "stt": 485,
+    "word": "improper",
+    "type": "adj",
+    "phonetic": "/ɪmˈprɑː.pɚ/",
+    "meaning": "không thích hợp, không phù hợp",
+    "page": 11
+  },
+  {
+    "stt": 486,
+    "word": "improve",
+    "type": "v",
+    "phonetic": "/ɪmˈpruːv/",
+    "meaning": "cải thiện",
+    "page": 11
+  },
+  {
+    "stt": 487,
+    "word": "improvement",
+    "type": "n",
+    "phonetic": "/ɪmˈpruːv.mənt/",
+    "meaning": "sự cải thiện, cải tiến",
+    "page": 11
+  },
+  {
+    "stt": 488,
+    "word": "incentive",
+    "type": "adj, n",
+    "phonetic": "/ɪnˈsen.t̬ɪv/",
+    "meaning": "khuyến khích; sự khích lệ, thúc đẩy",
+    "page": 11
+  },
+  {
+    "stt": 489,
+    "word": "inclined",
+    "type": "adj",
+    "phonetic": "/ɪnˈklaɪnd/",
+    "meaning": "có thiên hướng, khuynh hướng",
+    "page": 11
+  },
+  {
+    "stt": 490,
+    "word": "include",
+    "type": "v",
+    "phonetic": "/ɪnˈkluːd/",
+    "meaning": "bao gồm, gồm có",
+    "page": 11
+  },
+  {
+    "stt": 491,
+    "word": "inclusion",
+    "type": "n",
+    "phonetic": "/ɪnˈkluː.ʒən/",
+    "meaning": "sự bao gồm, tính vào",
+    "page": 12
+  },
+  {
+    "stt": 492,
+    "word": "income",
+    "type": "n",
+    "phonetic": "/ˈɪn.kʌm/",
+    "meaning": "thu nhập, lợi tức",
+    "page": 12
+  },
+  {
+    "stt": 493,
+    "word": "inconvenience",
+    "type": "n",
+    "phonetic": "/ˌɪn.kənˈviːn.jəns/",
+    "meaning": "sự bất tiện, phiền hà",
+    "page": 12
+  },
+  {
+    "stt": 494,
+    "word": "increase",
+    "type": "v, n",
+    "phonetic": "/ɪnˈkriːs/",
+    "meaning": "sự tăng lên; tăng thêm",
+    "page": 12
+  },
+  {
+    "stt": 495,
+    "word": "indicate",
+    "type": "v",
+    "phonetic": "/ˈɪn.də.keɪt/",
+    "meaning": "chỉ ra, chứng tỏ, biểu thị",
+    "page": 12
+  },
+  {
+    "stt": 496,
+    "word": "indication",
+    "type": "n",
+    "phonetic": "/ˌɪn.dəˈkeɪ.ʃən/",
+    "meaning": "sự biểu thị, biểu lộ",
+    "page": 12
+  },
+  {
+    "stt": 497,
+    "word": "individual",
+    "type": "n, v",
+    "phonetic": "/ˌɪn.dəˈvɪdʒ.u.əl/",
+    "meaning": "cá nhân; riêng lẻ, tách biệt",
+    "page": 12
+  },
+  {
+    "stt": 498,
+    "word": "individually",
+    "type": "adv",
+    "phonetic": "/ˌɪn.dəˈvɪdʒ.u.ə.li/",
+    "meaning": "riêng lẻ",
+    "page": 12
+  },
+  {
+    "stt": 499,
+    "word": "inexperienced",
+    "type": "adj",
+    "phonetic": "/ˌɪn.ɪkˈspɪr.i.ənst/",
+    "meaning": "thiếu kinh nghiệm",
+    "page": 12
+  },
+  {
+    "stt": 500,
+    "word": "infer",
+    "type": "v",
+    "phonetic": "/-ˈfɝː/",
+    "meaning": "suy ra, kết luận",
+    "page": 12
+  },
+  {
+    "stt": 501,
+    "word": "inflate",
+    "type": "v",
+    "phonetic": "/ɪnˈfleɪt/",
+    "meaning": "bơm phồng, thổi phồng",
+    "page": 12
+  },
+  {
+    "stt": 502,
+    "word": "inflation",
+    "type": "n",
+    "phonetic": "/ɪnˈfleɪ.ʃən/",
+    "meaning": "sự bơm phồng, lạm phát",
+    "page": 12
+  },
+  {
+    "stt": 503,
+    "word": "influence",
+    "type": "v",
+    "phonetic": "/ˈɪn.flu.əns/",
+    "meaning": "ảnh hưởng, uy lực; chi phối, tác động",
+    "page": 12
+  },
+  {
+    "stt": 504,
+    "word": "influential",
+    "type": "adj",
+    "phonetic": "/ˌɪn.fluˈen.ʃəl/",
+    "meaning": "có ảnh hưởng, có tác dụng",
+    "page": 12
+  },
+  {
+    "stt": 505,
+    "word": "information",
+    "type": "n",
+    "phonetic": "/ˌɪn.fɚˈmeɪ.ʃən/",
+    "meaning": "thông tin",
+    "page": 12
+  },
+  {
+    "stt": 506,
+    "word": "input",
+    "type": "n",
+    "phonetic": "/ˈɪn.pʊt/",
+    "meaning": "dữ liệu đầu vào",
+    "page": 12
+  },
+  {
+    "stt": 507,
+    "word": "inquiry",
+    "type": "n",
+    "phonetic": "/ˈɪŋ.kwɚ.i/",
+    "meaning": "sự điều tra, thẩm vấn",
+    "page": 12
+  },
+  {
+    "stt": 508,
+    "word": "install",
+    "type": "v",
+    "phonetic": "/ɪnˈstɑːl/",
+    "meaning": "cài đặt, tải xuống",
+    "page": 12
+  },
+  {
+    "stt": 509,
+    "word": "installation",
+    "type": "n",
+    "phonetic": "/ˌɪn.stəˈleɪ.ʃən/",
+    "meaning": "sự cài đặt",
+    "page": 12
+  },
+  {
+    "stt": 510,
+    "word": "insurance",
+    "type": "n",
+    "phonetic": "/ɪnˈʃɜ.r.əns/",
+    "meaning": "sự bảo hiểm, hợp đồng bảo hiểm",
+    "page": 12
+  },
+  {
+    "stt": 511,
+    "word": "insure",
+    "type": "v",
+    "phonetic": "/ɪnˈʃʊr/",
+    "meaning": "bảo hiểm, đảm bảo",
+    "page": 12
+  },
+  {
+    "stt": 512,
+    "word": "intend",
+    "type": "v",
+    "phonetic": "/ɪnˈtend/",
+    "meaning": "định, có ý định",
+    "page": 12
+  },
+  {
+    "stt": 513,
+    "word": "intention",
+    "type": "n",
+    "phonetic": "/ɪnˈten.ʃən/",
+    "meaning": "dự định, ý định",
+    "page": 12
+  },
+  {
+    "stt": 514,
+    "word": "intently",
+    "type": "adv",
+    "phonetic": "/ɪnˈtent.li/",
+    "meaning": "chăm chú, chú ý",
+    "page": 12
+  },
+  {
+    "stt": 515,
+    "word": "intern",
+    "type": "n",
+    "phonetic": "/ɪnˈtɝːn/",
+    "meaning": "thực tập sinh",
+    "page": 12
+  },
+  {
+    "stt": 516,
+    "word": "internal",
+    "type": "adj",
+    "phonetic": "/ɪnˈtɝː.nəl/",
+    "meaning": "bên trong, nội bộ",
+    "page": 12
+  },
+  {
+    "stt": 517,
+    "word": "international",
+    "type": "adj",
+    "phonetic": "/ˌɪn.t̬ɚˈnæʃ.ən.əl/",
+    "meaning": "quốc tế, đa quốc gia",
+    "page": 12
+  },
+  {
+    "stt": 518,
+    "word": "internship",
+    "type": "n",
+    "phonetic": "/ˈɪn.tɝːn.ʃɪp/",
+    "meaning": "kỳ thực tập",
+    "page": 12
+  },
+  {
+    "stt": 519,
+    "word": "interrupt",
+    "type": "v",
+    "phonetic": "/ˌɪn.t̬əˈrʌpt/",
+    "meaning": "làm gián đoạn, ngắt quãng",
+    "page": 12
+  },
+  {
+    "stt": 520,
+    "word": "interview",
+    "type": "n, v",
+    "phonetic": "/ˈɪn.t̬ɚ.vjuː/",
+    "meaning": "phỏng vấn",
+    "page": 12
+  },
+  {
+    "stt": 521,
+    "word": "invaluable",
+    "type": "adj",
+    "phonetic": "/ɪnˈvæl.jə.bəl/",
+    "meaning": "vô giá",
+    "page": 12
+  },
+  {
+    "stt": 522,
+    "word": "invent",
+    "type": "v",
+    "phonetic": "/ɪnˈvent/",
+    "meaning": "phát minh, sáng chế",
+    "page": 12
+  },
+  {
+    "stt": 523,
+    "word": "invention",
+    "type": "n",
+    "phonetic": "/ɪnˈven.ʃən/",
+    "meaning": "sự phát minh, sáng kiến, sáng chế",
+    "page": 12
+  },
+  {
+    "stt": 524,
+    "word": "inventory",
+    "type": "n",
+    "phonetic": "/ˈɪn.vən.tɔːr.i/",
+    "meaning": "sự kiểm kê, bản kiểm kê",
+    "page": 12
+  },
+  {
+    "stt": 525,
+    "word": "invest",
+    "type": "v",
+    "phonetic": "/ɪnˈvest/",
+    "meaning": "đầu tư",
+    "page": 12
+  },
+  {
+    "stt": 526,
+    "word": "investigation",
+    "type": "n",
+    "phonetic": "/ɪnˌves.təˈɡeɪ.ʃən/",
+    "meaning": "sự điều tra, nghiên cứu",
+    "page": 12
+  },
+  {
+    "stt": 527,
+    "word": "investment",
+    "type": "n",
+    "phonetic": "/ɪnˈvest.mənt/",
+    "meaning": "sự đầu tư, vốn đầu tư",
+    "page": 12
+  },
+  {
+    "stt": 528,
+    "word": "invite",
+    "type": "v",
+    "phonetic": "/ɪnˈvaɪt/",
+    "meaning": "mời, rủlôi cuốn, hấp dẫn",
+    "page": 12
+  },
+  {
+    "stt": 529,
+    "word": "invoice",
+    "type": "n",
+    "phonetic": "/ˈɪn.vɔɪs/",
+    "meaning": "hóa đơn",
+    "page": 12
+  },
+  {
+    "stt": 530,
+    "word": "isolate",
+    "type": "v",
+    "phonetic": "/ˈaɪ.sə.leɪt/",
+    "meaning": "cô lập, cách ly",
+    "page": 12
+  },
+  {
+    "stt": 531,
+    "word": "item",
+    "type": "n",
+    "phonetic": "/ˈaɪ.t̬əm/",
+    "meaning": "món đồtin tức",
+    "page": 12
+  },
+  {
+    "stt": 532,
+    "word": "itemize",
+    "type": "v",
+    "phonetic": "/ˈaɪ.t̬ə.maɪz/",
+    "meaning": "trình bày thành từng khoản, từng món",
+    "page": 12
+  },
+  {
+    "stt": 533,
+    "word": "itinerary",
+    "type": "n",
+    "phonetic": "/aɪˈtɪn.ə.rer.i/",
+    "meaning": "hành trình, lịch trình",
+    "page": 12
+  },
+  {
+    "stt": 534,
+    "word": "jealous",
+    "type": "adj",
+    "phonetic": "/ˈdʒel.əs/",
+    "meaning": "ghen ghét, đố kỵ",
+    "page": 12
+  },
+  {
+    "stt": 535,
+    "word": "jeopardize",
+    "type": "v",
+    "phonetic": "/ˈdʒep.ɚ.daɪz/",
+    "meaning": "gây nguy hại, đe dọa",
+    "page": 12
+  },
+  {
+    "stt": 536,
+    "word": "jeopardy",
+    "type": "n",
+    "phonetic": "/ˈdʒep.ɚ.di/",
+    "meaning": "nguy cơ, sự nguy hiểm",
+    "page": 12
+  },
+  {
+    "stt": 537,
+    "word": "jobless",
+    "type": "adj",
+    "phonetic": "/ˈdʒɑːb.ləs/",
+    "meaning": "thất nghiệp, không có việc làm",
+    "page": 13
+  },
+  {
+    "stt": 538,
+    "word": "join",
+    "type": "v",
+    "phonetic": "/dʒɔɪn/",
+    "meaning": "nối, ghéptham gia",
+    "page": 13
+  },
+  {
+    "stt": 539,
+    "word": "joint",
+    "type": "n, adj",
+    "phonetic": "/dʒɔɪnt/",
+    "meaning": "mối nối, khớp; chung",
+    "page": 13
+  },
+  {
+    "stt": 540,
+    "word": "journal",
+    "type": "n",
+    "phonetic": "/ˈdʒɝː.nəl/",
+    "meaning": "báo, tạp chí",
+    "page": 13
+  },
+  {
+    "stt": 541,
+    "word": "journey",
+    "type": "n",
+    "phonetic": "/ˈdʒɝː.ni/",
+    "meaning": "cuộc hành trình",
+    "page": 13
+  },
+  {
+    "stt": 542,
+    "word": "judge",
+    "type": "n, v",
+    "phonetic": "/dʒʌdʒ/",
+    "meaning": "quan toàn, thẩm phán, người phán xử; xét xử, phân xử",
+    "page": 13
+  },
+  {
+    "stt": 543,
+    "word": "justice",
+    "type": "n",
+    "phonetic": "/ˈdʒʌs.tɪs/",
+    "meaning": "sự công bằng, luật pháp",
+    "page": 13
+  },
+  {
+    "stt": 544,
+    "word": "justification",
+    "type": "n",
+    "phonetic": "/ˌdʒʌs.tə.fəˈkeɪ.ʃən/",
+    "meaning": "sự bào chữa, biện hộ",
+    "page": 13
+  },
+  {
+    "stt": 545,
+    "word": "justify",
+    "type": "v",
+    "phonetic": "/ˈdʒʌs.tə.faɪ/",
+    "meaning": "bào chữa, phân bua, biện hộ",
+    "page": 13
+  },
+  {
+    "stt": 546,
+    "word": "keen",
+    "type": "adj",
+    "phonetic": "/kiːn/",
+    "meaning": "say mê, ham thích",
+    "page": 13
+  },
+  {
+    "stt": 547,
+    "word": "keep",
+    "type": "v",
+    "phonetic": "/kiːp/",
+    "meaning": "giữ lại, giam giữ",
+    "page": 13
+  },
+  {
+    "stt": 548,
+    "word": "knowledge",
+    "type": "n",
+    "phonetic": "/ˈnɑː.lɪdʒ/",
+    "meaning": "kiến thức, sự hiểu biết",
+    "page": 13
+  },
+  {
+    "stt": 549,
+    "word": "knowledgeable",
+    "type": "adj",
+    "phonetic": "/´nɔlidʒəbl/",
+    "meaning": "thông thạo, thành thạo, am tường",
+    "page": 13
+  },
+  {
+    "stt": 550,
+    "word": "label",
+    "type": "n",
+    "phonetic": "/'leɪbl/",
+    "meaning": "nhãn, nhãn hiệu",
+    "page": 13
+  },
+  {
+    "stt": 551,
+    "word": "labor",
+    "type": "n",
+    "phonetic": "/'leibə/",
+    "meaning": "lao động, công việc chân tay",
+    "page": 13
+  },
+  {
+    "stt": 552,
+    "word": "lack",
+    "type": "n, v",
+    "phonetic": "/læk/",
+    "meaning": "sự thiếu, thiếu sót",
+    "page": 13
+  },
+  {
+    "stt": 553,
+    "word": "landlord",
+    "type": "n",
+    "phonetic": "/'lændlɔ:d/",
+    "meaning": "chủ nhà (nhà cho thuê)",
+    "page": 13
+  },
+  {
+    "stt": 554,
+    "word": "laptop",
+    "type": "n",
+    "phonetic": "/´læp¸tɔp/",
+    "meaning": "máy tính",
+    "page": 13
+  },
+  {
+    "stt": 555,
+    "word": "launch",
+    "type": "n",
+    "phonetic": "/lɔ:ntʃ/",
+    "meaning": "Xuồng lớn",
+    "page": 13
+  },
+  {
+    "stt": 556,
+    "word": "law",
+    "type": "n",
+    "phonetic": "/lɑː/",
+    "meaning": "luật, nội quy, quy định",
+    "page": 13
+  },
+  {
+    "stt": 557,
+    "word": "lay",
+    "type": "n",
+    "phonetic": "/lei/",
+    "meaning": "bài thơ ngắn, bài vè ngắn",
+    "page": 13
+  },
+  {
+    "stt": 558,
+    "word": "leak",
+    "type": "n",
+    "phonetic": "/li:k/",
+    "meaning": "lỗ thủng, lỗ rò, khe hở",
+    "page": 13
+  },
+  {
+    "stt": 559,
+    "word": "lean",
+    "type": "n",
+    "phonetic": "/li:n/",
+    "meaning": "độ nghiêng, độ dốc",
+    "page": 13
+  },
+  {
+    "stt": 560,
+    "word": "lease",
+    "type": "n",
+    "phonetic": "/li:s/",
+    "meaning": "hợp đồng cho thuê (bất động sản)",
+    "page": 13
+  },
+  {
+    "stt": 561,
+    "word": "leisure",
+    "type": "n",
+    "phonetic": "/ˈliʒər , ˈlɛʒər/",
+    "meaning": "thì giờ rỗi rãi, lúc thư nhàn",
+    "page": 13
+  },
+  {
+    "stt": 562,
+    "word": "lend",
+    "type": "v",
+    "phonetic": "/lend/",
+    "meaning": "cho vay, cho mượn",
+    "page": 13
+  },
+  {
+    "stt": 563,
+    "word": "liability",
+    "type": "n",
+    "phonetic": "/,laiə'biliti/",
+    "meaning": "trách nhiệm pháp lý, nghĩa vụ pháp lý",
+    "page": 13
+  },
+  {
+    "stt": 564,
+    "word": "license",
+    "type": "n",
+    "phonetic": "/lái:sn/",
+    "meaning": "bản quyền",
+    "page": 13
+  },
+  {
+    "stt": 565,
+    "word": "licensing",
+    "type": "n",
+    "phonetic": "/ˈlaɪ.sən.sɪŋ/",
+    "meaning": "sự cấp giấy phép",
+    "page": 13
+  },
+  {
+    "stt": 566,
+    "word": "lie",
+    "type": "n",
+    "phonetic": "/lai/",
+    "meaning": "sự nói dối, sự nói láo, sự nói điêu, sự dối trá",
+    "page": 13
+  },
+  {
+    "stt": 567,
+    "word": "limited",
+    "type": "adj",
+    "phonetic": "/ˈlɪmɪtɪd/",
+    "meaning": "hạn chế, có giới hạn",
+    "page": 13
+  },
+  {
+    "stt": 568,
+    "word": "limousine",
+    "type": "n",
+    "phonetic": "/´limə¸zi:n/",
+    "meaning": "xe hơi",
+    "page": 13
+  },
+  {
+    "stt": 569,
+    "word": "list",
+    "type": "n",
+    "phonetic": "/list/",
+    "meaning": "danh sách, sổ, bản kê khai",
+    "page": 13
+  },
+  {
+    "stt": 570,
+    "word": "livestock",
+    "type": "n",
+    "phonetic": "/´laiv¸stɔk/",
+    "meaning": "vật nuôi, thú nuôi",
+    "page": 13
+  },
+  {
+    "stt": 571,
+    "word": "loan",
+    "type": "n",
+    "phonetic": "/ləʊn/",
+    "meaning": "sự vay nợ",
+    "page": 13
+  },
+  {
+    "stt": 572,
+    "word": "lobby",
+    "type": "n",
+    "phonetic": "/lɒb.i/",
+    "meaning": "hành lang",
+    "page": 13
+  },
+  {
+    "stt": 573,
+    "word": "local",
+    "type": "adj",
+    "phonetic": "/'ləʊk(ə)l/",
+    "meaning": "địa phương",
+    "page": 13
+  },
+  {
+    "stt": 574,
+    "word": "locate",
+    "type": "v",
+    "phonetic": "/loʊˈkeɪt/",
+    "meaning": "trụ sở ở, nằm ở",
+    "page": 13
+  },
+  {
+    "stt": 575,
+    "word": "log on",
+    "type": "v",
+    "phonetic": "/lɔg/",
+    "meaning": "kết nối với hệ thống",
+    "page": 13
+  },
+  {
+    "stt": 576,
+    "word": "log",
+    "type": "n",
+    "phonetic": "/lɔg/",
+    "meaning": "khúc gỗ mới đốn hạ",
+    "page": 13
+  },
+  {
+    "stt": 577,
+    "word": "loyal",
+    "type": "adj",
+    "phonetic": "/'lɔiəl/",
+    "meaning": "trung thành, trung nghĩa, trung kiên",
+    "page": 13
+  },
+  {
+    "stt": 578,
+    "word": "luggage",
+    "type": "n",
+    "phonetic": "/'lʌgiʤ/",
+    "meaning": "hành lý",
+    "page": 13
+  },
+  {
+    "stt": 579,
+    "word": "luxurious",
+    "type": "adj",
+    "phonetic": "/lʌg´zjuəriəs/",
+    "meaning": "sang trọng, lộng lẫy; xa hoa",
+    "page": 13
+  },
+  {
+    "stt": 580,
+    "word": "luxury",
+    "type": "n",
+    "phonetic": "/lʌk.ʃər.i/",
+    "meaning": "sự xa xỉ, sự xa hoa",
+    "page": 13
+  },
+  {
+    "stt": 581,
+    "word": "maintain",
+    "type": "v",
+    "phonetic": "/mein´tein/",
+    "meaning": "giữ gìn, duy trì; bảo vệ",
+    "page": 13
+  },
+  {
+    "stt": 582,
+    "word": "maintenance",
+    "type": "n",
+    "phonetic": "/´meintənəns/",
+    "meaning": "sự giữ gìn, sự duy trì; sự bảo vệ",
+    "page": 13
+  },
+  {
+    "stt": 583,
+    "word": "major",
+    "type": "n",
+    "phonetic": "/ˈmeɪdʒər/",
+    "meaning": "chuyên đề",
+    "page": 14
+  },
+  {
+    "stt": 584,
+    "word": "manage",
+    "type": "v",
+    "phonetic": "/'mænɪʤ/",
+    "meaning": "quản lý",
+    "page": 14
+  },
+  {
+    "stt": 585,
+    "word": "managerial",
+    "type": "adj",
+    "phonetic": "/¸mæni´dʒiəriəl/",
+    "meaning": "(thuộc) người quản lý, (thuộc) giám đốc",
+    "page": 14
+  },
+  {
+    "stt": 586,
+    "word": "mandatory",
+    "type": "adj",
+    "phonetic": "/'mændətəri/",
+    "meaning": "có tính cách bắt buộc",
+    "page": 14
+  },
+  {
+    "stt": 587,
+    "word": "manufacture",
+    "type": "n",
+    "phonetic": "/,mænju'fæktʃə/",
+    "meaning": "sự chế tạo, sự sản xuất",
+    "page": 14
+  },
+  {
+    "stt": 588,
+    "word": "manufacturing",
+    "type": "n",
+    "phonetic": "/¸mænju´fæktʃəriη/",
+    "meaning": "sự sản xuất; sự chế tạo; sự gia công",
+    "page": 14
+  },
+  {
+    "stt": 589,
+    "word": "marketing",
+    "type": "n",
+    "phonetic": "/'mɑ:kitiɳ/",
+    "meaning": "tiếp thị",
+    "page": 14
+  },
+  {
+    "stt": 590,
+    "word": "mechanic",
+    "type": "n",
+    "phonetic": "/məˈkænɪk/",
+    "meaning": "thợ máy, công nhân cơ khí",
+    "page": 14
+  },
+  {
+    "stt": 591,
+    "word": "medical",
+    "type": "adj",
+    "phonetic": "/'medikə/",
+    "meaning": "(thuộc) y học",
+    "page": 14
+  },
+  {
+    "stt": 592,
+    "word": "medication",
+    "type": "n",
+    "phonetic": "/ˌmɛdɪˈkeɪʃən/",
+    "meaning": "sự bốc thuốc, sự cho thuốc",
+    "page": 14
+  },
+  {
+    "stt": 593,
+    "word": "medicine",
+    "type": "n",
+    "phonetic": "/'medisn/",
+    "meaning": "y học",
+    "page": 14
+  },
+  {
+    "stt": 594,
+    "word": "meeting",
+    "type": "n",
+    "phonetic": "/'mi:tiɳ/",
+    "meaning": "(chính trị) cuộc mít tinh, cuộc biểu tình",
+    "page": 14
+  },
+  {
+    "stt": 595,
+    "word": "membership",
+    "type": "n",
+    "phonetic": "/'membəʃip/",
+    "meaning": "tư cách hội viên, địa vị hội viên",
+    "page": 14
+  },
+  {
+    "stt": 596,
+    "word": "memorandum",
+    "type": "n",
+    "phonetic": "/¸memə´rændəm/",
+    "meaning": "bản ghi nhớ",
+    "page": 14
+  },
+  {
+    "stt": 597,
+    "word": "mention",
+    "type": "n",
+    "phonetic": "/'menʃn/",
+    "meaning": "sự kể ra, sự nói đến, sự đề cập",
+    "page": 14
+  },
+  {
+    "stt": 598,
+    "word": "merchandise",
+    "type": "n",
+    "phonetic": "/´mə:tʃən¸daiz/",
+    "meaning": "hàng hóa",
+    "page": 14
+  },
+  {
+    "stt": 599,
+    "word": "mere",
+    "type": "n",
+    "phonetic": "/miə/",
+    "meaning": "ao hồ",
+    "page": 14
+  },
+  {
+    "stt": 600,
+    "word": "merge",
+    "type": "v",
+    "phonetic": "/mə:dʤ/",
+    "meaning": "hoà vào; kết hợp; hợp nhất",
+    "page": 14
+  },
+  {
+    "stt": 601,
+    "word": "merger",
+    "type": "n",
+    "phonetic": "/´mə:dʒə/",
+    "meaning": "sự liên doanh liên kết",
+    "page": 14
+  },
+  {
+    "stt": 602,
+    "word": "mileage",
+    "type": "n",
+    "phonetic": "/´mailidʒ/",
+    "meaning": "tổng số dặm đã đi được",
+    "page": 14
+  },
+  {
+    "stt": 603,
+    "word": "million",
+    "type": "n",
+    "phonetic": "/´miljən/",
+    "meaning": "một triệu",
+    "page": 14
+  },
+  {
+    "stt": 604,
+    "word": "mimic",
+    "type": "adj",
+    "phonetic": "/´mimik/",
+    "meaning": "giả; bắt chước",
+    "page": 14
+  },
+  {
+    "stt": 605,
+    "word": "mishear",
+    "type": "v",
+    "phonetic": "/¸mis´hiə/",
+    "meaning": "nghe lầm",
+    "page": 14
+  },
+  {
+    "stt": 606,
+    "word": "misleading",
+    "type": "adj",
+    "phonetic": "/mis´li:diη/",
+    "meaning": "làm cho lạc đường, làm cho lạc lối",
+    "page": 14
+  },
+  {
+    "stt": 607,
+    "word": "misrepresent",
+    "type": "v",
+    "phonetic": "/¸misrepri´zent/",
+    "meaning": "trình bày sai, miêu tả sai",
+    "page": 14
+  },
+  {
+    "stt": 608,
+    "word": "monitor",
+    "type": "n",
+    "phonetic": "/'mɔnitə/",
+    "meaning": "lớp trưởng, cán bộ lớp (ở trường học)",
+    "page": 14
+  },
+  {
+    "stt": 609,
+    "word": "monument",
+    "type": "n",
+    "phonetic": "/'mɔnjumənt/",
+    "meaning": "vật kỷ niệm, đài kỷ niệm, bia kỷ niệm",
+    "page": 14
+  },
+  {
+    "stt": 610,
+    "word": "moral",
+    "type": "adj",
+    "phonetic": "/ˈmɔːr.əl/",
+    "meaning": "(thuộc) đạo đức, phẩm hạnhtinh thầnbài học, lời răn dạy",
+    "page": 14
+  },
+  {
+    "stt": 611,
+    "word": "mortgage",
+    "type": "n",
+    "phonetic": "/'mɔ:gidʤ/",
+    "meaning": "cầm cố, thế chấp",
+    "page": 14
+  },
+  {
+    "stt": 612,
+    "word": "motivate",
+    "type": "v",
+    "phonetic": "/´mouti¸veit/",
+    "meaning": "thúc đẩy, làm động cơ thúc đẩy",
+    "page": 14
+  },
+  {
+    "stt": 613,
+    "word": "motivation",
+    "type": "n",
+    "phonetic": "/,mouti'veiʃn/",
+    "meaning": "sự thúc đẩy, động cơ thúc đẩy",
+    "page": 14
+  },
+  {
+    "stt": 614,
+    "word": "napkin",
+    "type": "n",
+    "phonetic": "/'næpkin/",
+    "meaning": "khăn ăn",
+    "page": 14
+  },
+  {
+    "stt": 615,
+    "word": "narrow",
+    "type": "adj",
+    "phonetic": "/'nærou/",
+    "meaning": "hẹp, chật hẹp, eo hẹp",
+    "page": 14
+  },
+  {
+    "stt": 616,
+    "word": "narrowing",
+    "type": "n",
+    "phonetic": "/'nærouwiŋ/",
+    "meaning": "sự thu hẹp, sự co hẹp",
+    "page": 14
+  },
+  {
+    "stt": 617,
+    "word": "neighborhood",
+    "type": "n",
+    "phonetic": "/ˈneɪbərˌhʊd/",
+    "meaning": "hàng xóm",
+    "page": 14
+  },
+  {
+    "stt": 618,
+    "word": "network",
+    "type": "n",
+    "phonetic": "/'netwə:k/",
+    "meaning": "lưới, đồ dùng kiểu lưới",
+    "page": 14
+  },
+  {
+    "stt": 619,
+    "word": "nominate",
+    "type": "v",
+    "phonetic": "/'nɔmineit/",
+    "meaning": "chỉ định, chọn, bổ nhiệm",
+    "page": 14
+  },
+  {
+    "stt": 620,
+    "word": "nomination",
+    "type": "n",
+    "phonetic": "/,nɔmi'neiʃn/",
+    "meaning": "sự chỉ định, sự bổ nhiệm",
+    "page": 14
+  },
+  {
+    "stt": 621,
+    "word": "notice",
+    "type": "n",
+    "phonetic": "/'nəƱtis/",
+    "meaning": "thông tri, yết thị, thông báo",
+    "page": 14
+  },
+  {
+    "stt": 622,
+    "word": "notify",
+    "type": "v",
+    "phonetic": "/nəʊ.tɪ.faɪ/",
+    "meaning": "báo, khai báo; thông báo",
+    "page": 14
+  },
+  {
+    "stt": 623,
+    "word": "objection",
+    "type": "n",
+    "phonetic": "/əb'ʤekʃn/",
+    "meaning": "sự phản đối, sự chống đối",
+    "page": 14
+  },
+  {
+    "stt": 624,
+    "word": "objective",
+    "type": "adj",
+    "phonetic": "/əb´dʒektiv/",
+    "meaning": "khách quan",
+    "page": 14
+  },
+  {
+    "stt": 625,
+    "word": "obligation",
+    "type": "n",
+    "phonetic": "/,ɔbli'geiʃn/",
+    "meaning": "nghĩa vụ; bổn phận",
+    "page": 14
+  },
+  {
+    "stt": 626,
+    "word": "oblige",
+    "type": "v",
+    "phonetic": "/ə'blaiʤ/",
+    "meaning": "bắt buộc, cưỡng bách; đặt nghĩa vụ cho",
+    "page": 14
+  },
+  {
+    "stt": 627,
+    "word": "obtain",
+    "type": "v",
+    "phonetic": "/əb'teɪn/",
+    "meaning": "đạt được, giành được, thu được",
+    "page": 14
+  },
+  {
+    "stt": 628,
+    "word": "obviously",
+    "type": "adv",
+    "phonetic": "/'ɔbviəsli/",
+    "meaning": "một cách rõ ràng; có thể thấy được",
+    "page": 14
+  },
+  {
+    "stt": 629,
+    "word": "occupation",
+    "type": "n",
+    "phonetic": "/,ɔkju'peiʃn/",
+    "meaning": "sự chiếm giữ, sự chiếm đóng",
+    "page": 15
+  },
+  {
+    "stt": 630,
+    "word": "occur",
+    "type": "v",
+    "phonetic": "/ə'kə:/",
+    "meaning": "xảy ra, xảy đến, xuất hiện, tìm thấy",
+    "page": 15
+  },
+  {
+    "stt": 631,
+    "word": "officer",
+    "type": "n",
+    "phonetic": "/´ɔfisə/",
+    "meaning": "sĩ quan",
+    "page": 15
+  },
+  {
+    "stt": 632,
+    "word": "official",
+    "type": "adj",
+    "phonetic": "/ə'fiʃəl/",
+    "meaning": "(thuộc) chính quyền; (thuộc) văn phòng",
+    "page": 15
+  },
+  {
+    "stt": 633,
+    "word": "onward",
+    "type": "adj",
+    "phonetic": "/'ɔnwəd/",
+    "meaning": "về phía trước, tiến lên, hướng tới",
+    "page": 15
+  },
+  {
+    "stt": 634,
+    "word": "operate",
+    "type": "v",
+    "phonetic": "/'ɔpəreit/",
+    "meaning": "hoạt động; đang làm việc, thi hành (máy...)",
+    "page": 15
+  },
+  {
+    "stt": 635,
+    "word": "operation",
+    "type": "n",
+    "phonetic": "/,ɔpə'reiʃn/",
+    "meaning": "sự hoạt động; quá trình hoạt động",
+    "page": 15
+  },
+  {
+    "stt": 636,
+    "word": "opinion",
+    "type": "n",
+    "phonetic": "/ə'pinjən/",
+    "meaning": "ý kiến, quan điểm",
+    "page": 15
+  },
+  {
+    "stt": 637,
+    "word": "opportunity",
+    "type": "n",
+    "phonetic": "/ɒpərˈtyunɪti/",
+    "meaning": "cơ hội, thời cơ, dịp may",
+    "page": 15
+  },
+  {
+    "stt": 638,
+    "word": "optimistic",
+    "type": "adj",
+    "phonetic": "/¸ɔpti´mistik/",
+    "meaning": "lạc quan, yêu đời",
+    "page": 15
+  },
+  {
+    "stt": 639,
+    "word": "order",
+    "type": "n",
+    "phonetic": "/'ɔ:də/",
+    "meaning": "thứ, bậc, ngôi, hàng, cấp, loại, giai cấp",
+    "page": 15
+  },
+  {
+    "stt": 640,
+    "word": "organization",
+    "type": "n",
+    "phonetic": "/,ɔ:gənai'zeiʃn/",
+    "meaning": "sự tổ chức, sự cấu tạo",
+    "page": 15
+  },
+  {
+    "stt": 641,
+    "word": "organize",
+    "type": "v",
+    "phonetic": "/´ɔ:gə¸naiz/",
+    "meaning": "tổ chức, cấu tạo, thiết lập",
+    "page": 15
+  },
+  {
+    "stt": 642,
+    "word": "organized",
+    "type": "adj",
+    "phonetic": "/ˈɔːr.ɡən.aɪzd/",
+    "meaning": "có trật tự, ngăn nắp, hữu hiệu",
+    "page": 15
+  },
+  {
+    "stt": 643,
+    "word": "outline",
+    "type": "n",
+    "phonetic": "/´aut¸lain/",
+    "meaning": "nét phác thảo, đề cương; sự vạch ra những nét chính",
+    "page": 15
+  },
+  {
+    "stt": 644,
+    "word": "outlook",
+    "type": "n",
+    "phonetic": "/´aut¸luk/",
+    "meaning": "quang cảnh, viễn cảnh",
+    "page": 15
+  },
+  {
+    "stt": 645,
+    "word": "outstanding",
+    "type": "adj",
+    "phonetic": "/¸aut´stændiη/",
+    "meaning": "nổi bật, đáng chú ý; nổi tiếng, vượt trội",
+    "page": 15
+  },
+  {
+    "stt": 646,
+    "word": "overall",
+    "type": "adj",
+    "phonetic": "/ˈoʊvərˌɔl/",
+    "meaning": "toàn bộ, toàn thể, bao gồm mọi thứ",
+    "page": 15
+  },
+  {
+    "stt": 647,
+    "word": "overdraft",
+    "type": "n",
+    "phonetic": "/´ouvə¸dra:ft/",
+    "meaning": "số tiền chi trội; số tiền rút quá số tiền gửi",
+    "page": 15
+  },
+  {
+    "stt": 648,
+    "word": "overtime",
+    "type": "adj",
+    "phonetic": "/´ouvətaim/",
+    "meaning": "quá giờ, ngoài giờ (quy định)",
+    "page": 15
+  },
+  {
+    "stt": 649,
+    "word": "overview",
+    "type": "n",
+    "phonetic": "/´ouvə¸vju:/",
+    "meaning": "sự khái quát; miêu tả chung, ngắn gọn",
+    "page": 15
+  },
+  {
+    "stt": 650,
+    "word": "owe",
+    "type": "v",
+    "phonetic": "/ou/",
+    "meaning": "nợ, hàm ơn",
+    "page": 15
+  },
+  {
+    "stt": 651,
+    "word": "package",
+    "type": "v",
+    "phonetic": "/pæk.ɪdʒ/",
+    "meaning": "đóng gói, đóng kiện, xếp vào bao bì",
+    "page": 15
+  },
+  {
+    "stt": 652,
+    "word": "package",
+    "type": "n",
+    "phonetic": "/pæk.ɪdʒ/",
+    "meaning": "gói đồ, bưu kiện; hộp để đóng hàng, thùng hàng",
+    "page": 15
+  },
+  {
+    "stt": 653,
+    "word": "parcel",
+    "type": "n",
+    "phonetic": "/'pɑ:s(ə)l/",
+    "meaning": "gói; bưu kiện",
+    "page": 15
+  },
+  {
+    "stt": 654,
+    "word": "parking",
+    "type": "n",
+    "phonetic": "/ˈpɑːr.kɪŋ/",
+    "meaning": "bãi đỗ xe",
+    "page": 15
+  },
+  {
+    "stt": 655,
+    "word": "participant",
+    "type": "n",
+    "phonetic": "/pa:´tisipənt/",
+    "meaning": "người tham gia, người tham dự",
+    "page": 15
+  },
+  {
+    "stt": 656,
+    "word": "particularly",
+    "type": "adv",
+    "phonetic": "/pə´tikjuləli/",
+    "meaning": "đặc biệt, đặc thù; cá biệt, riêng biệt",
+    "page": 15
+  },
+  {
+    "stt": 657,
+    "word": "passenger",
+    "type": "n",
+    "phonetic": "/'pæsindʤə/",
+    "meaning": "hành khách (đi tàu xe...)",
+    "page": 15
+  },
+  {
+    "stt": 658,
+    "word": "patent",
+    "type": "adj",
+    "phonetic": "/'peitənt/",
+    "meaning": "tài tình, khéo léo, tinh xảo",
+    "page": 15
+  },
+  {
+    "stt": 659,
+    "word": "patented",
+    "type": "adj",
+    "phonetic": "/ˈpeɪtəntɪd, ˈpætəntɪd/",
+    "meaning": "đã có bằng sáng chế, môn bài",
+    "page": 15
+  },
+  {
+    "stt": 660,
+    "word": "patience",
+    "type": "n",
+    "phonetic": "/´peiʃəns/",
+    "meaning": "tính kiên nhẫn, tính nhẫn nại; sự bền chí",
+    "page": 15
+  },
+  {
+    "stt": 661,
+    "word": "payment",
+    "type": "n",
+    "phonetic": "/'peim(ə)nt/",
+    "meaning": "sự trả tiền, số tiền trả; sự bồi thường, tiền bồi thường",
+    "page": 15
+  },
+  {
+    "stt": 662,
+    "word": "perform",
+    "type": "v",
+    "phonetic": "/pə´fɔ:m/",
+    "meaning": "biểu diễn, trình diễn (kịch, điệu nhảy...); đóng",
+    "page": 15
+  },
+  {
+    "stt": 663,
+    "word": "performance",
+    "type": "n",
+    "phonetic": "/pə'fɔ:məns/",
+    "meaning": "sự biểu diễn, việc đóng (phim, kịch...); cuộc biểu diễn",
+    "page": 15
+  },
+  {
+    "stt": 664,
+    "word": "permanent",
+    "type": "adj",
+    "phonetic": "/'pə:mənənt/",
+    "meaning": "lâu dài, vĩnh cửu; thường xuyên",
+    "page": 15
+  },
+  {
+    "stt": 665,
+    "word": "permission",
+    "type": "n",
+    "phonetic": "/pə'miʃn/",
+    "meaning": "sự cho phép, sự chấp nhận; giấy phép",
+    "page": 15
+  },
+  {
+    "stt": 666,
+    "word": "permit",
+    "type": "v",
+    "phonetic": "/'pər'mɪt/",
+    "meaning": "cho phép, cho cơ hội; thừa nhận",
+    "page": 15
+  },
+  {
+    "stt": 667,
+    "word": "personal",
+    "type": "adj",
+    "phonetic": "/'pə:snl/",
+    "meaning": "cá nhân, tư, riêng",
+    "page": 15
+  },
+  {
+    "stt": 668,
+    "word": "personalized",
+    "type": "v",
+    "phonetic": "/´pə:sənə¸laiz/",
+    "meaning": "cá nhân hoá",
+    "page": 15
+  },
+  {
+    "stt": 669,
+    "word": "personnel",
+    "type": "n",
+    "phonetic": "/¸pə:sə´nel/",
+    "meaning": "nhân viên, công chức (cơ quan, nhà máy...)",
+    "page": 15
+  },
+  {
+    "stt": 670,
+    "word": "persuade",
+    "type": "v",
+    "phonetic": "/pə'sweid/",
+    "meaning": "thuyết phục",
+    "page": 15
+  },
+  {
+    "stt": 671,
+    "word": "pessimistic",
+    "type": "adj",
+    "phonetic": "/¸pesi´mistik/",
+    "meaning": "bi quan, yếm thế",
+    "page": 15
+  },
+  {
+    "stt": 672,
+    "word": "plant",
+    "type": "n",
+    "phonetic": "/plænt , plɑnt/",
+    "meaning": "thực vật",
+    "page": 15
+  },
+  {
+    "stt": 673,
+    "word": "platform",
+    "type": "n",
+    "phonetic": "/'plætfɔ:m/",
+    "meaning": "nền, bục, bệ",
+    "page": 15
+  },
+  {
+    "stt": 674,
+    "word": "pleasant",
+    "type": "adj",
+    "phonetic": "/'plezənt/",
+    "meaning": "vui vẻ, dễ thương (người...)",
+    "page": 16
+  },
+  {
+    "stt": 675,
+    "word": "plow",
+    "type": "n",
+    "phonetic": "/plau/",
+    "meaning": "cái cày; công cụ giống như cái cày",
+    "page": 16
+  },
+  {
+    "stt": 676,
+    "word": "plug",
+    "type": "n",
+    "phonetic": "/plʌg/",
+    "meaning": "phích cắm; ổ cắm điện",
+    "page": 16
+  },
+  {
+    "stt": 677,
+    "word": "plumber",
+    "type": "n",
+    "phonetic": "/´plʌmə/",
+    "meaning": "thợ hàn chì, thợ ống nước",
+    "page": 16
+  },
+  {
+    "stt": 678,
+    "word": "point",
+    "type": "n",
+    "phonetic": "/pɔint/",
+    "meaning": "điểm",
+    "page": 16
+  },
+  {
+    "stt": 679,
+    "word": "pointless",
+    "type": "adj",
+    "phonetic": "/´pɔintlis/",
+    "meaning": "vô nghĩa, không ý vị, lạc lõng",
+    "page": 16
+  },
+  {
+    "stt": 680,
+    "word": "policy",
+    "type": "n",
+    "phonetic": "/pɔlisi/",
+    "meaning": "chính sách (của chính phủ, đảng...)",
+    "page": 16
+  },
+  {
+    "stt": 681,
+    "word": "polite",
+    "type": "adj",
+    "phonetic": "/pəˈlaɪt/",
+    "meaning": "lễ phép, có lễ độ; lịch sự, lịch thiệp",
+    "page": 16
+  },
+  {
+    "stt": 682,
+    "word": "politician",
+    "type": "n",
+    "phonetic": "/,pɒlə'tɪʃn/",
+    "meaning": "nhà chính trị; chính khách",
+    "page": 16
+  },
+  {
+    "stt": 683,
+    "word": "politics",
+    "type": "n",
+    "phonetic": "/'pɔlitiks/",
+    "meaning": "hoạt động chính trị, công việc chính trị",
+    "page": 16
+  },
+  {
+    "stt": 684,
+    "word": "poll",
+    "type": "n",
+    "phonetic": "/poul/",
+    "meaning": "sự bầu cử; số phiếu bầu",
+    "page": 16
+  },
+  {
+    "stt": 685,
+    "word": "pollute",
+    "type": "v",
+    "phonetic": "/pəˈlut/",
+    "meaning": "làm ô nhiễm, làm nhơ bẩn (nước...)",
+    "page": 16
+  },
+  {
+    "stt": 686,
+    "word": "popular",
+    "type": "adj",
+    "phonetic": "/ˈpɑːpjələr/",
+    "meaning": "được nhiều người ưa chuộng, được nhiều người ngưỡng mộ",
+    "page": 16
+  },
+  {
+    "stt": 687,
+    "word": "popularity",
+    "type": "n",
+    "phonetic": "/ˌpɒpyəˈlærɪti/",
+    "meaning": "tính đại chúng; tính phổ biến",
+    "page": 16
+  },
+  {
+    "stt": 688,
+    "word": "position",
+    "type": "n",
+    "phonetic": "/pəˈzɪʃən/",
+    "meaning": "vị trí, chỗ (của một vật gì)",
+    "page": 16
+  },
+  {
+    "stt": 689,
+    "word": "postpone",
+    "type": "v",
+    "phonetic": "/pəʊst pəʊn/",
+    "meaning": "hoãn lại, trì hoãn",
+    "page": 16
+  },
+  {
+    "stt": 690,
+    "word": "postponement",
+    "type": "n",
+    "phonetic": "/poust´pounmənt/",
+    "meaning": "sự trì hoãn; trường hợp bị trì hoãn",
+    "page": 16
+  },
+  {
+    "stt": 691,
+    "word": "potential",
+    "type": "adj",
+    "phonetic": "/pəˈtenʃl/",
+    "meaning": "tiềm năng; tiềm tàng",
+    "page": 16
+  },
+  {
+    "stt": 692,
+    "word": "power",
+    "type": "n",
+    "phonetic": "/ˈpauə(r)/",
+    "meaning": "khả năng; tài năng, năng lực",
+    "page": 16
+  },
+  {
+    "stt": 693,
+    "word": "practical",
+    "type": "adj",
+    "phonetic": "/ˈpræktɪkəl/",
+    "meaning": "thực hành (đối với lý thuyết)",
+    "page": 16
+  },
+  {
+    "stt": 694,
+    "word": "practically",
+    "type": "adv",
+    "phonetic": "/´præktikəli/",
+    "meaning": "về mặt thực hành (đối với lý thuyết)",
+    "page": 16
+  },
+  {
+    "stt": 695,
+    "word": "predict",
+    "type": "v",
+    "phonetic": "/pri'dikt/",
+    "meaning": "nói trước, tiên đoán, dự đoán",
+    "page": 16
+  },
+  {
+    "stt": 696,
+    "word": "predictable",
+    "type": "adj",
+    "phonetic": "/pri'diktəbl/",
+    "meaning": "có thể đoán trước, có thể dự đoán, dự báo",
+    "page": 16
+  },
+  {
+    "stt": 697,
+    "word": "prefer",
+    "type": "v",
+    "phonetic": "/pri'fə:/",
+    "meaning": "thích hơn, ưa hơn",
+    "page": 16
+  },
+  {
+    "stt": 698,
+    "word": "preference",
+    "type": "n",
+    "phonetic": "/'prefərəns/",
+    "meaning": "sở thích; sự thích hơn, sự ưa hơn",
+    "page": 16
+  },
+  {
+    "stt": 699,
+    "word": "premises",
+    "type": "n",
+    "phonetic": "/'premis/",
+    "meaning": "biệt thự",
+    "page": 16
+  },
+  {
+    "stt": 700,
+    "word": "present",
+    "type": "n",
+    "phonetic": "/ˈprez.ənt/",
+    "meaning": "hiện tại, hiện thời, hiện giờ, hiện nay",
+    "page": 16
+  },
+  {
+    "stt": 701,
+    "word": "press",
+    "type": "n",
+    "phonetic": "/pres/",
+    "meaning": "sự ép, sự nén, sự bóp, sự ấn",
+    "page": 16
+  },
+  {
+    "stt": 702,
+    "word": "prevent",
+    "type": "v",
+    "phonetic": "/pri'vent/",
+    "meaning": "ngăn cản; ngăn chặn, ngăn ngừa",
+    "page": 16
+  },
+  {
+    "stt": 703,
+    "word": "prevention",
+    "type": "n",
+    "phonetic": "/pri'ven∫n/",
+    "meaning": "sự ngăn cản, sự ngăn trở",
+    "page": 16
+  },
+  {
+    "stt": 704,
+    "word": "priceless",
+    "type": "adj",
+    "phonetic": "/ˈpraɪslɪs/",
+    "meaning": "vô giá; không định giá được",
+    "page": 16
+  },
+  {
+    "stt": 705,
+    "word": "principle",
+    "type": "n",
+    "phonetic": "/ˈprɪntsɪpl/",
+    "meaning": "gốc, nguồn gốc, yếu tố cơ bản",
+    "page": 16
+  },
+  {
+    "stt": 706,
+    "word": "priority",
+    "type": "n",
+    "phonetic": "/prai´ɔriti/",
+    "meaning": "sự ưu thế (về cấp bậc); quyền ưu tiên",
+    "page": 16
+  },
+  {
+    "stt": 707,
+    "word": "private",
+    "type": "adj",
+    "phonetic": "/ˈpraɪvɪt/",
+    "meaning": "riêng, tư, cá nhân",
+    "page": 16
+  },
+  {
+    "stt": 708,
+    "word": "probability",
+    "type": "n",
+    "phonetic": "/ˌprɒbəˈbɪlɪti/",
+    "meaning": "sự có thể có, khả năng có thể xảy ra",
+    "page": 16
+  },
+  {
+    "stt": 709,
+    "word": "probably",
+    "type": "adv",
+    "phonetic": "/´prɔbəbli/",
+    "meaning": "có khả năng, có lẽ, có thể",
+    "page": 16
+  },
+  {
+    "stt": 710,
+    "word": "probationary",
+    "type": "adj",
+    "phonetic": "/prə´beiʃənəri/",
+    "meaning": "đang trong thời gian thử thách",
+    "page": 16
+  },
+  {
+    "stt": 711,
+    "word": "process",
+    "type": "n",
+    "phonetic": "/'prouses/",
+    "meaning": "quá trình, sự tiến triển",
+    "page": 16
+  },
+  {
+    "stt": 712,
+    "word": "profession",
+    "type": "n",
+    "phonetic": "/prə´feʃ(ə)n/",
+    "meaning": "nghề, nghề nghiệp",
+    "page": 16
+  },
+  {
+    "stt": 713,
+    "word": "professional",
+    "type": "adj",
+    "phonetic": "/prə'feʃənl/",
+    "meaning": "(thuộc) nghề, (thuộc) nghề nghiệp; có tay nghề",
+    "page": 16
+  },
+  {
+    "stt": 714,
+    "word": "profile",
+    "type": "n",
+    "phonetic": "/´proufail/",
+    "meaning": "tiểu sử sơ lược; mô tả sơ lược",
+    "page": 16
+  },
+  {
+    "stt": 715,
+    "word": "profit",
+    "type": "n",
+    "phonetic": "/ˈprɒfɪt/",
+    "meaning": "thuận lợi; lợi ích, bổ ích",
+    "page": 16
+  },
+  {
+    "stt": 716,
+    "word": "profitability",
+    "type": "n",
+    "phonetic": "/'prɔfitə'biləti/",
+    "meaning": "sự có lợi, sự có ích; sự thuận lợi",
+    "page": 16
+  },
+  {
+    "stt": 717,
+    "word": "profitable",
+    "type": "adj",
+    "phonetic": "/´prɑ:fɪtəbl/",
+    "meaning": "có lợi, có ích; thuận lợi",
+    "page": 16
+  },
+  {
+    "stt": 718,
+    "word": "progressive",
+    "type": "adj",
+    "phonetic": "/prəˈgrɛsɪv/",
+    "meaning": "tiến lên, tiến tới",
+    "page": 16
+  },
+  {
+    "stt": 719,
+    "word": "prohibit",
+    "type": "v",
+    "phonetic": "/proʊ'hɪbɪt/",
+    "meaning": "cấm, ngăn cấm",
+    "page": 16
+  },
+  {
+    "stt": 720,
+    "word": "project",
+    "type": "n",
+    "phonetic": "/ˈprɒdʒɛkt/",
+    "meaning": "đề án, dự án; kế hoạch",
+    "page": 17
+  },
+  {
+    "stt": 721,
+    "word": "promote",
+    "type": "v",
+    "phonetic": "/prəˈmoʊt/",
+    "meaning": "thăng chức, thăng cấp; đề bạt",
+    "page": 17
+  },
+  {
+    "stt": 722,
+    "word": "promotion",
+    "type": "n",
+    "phonetic": "/prə'mou∫n/",
+    "meaning": "sự thăng chức, sự đề bạt",
+    "page": 17
+  },
+  {
+    "stt": 723,
+    "word": "promptly",
+    "type": "adv",
+    "phonetic": "/´prɔmptli/",
+    "meaning": "mau lẹ, nhanh chóng; ngay lập tức",
+    "page": 17
+  },
+  {
+    "stt": 724,
+    "word": "properly",
+    "type": "adv",
+    "phonetic": "/´prɔpəli/",
+    "meaning": "đúng đắn, hợp thức, hợp lệ",
+    "page": 17
+  },
+  {
+    "stt": 725,
+    "word": "property",
+    "type": "n",
+    "phonetic": "/'prɔpəti/",
+    "meaning": "tài sản, của cải, vật sở hữu, người giàu có",
+    "page": 17
+  },
+  {
+    "stt": 726,
+    "word": "protect",
+    "type": "v",
+    "phonetic": "/prə'tekt/",
+    "meaning": "bảo vệ, bảo hộ, che chở",
+    "page": 17
+  },
+  {
+    "stt": 727,
+    "word": "protection",
+    "type": "n",
+    "phonetic": "/prə'tek∫n/",
+    "meaning": "sự bảo vệ, sự bảo hộ, sự che chở",
+    "page": 17
+  },
+  {
+    "stt": 728,
+    "word": "publicity",
+    "type": "n",
+    "phonetic": "/pʌb'lɪsətɪ /",
+    "meaning": "sự công khai",
+    "page": 17
+  },
+  {
+    "stt": 729,
+    "word": "publicize",
+    "type": "v",
+    "phonetic": "/´pʌbli¸saiz/",
+    "meaning": "đưa ra công khai; làm cho thiên hạ biết đến",
+    "page": 17
+  },
+  {
+    "stt": 730,
+    "word": "purchase",
+    "type": "n",
+    "phonetic": "/'pə:t∫əs/",
+    "meaning": "sự mua, tậu; vật mua được, vật tậu được",
+    "page": 17
+  },
+  {
+    "stt": 731,
+    "word": "purpose",
+    "type": "n",
+    "phonetic": "/'pɜ:pəs/",
+    "meaning": "mục đích, ý định",
+    "page": 17
+  },
+  {
+    "stt": 732,
+    "word": "pursue",
+    "type": "v",
+    "phonetic": "/pə'sju:/",
+    "meaning": "đuổi theo, đuổi bắt, truy nã, truy kích",
+    "page": 17
+  },
+  {
+    "stt": 733,
+    "word": "qualification",
+    "type": "n",
+    "phonetic": "/,kwalifi'keiSn/",
+    "meaning": "phẩm chất, năng lực",
+    "page": 17
+  },
+  {
+    "stt": 734,
+    "word": "qualified",
+    "type": "adj",
+    "phonetic": "/ˈkwɒləˌfaɪd/",
+    "meaning": "đủ tư cách, khả năng, điều kiện",
+    "page": 17
+  },
+  {
+    "stt": 735,
+    "word": "qualify",
+    "type": "v",
+    "phonetic": "/'´kwɔli¸fai/",
+    "meaning": "đủ tư cách, khả năng, điều kiện",
+    "page": 17
+  },
+  {
+    "stt": 736,
+    "word": "questionnaire",
+    "type": "n",
+    "phonetic": "/ˌkwɛstʃəˈnɛər/",
+    "meaning": "bản câu hỏi (để điều tra, để thăm dò ý kiến)",
+    "page": 17
+  },
+  {
+    "stt": 737,
+    "word": "quotation",
+    "type": "n",
+    "phonetic": "/kwou'teiʃn/",
+    "meaning": "sự trích dẫn, sự được trích dẫn",
+    "page": 17
+  },
+  {
+    "stt": 738,
+    "word": "quote",
+    "type": "n",
+    "phonetic": "/kwout/",
+    "meaning": "lời trích dẫn; đoạn trích dẫn",
+    "page": 17
+  },
+  {
+    "stt": 739,
+    "word": "range",
+    "type": "n",
+    "phonetic": "/reɪndʒ/",
+    "meaning": "dãy, hàng",
+    "page": 17
+  },
+  {
+    "stt": 740,
+    "word": "rare",
+    "type": "adj",
+    "phonetic": "/reə/",
+    "meaning": "hiếm, hiếm có, ít có",
+    "page": 17
+  },
+  {
+    "stt": 741,
+    "word": "rate",
+    "type": "n",
+    "phonetic": "/reit/",
+    "meaning": "tỷ lệ",
+    "page": 17
+  },
+  {
+    "stt": 742,
+    "word": "rational",
+    "type": "adj",
+    "phonetic": "/´ræʃənəl/",
+    "meaning": "có lý trí, dựa trên lý trí",
+    "page": 17
+  },
+  {
+    "stt": 743,
+    "word": "raw",
+    "type": "adj",
+    "phonetic": "/rɔ:/",
+    "meaning": "sống, thô",
+    "page": 17
+  },
+  {
+    "stt": 744,
+    "word": "reach",
+    "type": "n",
+    "phonetic": "/ri:tʃ/",
+    "meaning": "sự chìa ra, sự trải ra",
+    "page": 17
+  },
+  {
+    "stt": 745,
+    "word": "realize",
+    "type": "v",
+    "phonetic": "/'riəlaiz/",
+    "meaning": "thấy rõ, hiểu rõ, nhận thức rõ (việc gì...)",
+    "page": 17
+  },
+  {
+    "stt": 746,
+    "word": "rearrange",
+    "type": "v",
+    "phonetic": "/'ri:ə'reindʤ/",
+    "meaning": "sắp xếp lại, bố trí lại, sắp đặt lại",
+    "page": 17
+  },
+  {
+    "stt": 747,
+    "word": "reasonable",
+    "type": "adj",
+    "phonetic": "/´ri:zənəbl/",
+    "meaning": "có lý, hợp lý",
+    "page": 17
+  },
+  {
+    "stt": 748,
+    "word": "reasonably",
+    "type": "adv",
+    "phonetic": "/ˈriː.zən.ə.bli/",
+    "meaning": "hợp lý",
+    "page": 17
+  },
+  {
+    "stt": 749,
+    "word": "receipt",
+    "type": "n",
+    "phonetic": "/ri´si:t/",
+    "meaning": "công thức (làm bánh, nấu món ăn...)",
+    "page": 17
+  },
+  {
+    "stt": 750,
+    "word": "receive",
+    "type": "v",
+    "phonetic": "/ri'si:v/",
+    "meaning": "nhận, lĩnh, thu",
+    "page": 17
+  },
+  {
+    "stt": 751,
+    "word": "recent",
+    "type": "adj",
+    "phonetic": "/´ri:sənt/",
+    "meaning": "gần đây, xảy ra gần đây, mới đây",
+    "page": 17
+  },
+  {
+    "stt": 752,
+    "word": "reception",
+    "type": "n",
+    "phonetic": "/ri'sep∫n/",
+    "meaning": "sự nhận, sự thu nhận, sự lĩnh",
+    "page": 17
+  },
+  {
+    "stt": 753,
+    "word": "receptive",
+    "type": "adj",
+    "phonetic": "/ri'septiv/",
+    "meaning": "dễ tiếp thu, dễ lĩnh hội",
+    "page": 17
+  },
+  {
+    "stt": 754,
+    "word": "recipe",
+    "type": "n",
+    "phonetic": "/´resəpi/",
+    "meaning": "công thức làm món ăn",
+    "page": 17
+  },
+  {
+    "stt": 755,
+    "word": "recognize",
+    "type": "v",
+    "phonetic": "/'rekəgnaiz/",
+    "meaning": "công nhận, thừa nhận, chấp nhận",
+    "page": 17
+  },
+  {
+    "stt": 756,
+    "word": "recommend",
+    "type": "v",
+    "phonetic": "/rekə'mend/",
+    "meaning": "giới thiệu, tiến cử (người, vật...)",
+    "page": 17
+  },
+  {
+    "stt": 757,
+    "word": "recommendation",
+    "type": "n",
+    "phonetic": "/¸rekəmen´deiʃən/",
+    "meaning": "sự giới thiệu, sự tiến cử",
+    "page": 17
+  },
+  {
+    "stt": 758,
+    "word": "recruit",
+    "type": "v",
+    "phonetic": "/ri'kru:t/",
+    "meaning": "tuyển, chiêu mộ (lính mới); tìm thêm",
+    "page": 17
+  },
+  {
+    "stt": 759,
+    "word": "recruitment",
+    "type": "n",
+    "phonetic": "/ ri'kru;tm(ə)nt/",
+    "meaning": "sự tuyển mộ (lính), sự lấy thêm",
+    "page": 17
+  },
+  {
+    "stt": 760,
+    "word": "reduce",
+    "type": "v",
+    "phonetic": "/ri'dju:s/",
+    "meaning": "thu nhỏ, làm giảm bớt",
+    "page": 17
+  },
+  {
+    "stt": 761,
+    "word": "reduction",
+    "type": "n",
+    "phonetic": "/ri´dʌkʃən/",
+    "meaning": "sự thu nhỏ, sự giảm bớt",
+    "page": 17
+  },
+  {
+    "stt": 762,
+    "word": "redundant",
+    "type": "adj",
+    "phonetic": "/ri'dʌndənt/",
+    "meaning": "thừa, dư",
+    "page": 17
+  },
+  {
+    "stt": 763,
+    "word": "refrigerator",
+    "type": "n",
+    "phonetic": "/rɪˈfrɪdʒ.ər.eɪ.tər/",
+    "meaning": "tủ lạnh",
+    "page": 17
+  },
+  {
+    "stt": 764,
+    "word": "refund",
+    "type": "n, v",
+    "phonetic": "/ˈrifʌnd/",
+    "meaning": "trả lại, sự trả lại",
+    "page": 17
+  },
+  {
+    "stt": 765,
+    "word": "refundable",
+    "type": "adj",
+    "phonetic": "/ri´fʌndəbl/",
+    "meaning": "có thể được trả lại tiền",
+    "page": 17
+  },
+  {
+    "stt": 766,
+    "word": "refusal",
+    "type": "n",
+    "phonetic": "/rɪˈfjuː.zəl/",
+    "meaning": "sự từ chối, sự khước từ; sự bị từ chối",
+    "page": 17
+  },
+  {
+    "stt": 767,
+    "word": "refuse",
+    "type": "v",
+    "phonetic": "/rɪˈfyuz/",
+    "meaning": "từ chối, khước từ, cự tuyệt",
+    "page": 18
+  },
+  {
+    "stt": 768,
+    "word": "regarding",
+    "type": "n",
+    "phonetic": "/ri´ga:diη/",
+    "meaning": "về ( ai/cái gì), về việc, đối với (vấn đề...)",
+    "page": 18
+  },
+  {
+    "stt": 769,
+    "word": "regardless",
+    "type": "adv",
+    "phonetic": "/ri´ga:dlis/",
+    "meaning": "bất chấp, không đếm xỉa tới, không chú ý tới",
+    "page": 18
+  },
+  {
+    "stt": 770,
+    "word": "regional",
+    "type": "adj",
+    "phonetic": "/ˈridʒənl/",
+    "meaning": "(thuộc) vùng; địa phương",
+    "page": 18
+  },
+  {
+    "stt": 771,
+    "word": "registration",
+    "type": "n",
+    "phonetic": "/,redʤis'treiʃn/",
+    "meaning": "sự đăng ký, sự ghi vào sổ",
+    "page": 18
+  },
+  {
+    "stt": 772,
+    "word": "regret",
+    "type": "n, v",
+    "phonetic": "/ri'gret/",
+    "meaning": "hối tiếc; sự ân hận",
+    "page": 18
+  },
+  {
+    "stt": 773,
+    "word": "regular",
+    "type": "adj",
+    "phonetic": "/ˈreɡ.jə.lɚ/",
+    "meaning": "đều đặn, thường xuyên",
+    "page": 18
+  },
+  {
+    "stt": 774,
+    "word": "regularly",
+    "type": "adv",
+    "phonetic": "/´regjuləli/",
+    "meaning": "đều đặn, thường xuyên",
+    "page": 18
+  },
+  {
+    "stt": 775,
+    "word": "regulate",
+    "type": "v",
+    "phonetic": "/ˈreɡ.jə.leɪt/",
+    "meaning": "điều khiển",
+    "page": 18
+  },
+  {
+    "stt": 776,
+    "word": "reject",
+    "type": "n, v",
+    "phonetic": "/'ri:ʤekt/",
+    "meaning": "vật bị loại, vật bỏ đi, vật không được chọn",
+    "page": 18
+  },
+  {
+    "stt": 777,
+    "word": "relax",
+    "type": "v",
+    "phonetic": "/rɪˈlæks/",
+    "meaning": "thư giãn, nghỉ ngơi",
+    "page": 18
+  },
+  {
+    "stt": 778,
+    "word": "relaxation",
+    "type": "n",
+    "phonetic": "/¸ri:læk´seiʃən/",
+    "meaning": "sự dịu đi, sự bớt căng thẳng",
+    "page": 18
+  },
+  {
+    "stt": 779,
+    "word": "release",
+    "type": "v",
+    "phonetic": "/rɪˈliːs/",
+    "meaning": "thả ra, trả lại tự do",
+    "page": 18
+  },
+  {
+    "stt": 780,
+    "word": "relevant",
+    "type": "adj",
+    "phonetic": "/´reləvənt/",
+    "meaning": "thích đáng, thích hợp; xác đáng",
+    "page": 18
+  },
+  {
+    "stt": 781,
+    "word": "remain",
+    "type": "v",
+    "phonetic": "/rɪˈmeɪn/",
+    "meaning": "duy trì",
+    "page": 18
+  },
+  {
+    "stt": 782,
+    "word": "remarkable",
+    "type": "adj",
+    "phonetic": "/ri'ma:kəb(ə)l/",
+    "meaning": "đáng chú ý, đáng để ý",
+    "page": 18
+  },
+  {
+    "stt": 783,
+    "word": "remind",
+    "type": "v",
+    "phonetic": "/rɪˈmaɪnd/",
+    "meaning": "nhắc lại, nhớ lại",
+    "page": 18
+  },
+  {
+    "stt": 784,
+    "word": "reminder",
+    "type": "n",
+    "phonetic": "/ri´maində/",
+    "meaning": "vật làm nhớ lại, cái làm nhớ lại",
+    "page": 18
+  },
+  {
+    "stt": 785,
+    "word": "remittance",
+    "type": "n",
+    "phonetic": "/ri´mitəns/",
+    "meaning": "sự gửi tiền, sự gửi hàng",
+    "page": 18
+  },
+  {
+    "stt": 786,
+    "word": "remove",
+    "type": "v",
+    "phonetic": "/ri'mu:v/",
+    "meaning": "dời đi, di chuyển, dọn, cất dọn",
+    "page": 18
+  },
+  {
+    "stt": 787,
+    "word": "remuneration",
+    "type": "n",
+    "phonetic": "/rɪˌmjuː.nəˈreɪ.ʃən/",
+    "meaning": "tiền thù lao, tiền trả công",
+    "page": 18
+  },
+  {
+    "stt": 788,
+    "word": "renovate",
+    "type": "v",
+    "phonetic": "/ˈrɛnəˌveɪt/",
+    "meaning": "nâng cấp, cải tiến, đổi mới, sửa chữa lại",
+    "page": 18
+  },
+  {
+    "stt": 789,
+    "word": "renovation",
+    "type": "n",
+    "phonetic": "/ˌren.əˈveɪ.ʃən/",
+    "meaning": "sự nâng cấp, sự cải tiến",
+    "page": 18
+  },
+  {
+    "stt": 790,
+    "word": "rent",
+    "type": "n",
+    "phonetic": "/rent/",
+    "meaning": "sự thuê mướn",
+    "page": 18
+  },
+  {
+    "stt": 791,
+    "word": "repair",
+    "type": "v",
+    "phonetic": "/rɪˈper/",
+    "meaning": "sửa chữa, sửa đổi",
+    "page": 18
+  },
+  {
+    "stt": 792,
+    "word": "repayment",
+    "type": "n",
+    "phonetic": "/ri:´peimənt/",
+    "meaning": "sự trả lại",
+    "page": 18
+  },
+  {
+    "stt": 793,
+    "word": "repetitive",
+    "type": "adj",
+    "phonetic": "/rɪˈpet̬.ə.t̬ɪv/",
+    "meaning": "có đặc trưng lặp đi lặp lại",
+    "page": 18
+  },
+  {
+    "stt": 794,
+    "word": "replace",
+    "type": "v",
+    "phonetic": "/rɪpleɪs/",
+    "meaning": "thay thế, thay chỗ ai/cái gì",
+    "page": 18
+  },
+  {
+    "stt": 795,
+    "word": "replacement",
+    "type": "n",
+    "phonetic": "/rɪˈpleɪs.mənt/",
+    "meaning": "sự thay thế, vật thay thế",
+    "page": 18
+  },
+  {
+    "stt": 796,
+    "word": "report",
+    "type": "n",
+    "phonetic": "/ri'pɔ:t/",
+    "meaning": "bản báo cáo, bản tường thuật; biên bản",
+    "page": 18
+  },
+  {
+    "stt": 797,
+    "word": "represent",
+    "type": "v",
+    "phonetic": "/ˌrep.rɪˈzent/",
+    "meaning": "miêu tả, hình dung",
+    "page": 18
+  },
+  {
+    "stt": 798,
+    "word": "representative",
+    "type": "adj",
+    "phonetic": "/,repri'zentətiv/",
+    "meaning": "miêu tả, biểu hiện",
+    "page": 18
+  },
+  {
+    "stt": 799,
+    "word": "request",
+    "type": "n",
+    "phonetic": "/rɪˈkwest/",
+    "meaning": "yêu cầu",
+    "page": 18
+  },
+  {
+    "stt": 800,
+    "word": "require",
+    "type": "v",
+    "phonetic": "/ri'kwaiə(r)/",
+    "meaning": "đòi hỏi, yêu cầu; quy định",
+    "page": 18
+  },
+  {
+    "stt": 801,
+    "word": "requirement",
+    "type": "n",
+    "phonetic": "/rɪˈkwaɪr.mənt/",
+    "meaning": "yêu cầu, cần thiết",
+    "page": 18
+  },
+  {
+    "stt": 802,
+    "word": "reschedule",
+    "type": "v",
+    "phonetic": "/ˌriːˈskedʒ.uːl/",
+    "meaning": "lên lịch, sắp xếp lịch",
+    "page": 18
+  },
+  {
+    "stt": 803,
+    "word": "rescue",
+    "type": "v",
+    "phonetic": "/ˈres.kjuː/",
+    "meaning": "cứu ai đó khỏi nguy hiểm",
+    "page": 18
+  },
+  {
+    "stt": 804,
+    "word": "resemble",
+    "type": "v",
+    "phonetic": "/rɪˈzem.bəl/",
+    "meaning": "giống nhau, giống ai đó",
+    "page": 18
+  },
+  {
+    "stt": 805,
+    "word": "reservation",
+    "type": "n",
+    "phonetic": "/ˌrez.ɚˈveɪ.ʃən/",
+    "meaning": "dự phòng",
+    "page": 18
+  },
+  {
+    "stt": 806,
+    "word": "resign",
+    "type": "v",
+    "phonetic": "/rɪˈzaɪn/",
+    "meaning": "bỏ việc, từ chức",
+    "page": 18
+  },
+  {
+    "stt": 807,
+    "word": "resist",
+    "type": "v",
+    "phonetic": "/rɪˈzɪst/",
+    "meaning": "chống lại",
+    "page": 18
+  },
+  {
+    "stt": 808,
+    "word": "resolve",
+    "type": "n, v",
+    "phonetic": "/rɪˈzɑːlv/",
+    "meaning": "quyết tâm, ý kiên quyết",
+    "page": 18
+  },
+  {
+    "stt": 809,
+    "word": "respect",
+    "type": "n",
+    "phonetic": "/riˈspekt/",
+    "meaning": "sự kính trọng; sự ngưỡng mộ",
+    "page": 18
+  },
+  {
+    "stt": 810,
+    "word": "respectable",
+    "type": "adj",
+    "phonetic": "/ris´pektəbl/",
+    "meaning": "đáng trọng; đáng kính",
+    "page": 18
+  },
+  {
+    "stt": 811,
+    "word": "respond",
+    "type": "v",
+    "phonetic": "/ri'spond/",
+    "meaning": "hưởng ứng",
+    "page": 18
+  },
+  {
+    "stt": 812,
+    "word": "responsibility",
+    "type": "n",
+    "phonetic": "/rɪˌspɑːn.səˈbɪl.ə.t̬i/",
+    "meaning": "trách nhiệm; sự chịu trách nhiệm; bổn phận; nghĩa vụ",
+    "page": 18
+  },
+  {
+    "stt": 813,
+    "word": "responsible",
+    "type": "adj",
+    "phonetic": "/ri'spɔnsəbl/",
+    "meaning": "chịu trách nhiệm",
+    "page": 19
+  },
+  {
+    "stt": 814,
+    "word": "restructure",
+    "type": "v",
+    "phonetic": "/ri:´strʌktʃə/",
+    "meaning": "cơ cấu lại; tổ chức lại; sắp xếp lại",
+    "page": 19
+  },
+  {
+    "stt": 815,
+    "word": "resume",
+    "type": "v",
+    "phonetic": "/ri´zju:m/",
+    "meaning": "lấy lại, chiếm lại, giành lại; hồi phục lại",
+    "page": 19
+  },
+  {
+    "stt": 816,
+    "word": "retail",
+    "type": "n, adv",
+    "phonetic": "/ˈriteɪl , rɪˈteɪl/",
+    "meaning": "sự bán lẻ, việc bán lẻ",
+    "page": 19
+  },
+  {
+    "stt": 817,
+    "word": "retire",
+    "type": "v",
+    "phonetic": "/ri´taiə /",
+    "meaning": "rời bỏ, đi ra, rút về, lui về (một nơi nào kín đáo...)",
+    "page": 19
+  },
+  {
+    "stt": 818,
+    "word": "retirement",
+    "type": "n",
+    "phonetic": "/rɪˈtaɪərmənt/",
+    "meaning": "sự ẩn dật, sự về hưu",
+    "page": 19
+  },
+  {
+    "stt": 819,
+    "word": "revamp",
+    "type": "v",
+    "phonetic": "/ˌriːˈvæmp/",
+    "meaning": "tân trang, sửa chữa",
+    "page": 19
+  },
+  {
+    "stt": 820,
+    "word": "revise",
+    "type": "v, n",
+    "phonetic": "/ri'vaiz/",
+    "meaning": "đọc lại, xem lại, duyệt lại, xét lại",
+    "page": 19
+  },
+  {
+    "stt": 821,
+    "word": "revised",
+    "type": "v, n",
+    "phonetic": "/ri'vaiz/",
+    "meaning": "đọc lại, xem lại, duyệt lại, xét lại",
+    "page": 19
+  },
+  {
+    "stt": 822,
+    "word": "right",
+    "type": "n",
+    "phonetic": "/rait/",
+    "meaning": "điều tốt, điều phải, điều đứng đắn",
+    "page": 19
+  },
+  {
+    "stt": 823,
+    "word": "rival",
+    "type": "n, adj",
+    "phonetic": "/raivl/",
+    "meaning": "đối thủ, địch thủ, đối địch, kình địch",
+    "page": 19
+  },
+  {
+    "stt": 824,
+    "word": "roadside",
+    "type": "n, adj",
+    "phonetic": "/´roud¸said/",
+    "meaning": "bờ đường, lề đường",
+    "page": 19
+  },
+  {
+    "stt": 825,
+    "word": "roughly",
+    "type": "adv",
+    "phonetic": "/'rʌfli/",
+    "meaning": "ráp, xù xì, gồ ghề, không bằng phẳng",
+    "page": 19
+  },
+  {
+    "stt": 826,
+    "word": "route",
+    "type": "n",
+    "phonetic": "/raʊt/",
+    "meaning": "tuyến đường; lộ trình; đường đi",
+    "page": 19
+  },
+  {
+    "stt": 827,
+    "word": "runway",
+    "type": "n",
+    "phonetic": "/´rʌn¸wei/",
+    "meaning": "đường băng",
+    "page": 19
+  },
+  {
+    "stt": 828,
+    "word": "salary",
+    "type": "n",
+    "phonetic": "/ˈsæləri/",
+    "meaning": "tiền lương",
+    "page": 19
+  },
+  {
+    "stt": 829,
+    "word": "sale",
+    "type": "n",
+    "phonetic": "/seil/",
+    "meaning": "sự bán, việc bán",
+    "page": 19
+  },
+  {
+    "stt": 830,
+    "word": "salvage",
+    "type": "n",
+    "phonetic": "/´sælvidʒ/",
+    "meaning": "sự cứu hộ; sự cứu chạy (khỏi đám cháy, mưa lũ..)",
+    "page": 19
+  },
+  {
+    "stt": 831,
+    "word": "sample",
+    "type": "n",
+    "phonetic": "/´sa:mpl/",
+    "meaning": "mẫu; vật mẫu, hàng mẫu",
+    "page": 19
+  },
+  {
+    "stt": 832,
+    "word": "satisfactory",
+    "type": "adj",
+    "phonetic": "/,sætis'fæktəri/",
+    "meaning": "vừa lòng, vừa ý; thoả mãn (tuy không xuất sắc lắm)",
+    "page": 19
+  },
+  {
+    "stt": 833,
+    "word": "satisfied",
+    "type": "adj",
+    "phonetic": "/'sætisfaid/",
+    "meaning": "cảm thấy hài lòng, cảm thấy vừa ý; thoả mãn",
+    "page": 19
+  },
+  {
+    "stt": 834,
+    "word": "satisfy",
+    "type": "v",
+    "phonetic": "/'sætisfai/",
+    "meaning": "làm thoả mãn, làm hài lòng",
+    "page": 19
+  },
+  {
+    "stt": 835,
+    "word": "save",
+    "type": "n",
+    "phonetic": "/seiv/",
+    "meaning": "cứu nguy, cứu vãn",
+    "page": 19
+  },
+  {
+    "stt": 836,
+    "word": "savvy",
+    "type": "n",
+    "phonetic": "/ˈsæv.i/",
+    "meaning": "sự hiểu biết, nắm rõ",
+    "page": 19
+  },
+  {
+    "stt": 837,
+    "word": "scene",
+    "type": "n",
+    "phonetic": "/si:n/",
+    "meaning": "quang cảnh",
+    "page": 19
+  },
+  {
+    "stt": 838,
+    "word": "scenery",
+    "type": "n",
+    "phonetic": "/'si:nəri/",
+    "meaning": "phong cảnh, cảnh vật",
+    "page": 19
+  },
+  {
+    "stt": 839,
+    "word": "schedule",
+    "type": "n",
+    "phonetic": "/'skedʒu:l/",
+    "meaning": "kế hoạch làm việc, tiến độ thi công",
+    "page": 19
+  },
+  {
+    "stt": 840,
+    "word": "scrutinize",
+    "type": "v",
+    "phonetic": "/´skru:ti¸naiz/",
+    "meaning": "chăm chú, nhìn kỹ; xem xét kỹ lưỡng",
+    "page": 19
+  },
+  {
+    "stt": 841,
+    "word": "search",
+    "type": "n, v",
+    "phonetic": "/sə:t∫/",
+    "meaning": "sự nhìn để tìm, nhìn để tìm, thăm dò",
+    "page": 19
+  },
+  {
+    "stt": 842,
+    "word": "secluded",
+    "type": "adj",
+    "phonetic": "/si´klu:did/",
+    "meaning": "hẻo lánh; không có nhiều người trông thấy",
+    "page": 19
+  },
+  {
+    "stt": 843,
+    "word": "secretarial",
+    "type": "adj",
+    "phonetic": "/¸sekri´tɛəriəl/",
+    "meaning": "(thuộc) thư ký",
+    "page": 19
+  },
+  {
+    "stt": 844,
+    "word": "secretary",
+    "type": "n",
+    "phonetic": "/'sekrətri/",
+    "meaning": "thư ký",
+    "page": 19
+  },
+  {
+    "stt": 845,
+    "word": "select",
+    "type": "v",
+    "phonetic": "/si´lekt/",
+    "meaning": "lựa chọn, chọn lọc, tuyển chọn",
+    "page": 19
+  },
+  {
+    "stt": 846,
+    "word": "selection",
+    "type": "n",
+    "phonetic": "/si'lekʃn/",
+    "meaning": "sự lựa chọn, sự chọn lọc, sự tuyển lựa",
+    "page": 19
+  },
+  {
+    "stt": 847,
+    "word": "selective",
+    "type": "adj",
+    "phonetic": "/si'lektiv/",
+    "meaning": "có tuyển chọn; dựa trên sự tuyển chọn",
+    "page": 19
+  },
+  {
+    "stt": 848,
+    "word": "seminar",
+    "type": "n",
+    "phonetic": "/¸semi´na:/",
+    "meaning": "hội nghị chuyên đề",
+    "page": 19
+  },
+  {
+    "stt": 849,
+    "word": "senior",
+    "type": "adj",
+    "phonetic": "/'si:niə/",
+    "meaning": "nhiều tuổi hơn; cao hơn về cấp bậc (chức quyền..); lâu năm hơn",
+    "page": 19
+  },
+  {
+    "stt": 850,
+    "word": "sequel",
+    "type": "n",
+    "phonetic": "/ˈsiː.kwəl/",
+    "meaning": "sự tiếp tục, nối tiếp, kết quả",
+    "page": 19
+  },
+  {
+    "stt": 851,
+    "word": "serious",
+    "type": "adj",
+    "phonetic": "/'siəriəs/",
+    "meaning": "đứng đắn, nghiêm trang, nghiêm nghị",
+    "page": 19
+  },
+  {
+    "stt": 852,
+    "word": "service",
+    "type": "n",
+    "phonetic": "/'sə:vis/",
+    "meaning": "sự phục vụ, sự hầu hạ",
+    "page": 19
+  },
+  {
+    "stt": 853,
+    "word": "several",
+    "type": "adj",
+    "phonetic": "/'sevrəl/",
+    "meaning": "vài, riêng, cá nhân; khác nhau",
+    "page": 19
+  },
+  {
+    "stt": 854,
+    "word": "shape",
+    "type": "n",
+    "phonetic": "/ʃeip/",
+    "meaning": "hình, hình dạng, hình thù",
+    "page": 19
+  },
+  {
+    "stt": 855,
+    "word": "sharp",
+    "type": "adj",
+    "phonetic": "/ʃɑrp/",
+    "meaning": "sắc, nhọn, bén",
+    "page": 19
+  },
+  {
+    "stt": 856,
+    "word": "shift",
+    "type": "n",
+    "phonetic": "/ʃift/",
+    "meaning": "sự thay đổi (về vị trí, bản chất, hình dáng..)",
+    "page": 19
+  },
+  {
+    "stt": 857,
+    "word": "shine",
+    "type": "n",
+    "phonetic": "/ʃain/",
+    "meaning": "ánh sáng; ánh nắng; sự chói sáng, độ sáng",
+    "page": 20
+  },
+  {
+    "stt": 858,
+    "word": "shipment",
+    "type": "n",
+    "phonetic": "/´ʃipmənt/",
+    "meaning": "việc gửi hàng; việc chất hàng lên tàu",
+    "page": 20
+  },
+  {
+    "stt": 859,
+    "word": "shipping",
+    "type": "n",
+    "phonetic": "/ˈʃɪp.ɪŋ/",
+    "meaning": "đang chuyển hàng",
+    "page": 20
+  },
+  {
+    "stt": 860,
+    "word": "shortage",
+    "type": "n",
+    "phonetic": "/ˈʃɔːr.t̬ɪdʒ/",
+    "meaning": "sự thiếu sót",
+    "page": 20
+  },
+  {
+    "stt": 861,
+    "word": "shuttle",
+    "type": "n",
+    "phonetic": "/ˈʃʌt̬.əl/",
+    "meaning": "xe đưa đón",
+    "page": 20
+  },
+  {
+    "stt": 862,
+    "word": "sightseeing",
+    "type": "n",
+    "phonetic": "/ˈsaɪtˌsiː.ɪŋ/",
+    "meaning": "tham quan",
+    "page": 20
+  },
+  {
+    "stt": 863,
+    "word": "significant",
+    "type": "adj",
+    "phonetic": "/sɪɡˈnɪf.ə.kənt/",
+    "meaning": "quan trọng",
+    "page": 20
+  },
+  {
+    "stt": 864,
+    "word": "simplify",
+    "type": "v",
+    "phonetic": "/ˈsɪm.plə.faɪ/",
+    "meaning": "đơn giản hóa",
+    "page": 20
+  },
+  {
+    "stt": 865,
+    "word": "situation",
+    "type": "n",
+    "phonetic": "/ˌsɪtʃ.uˈeɪ.ʃən/",
+    "meaning": "tình hình",
+    "page": 20
+  },
+  {
+    "stt": 866,
+    "word": "slump",
+    "type": "v",
+    "phonetic": "/slʌmp/",
+    "meaning": "sự sụt giảm",
+    "page": 20
+  },
+  {
+    "stt": 867,
+    "word": "software",
+    "type": "n",
+    "phonetic": "/ˈsɑːft.wer/",
+    "meaning": "phần mềm",
+    "page": 20
+  },
+  {
+    "stt": 868,
+    "word": "solar",
+    "type": "adj",
+    "phonetic": "/ˈsoʊ.lɚ/",
+    "meaning": "hệ mặt trời",
+    "page": 20
+  },
+  {
+    "stt": 869,
+    "word": "spacious",
+    "type": "adj",
+    "phonetic": "/ˈspeɪ.ʃəs/",
+    "meaning": "rộng rãi",
+    "page": 20
+  },
+  {
+    "stt": 870,
+    "word": "spare part",
+    "type": "n",
+    "phonetic": "/ˈspeər ˈpɑrt/",
+    "meaning": "phụ tùng",
+    "page": 20
+  },
+  {
+    "stt": 871,
+    "word": "spare time",
+    "type": "n",
+    "phonetic": "/ˈspeər ˈtɑɪm/",
+    "meaning": "thời gian rảnh",
+    "page": 20
+  },
+  {
+    "stt": 872,
+    "word": "specialize",
+    "type": "v",
+    "phonetic": "/ˈspeʃ.ə.laɪz/",
+    "meaning": "chuyên môn hóa",
+    "page": 20
+  },
+  {
+    "stt": 873,
+    "word": "specialty",
+    "type": "n",
+    "phonetic": "/ˈspeʃ.əl.ti/",
+    "meaning": "chuyên môn",
+    "page": 20
+  },
+  {
+    "stt": 874,
+    "word": "specification",
+    "type": "n",
+    "phonetic": "/ˌspes.ə.fəˈkeɪ.ʃən/",
+    "meaning": "chi tiết, đặc điểm",
+    "page": 20
+  },
+  {
+    "stt": 875,
+    "word": "specify",
+    "type": "v",
+    "phonetic": "/ˈspes.ə.faɪ/",
+    "meaning": "giải thích, miêu tả",
+    "page": 20
+  },
+  {
+    "stt": 876,
+    "word": "spectator",
+    "type": "n",
+    "phonetic": "/spekˈteɪ.t̬ɚ/",
+    "meaning": "khán giả",
+    "page": 20
+  },
+  {
+    "stt": 877,
+    "word": "stable",
+    "type": "adj",
+    "phonetic": "/ˈsteɪ.bəl/",
+    "meaning": "ổn định",
+    "page": 20
+  },
+  {
+    "stt": 878,
+    "word": "stadium",
+    "type": "n",
+    "phonetic": "/ˈsteɪ.di.əm/",
+    "meaning": "sân vận động",
+    "page": 20
+  },
+  {
+    "stt": 879,
+    "word": "staff",
+    "type": "n",
+    "phonetic": "/stæf/",
+    "meaning": "nhân viên",
+    "page": 20
+  },
+  {
+    "stt": 880,
+    "word": "stapler",
+    "type": "n",
+    "phonetic": "/ˈsteɪ.plɚ/",
+    "meaning": "người phân loại",
+    "page": 20
+  },
+  {
+    "stt": 881,
+    "word": "stare",
+    "type": "v",
+    "phonetic": "/ster/",
+    "meaning": "nhìn chằm chằm",
+    "page": 20
+  },
+  {
+    "stt": 882,
+    "word": "starter",
+    "type": "n",
+    "phonetic": "/ˈstɑːr.t̬ɚ/",
+    "meaning": "người ra lệnh xuất phát, món khai vị",
+    "page": 20
+  },
+  {
+    "stt": 883,
+    "word": "stationery",
+    "type": "n",
+    "phonetic": "/ˈsteɪ.ʃə.ner.i/",
+    "meaning": "đồ dùng văn phòng",
+    "page": 20
+  },
+  {
+    "stt": 884,
+    "word": "steep",
+    "type": "adj",
+    "phonetic": "/stiːp/",
+    "meaning": "quá quắt, không biết điều",
+    "page": 20
+  },
+  {
+    "stt": 885,
+    "word": "stock",
+    "type": "n",
+    "phonetic": "/stɑːk/",
+    "meaning": "kho hàng, kho dự trữ",
+    "page": 20
+  },
+  {
+    "stt": 886,
+    "word": "strategic",
+    "type": "adj",
+    "phonetic": "/strəˈtiː.dʒɪk/",
+    "meaning": "mang tính chiến lược",
+    "page": 20
+  },
+  {
+    "stt": 887,
+    "word": "strategy",
+    "type": "v",
+    "phonetic": "/'strætəʤɪ/",
+    "meaning": "chiến lược",
+    "page": 20
+  },
+  {
+    "stt": 888,
+    "word": "streamline",
+    "type": "v",
+    "phonetic": "/ˈstriːm.laɪn/",
+    "meaning": "dòng nước, luồng không khí",
+    "page": 20
+  },
+  {
+    "stt": 889,
+    "word": "strike",
+    "type": "v",
+    "phonetic": "/straɪk/",
+    "meaning": "đánh đập",
+    "page": 20
+  },
+  {
+    "stt": 890,
+    "word": "studio",
+    "type": "n",
+    "phonetic": "/ˈstuː.di.oʊ/",
+    "meaning": "phòng thu âm",
+    "page": 20
+  },
+  {
+    "stt": 891,
+    "word": "stunning",
+    "type": "adj",
+    "phonetic": "/ˈstʌn.ɪŋ/",
+    "meaning": "tuyệt vời, lộng lẫy",
+    "page": 20
+  },
+  {
+    "stt": 892,
+    "word": "submit",
+    "type": "v",
+    "phonetic": "/səbˈmɪt/",
+    "meaning": "xác nhận, gửi đi",
+    "page": 20
+  },
+  {
+    "stt": 893,
+    "word": "subscribe",
+    "type": "v",
+    "phonetic": "/səbˈskraɪb/",
+    "meaning": "đăng ký",
+    "page": 20
+  },
+  {
+    "stt": 894,
+    "word": "subscription",
+    "type": "n",
+    "phonetic": "/səbˈskrɪp.ʃən/",
+    "meaning": "sự đăng ký",
+    "page": 20
+  },
+  {
+    "stt": 895,
+    "word": "subsidiary",
+    "type": "adj",
+    "phonetic": "/səbˈsɪd.i.er.i/",
+    "meaning": "sự lệ thuộc",
+    "page": 20
+  },
+  {
+    "stt": 896,
+    "word": "suffocate",
+    "type": "v",
+    "phonetic": "/ˈsʌf.ə.keɪt/",
+    "meaning": "làm ngạt, bóp nghẹt",
+    "page": 20
+  },
+  {
+    "stt": 897,
+    "word": "suggest",
+    "type": "v",
+    "phonetic": "/səˈdʒest/",
+    "meaning": "đề xuất",
+    "page": 20
+  },
+  {
+    "stt": 898,
+    "word": "suggestion",
+    "type": "n",
+    "phonetic": "/səˈdʒes.tʃən/",
+    "meaning": "sự đề xuất",
+    "page": 20
+  },
+  {
+    "stt": 899,
+    "word": "suit",
+    "type": "n",
+    "phonetic": "/suːt/",
+    "meaning": "bộ vest",
+    "page": 20
+  },
+  {
+    "stt": 900,
+    "word": "suitability",
+    "type": "n",
+    "phonetic": "/ˌsuː.t̬əˈbɪl.ə.t̬i/",
+    "meaning": "sự thích hợp",
+    "page": 20
+  },
+  {
+    "stt": 901,
+    "word": "suitable",
+    "type": "adj",
+    "phonetic": "/ˈsuː.t̬ə.bəl/",
+    "meaning": "phù hợp , thích hợp",
+    "page": 20
+  },
+  {
+    "stt": 902,
+    "word": "supervise",
+    "type": "v",
+    "phonetic": "/ˈsuː.pɚ.vaɪz/",
+    "meaning": "giám sát",
+    "page": 20
+  },
+  {
+    "stt": 903,
+    "word": "supervision",
+    "type": "n",
+    "phonetic": "/ˌsuː.pɚˈvɪʒ.ən/",
+    "meaning": "sự giám sát",
+    "page": 20
+  },
+  {
+    "stt": 904,
+    "word": "supplier",
+    "type": "n",
+    "phonetic": "/səˈplaɪ.ɚ/",
+    "meaning": "nhà cung cấp",
+    "page": 21
+  },
+  {
+    "stt": 905,
+    "word": "supply",
+    "type": "v",
+    "phonetic": "/səˈplaɪ/",
+    "meaning": "cung cấp",
+    "page": 21
+  },
+  {
+    "stt": 906,
+    "word": "support",
+    "type": "v",
+    "phonetic": "/səˈpɔːrt/",
+    "meaning": "trợ giúp",
+    "page": 21
+  },
+  {
+    "stt": 907,
+    "word": "supporter",
+    "type": "n",
+    "phonetic": "/səˈpɔːr.t̬ɚ/",
+    "meaning": "người trợ giúp",
+    "page": 21
+  },
+  {
+    "stt": 908,
+    "word": "surrounding",
+    "type": "adj",
+    "phonetic": "/səˈraʊn.dɪŋ/",
+    "meaning": "bao quanh",
+    "page": 21
+  },
+  {
+    "stt": 909,
+    "word": "suspicious",
+    "type": "adj",
+    "phonetic": "/səˈspɪʃ.əs/",
+    "meaning": "khả nghi",
+    "page": 21
+  },
+  {
+    "stt": 910,
+    "word": "switchboard",
+    "type": "n",
+    "phonetic": "/ˈswɪtʃ.bɔːrd/",
+    "meaning": "tổng đài",
+    "page": 21
+  },
+  {
+    "stt": 911,
+    "word": "systematic",
+    "type": "adj",
+    "phonetic": "/ˌsɪs.təˈmæt̬.ɪk/",
+    "meaning": "có hệ thống",
+    "page": 21
+  },
+  {
+    "stt": 912,
+    "word": "takeover",
+    "type": "n",
+    "phonetic": "/ˈteɪkˌoʊ.vɚ/",
+    "meaning": "tiếp quản",
+    "page": 21
+  },
+  {
+    "stt": 913,
+    "word": "tax",
+    "type": "n",
+    "phonetic": "/tæks/",
+    "meaning": "thuế",
+    "page": 21
+  },
+  {
+    "stt": 914,
+    "word": "technical",
+    "type": "adj",
+    "phonetic": "/ˈtek.nɪ.kəl/",
+    "meaning": "có tính kỹ thuật",
+    "page": 21
+  },
+  {
+    "stt": 915,
+    "word": "technician",
+    "type": "n",
+    "phonetic": "/tekˈnɪʃ.ən/",
+    "meaning": "kỹ thuật viên",
+    "page": 21
+  },
+  {
+    "stt": 916,
+    "word": "temporary",
+    "type": "adj",
+    "phonetic": "/ˈtem.pə.rer.i/",
+    "meaning": "tạm thời",
+    "page": 21
+  },
+  {
+    "stt": 917,
+    "word": "tenant",
+    "type": "n",
+    "phonetic": "/ˈten.ənt/",
+    "meaning": "người thuê nhà",
+    "page": 21
+  },
+  {
+    "stt": 918,
+    "word": "terminate",
+    "type": "v",
+    "phonetic": "/ˈtɝː.mə.neɪt/",
+    "meaning": "chấm dứt",
+    "page": 21
+  },
+  {
+    "stt": 919,
+    "word": "terrible",
+    "type": "adj",
+    "phonetic": "/ˈter.ə.bəl/",
+    "meaning": "kinh khủng",
+    "page": 21
+  },
+  {
+    "stt": 920,
+    "word": "terrific",
+    "type": "adj",
+    "phonetic": "/təˈrɪf.ɪk/",
+    "meaning": "khủng khiếp",
+    "page": 21
+  },
+  {
+    "stt": 921,
+    "word": "theoretical",
+    "type": "adj",
+    "phonetic": "/ˌθiː.əˈret̬.kəl/",
+    "meaning": "mang tính lý thuyết",
+    "page": 21
+  },
+  {
+    "stt": 922,
+    "word": "theory",
+    "type": "n",
+    "phonetic": "/ˈθɪr.i/",
+    "meaning": "học thuyết",
+    "page": 21
+  },
+  {
+    "stt": 923,
+    "word": "thorough",
+    "type": "adj",
+    "phonetic": "/ˈθɝː.ə/",
+    "meaning": "triệt để",
+    "page": 21
+  },
+  {
+    "stt": 924,
+    "word": "tidy",
+    "type": "adj",
+    "phonetic": "/ˈtaɪ.di/",
+    "meaning": "ngăn nắp",
+    "page": 21
+  },
+  {
+    "stt": 925,
+    "word": "tip",
+    "type": "n",
+    "phonetic": "/tɪp/",
+    "meaning": "tiền boa",
+    "page": 21
+  },
+  {
+    "stt": 926,
+    "word": "tour",
+    "type": "n",
+    "phonetic": "/tʊr/",
+    "meaning": "chuyến du lịch",
+    "page": 21
+  },
+  {
+    "stt": 927,
+    "word": "tourism",
+    "type": "n",
+    "phonetic": "/ˈtʊr.ɪ.zəm/",
+    "meaning": "du lịch",
+    "page": 21
+  },
+  {
+    "stt": 928,
+    "word": "tourist",
+    "type": "n",
+    "phonetic": "/ˈtʊr.ɪst/",
+    "meaning": "du khách",
+    "page": 21
+  },
+  {
+    "stt": 929,
+    "word": "towel",
+    "type": "n",
+    "phonetic": "/taʊəl/",
+    "meaning": "cái khăn lau",
+    "page": 21
+  },
+  {
+    "stt": 930,
+    "word": "tower",
+    "type": "n",
+    "phonetic": "/ˈtaʊ.ɚ/",
+    "meaning": "tòa nhà, tháp",
+    "page": 21
+  },
+  {
+    "stt": 931,
+    "word": "track",
+    "type": "n",
+    "phonetic": "/træk/",
+    "meaning": "con đường",
+    "page": 21
+  },
+  {
+    "stt": 932,
+    "word": "trade",
+    "type": "n",
+    "phonetic": "/treɪd/",
+    "meaning": "sự trao đổi (hàng hóa, vật phẩm)",
+    "page": 21
+  },
+  {
+    "stt": 933,
+    "word": "tradition",
+    "type": "n",
+    "phonetic": "/trəˈdɪʃ.ən/",
+    "meaning": "sự truyền thống",
+    "page": 21
+  },
+  {
+    "stt": 934,
+    "word": "traffic",
+    "type": "n",
+    "phonetic": "/ˈtræf.ɪk/",
+    "meaning": "giao thông",
+    "page": 21
+  },
+  {
+    "stt": 935,
+    "word": "training",
+    "type": "n",
+    "phonetic": "/ˈtreɪ.nɪŋ/",
+    "meaning": "sự huấn luyện, sự đào tạo",
+    "page": 21
+  },
+  {
+    "stt": 936,
+    "word": "transfer",
+    "type": "v",
+    "phonetic": "/ˈtræns.fɝː/",
+    "meaning": "chuyển khoản",
+    "page": 21
+  },
+  {
+    "stt": 937,
+    "word": "transform",
+    "type": "v",
+    "phonetic": "/trænsˈfɔːrm/",
+    "meaning": "biến đổi",
+    "page": 21
+  },
+  {
+    "stt": 938,
+    "word": "transformation",
+    "type": "n",
+    "phonetic": "/ˌtræns.fɚˈmeɪ.ʃən/",
+    "meaning": "sự biến đổi",
+    "page": 21
+  },
+  {
+    "stt": 939,
+    "word": "transit",
+    "type": "n",
+    "phonetic": "/ˈtræn.zɪt/",
+    "meaning": "vận chuyển",
+    "page": 21
+  },
+  {
+    "stt": 940,
+    "word": "transportation",
+    "type": "n",
+    "phonetic": "/ˌtræn.spɚˈteɪ.ʃən/",
+    "meaning": "sự vận chuyển",
+    "page": 21
+  },
+  {
+    "stt": 941,
+    "word": "trend",
+    "type": "n",
+    "phonetic": "/trend/",
+    "meaning": "xu hướng",
+    "page": 21
+  },
+  {
+    "stt": 942,
+    "word": "trial",
+    "type": "n",
+    "phonetic": "/traɪəl/",
+    "meaning": "thử nghiệm",
+    "page": 21
+  },
+  {
+    "stt": 943,
+    "word": "triumph",
+    "type": "n",
+    "phonetic": "/ˈtraɪ.əmf/",
+    "meaning": "chiến thắng",
+    "page": 21
+  },
+  {
+    "stt": 944,
+    "word": "trust",
+    "type": "v",
+    "phonetic": "/trʌst/",
+    "meaning": "tin, tin tưởng",
+    "page": 21
+  },
+  {
+    "stt": 945,
+    "word": "turnover",
+    "type": "n",
+    "phonetic": "/ˈtɝːnˌoʊ.vɚ/",
+    "meaning": "doanh số, doanh thu",
+    "page": 21
+  },
+  {
+    "stt": 946,
+    "word": "unconditional",
+    "type": "adj",
+    "phonetic": "/ˌʌn.kənˈdɪʃ.ən.əl/",
+    "meaning": "vô điều kiện",
+    "page": 21
+  },
+  {
+    "stt": 947,
+    "word": "understand",
+    "type": "v",
+    "phonetic": "/ˌʌn.dɚˈstænd/",
+    "meaning": "hiểu, nắm bắt được",
+    "page": 21
+  },
+  {
+    "stt": 948,
+    "word": "unfavorable",
+    "type": "adj",
+    "phonetic": "/ʌnˈfeɪ.vər.ə.bəl/",
+    "meaning": "không thuận lợi",
+    "page": 21
+  },
+  {
+    "stt": 949,
+    "word": "unfortunately",
+    "type": "adj",
+    "phonetic": "/ʌnˈfɔːr.tʃən.ət.li/",
+    "meaning": "không may mắn",
+    "page": 21
+  },
+  {
+    "stt": 950,
+    "word": "uniform",
+    "type": "n",
+    "phonetic": "/ˈjuː.nə.fɔːrm/",
+    "meaning": "đồng phục",
+    "page": 21
+  },
+  {
+    "stt": 951,
+    "word": "unspoiled",
+    "type": "adj",
+    "phonetic": "/ʌnˈspɔɪld/",
+    "meaning": "hoang sơ",
+    "page": 22
+  },
+  {
+    "stt": 952,
+    "word": "unwrap",
+    "type": "v",
+    "phonetic": "/ʌnˈræp/",
+    "meaning": "bóc, mở",
+    "page": 22
+  },
+  {
+    "stt": 953,
+    "word": "upcoming",
+    "type": "adj",
+    "phonetic": "/ˈʌpˌkʌm.ɪŋ/",
+    "meaning": "sắp xảy ra",
+    "page": 22
+  },
+  {
+    "stt": 954,
+    "word": "update",
+    "type": "v",
+    "phonetic": "/ʌpˈdeɪt/",
+    "meaning": "nâng cấp",
+    "page": 22
+  },
+  {
+    "stt": 955,
+    "word": "upgrade",
+    "type": "v",
+    "phonetic": "/ʌpˈɡreɪd/",
+    "meaning": "nâng cấp",
+    "page": 22
+  },
+  {
+    "stt": 956,
+    "word": "upset",
+    "type": "v, adj",
+    "phonetic": "/ʌpˈset/",
+    "meaning": "buồn bã, lo lắng",
+    "page": 22
+  },
+  {
+    "stt": 957,
+    "word": "upstairs",
+    "type": "n",
+    "phonetic": "/ʌpˈsterz/",
+    "meaning": "tầng trên",
+    "page": 22
+  },
+  {
+    "stt": 958,
+    "word": "utility bill",
+    "type": "n",
+    "phonetic": "/juːˈtɪl.ə.t̬i/",
+    "meaning": "/bɪl/ hóa đơn điện nước",
+    "page": 22
+  },
+  {
+    "stt": 959,
+    "word": "vacancy",
+    "type": "n",
+    "phonetic": "/ˈveɪ.kən.si/",
+    "meaning": "vị trí bỏ trống",
+    "page": 22
+  },
+  {
+    "stt": 960,
+    "word": "vacant",
+    "type": "v",
+    "phonetic": "/ˈveɪ.kənt/",
+    "meaning": "bỏ trống",
+    "page": 22
+  },
+  {
+    "stt": 961,
+    "word": "vacation",
+    "type": "n",
+    "phonetic": "/veɪˈkeɪ.ʃən/",
+    "meaning": "kì nghỉ",
+    "page": 22
+  },
+  {
+    "stt": 962,
+    "word": "vaccination",
+    "type": "n",
+    "phonetic": "/ˌvæk.səˈneɪ.ʃən/",
+    "meaning": "tiêm chủng",
+    "page": 22
+  },
+  {
+    "stt": 963,
+    "word": "valuables",
+    "type": "n",
+    "phonetic": "/ˈvæl.jə.bəlz/",
+    "meaning": "vật có giá trị",
+    "page": 22
+  },
+  {
+    "stt": 964,
+    "word": "varied",
+    "type": "adj",
+    "phonetic": "/ˈver.ɪd/",
+    "meaning": "đa dạng",
+    "page": 22
+  },
+  {
+    "stt": 965,
+    "word": "variety",
+    "type": "n",
+    "phonetic": "/vəˈraɪ.ə.t̬i/",
+    "meaning": "sự đa dạng",
+    "page": 22
+  },
+  {
+    "stt": 966,
+    "word": "various",
+    "type": "adj",
+    "phonetic": "/ˈver.i.əs/",
+    "meaning": "đa dạng",
+    "page": 22
+  },
+  {
+    "stt": 967,
+    "word": "vendor",
+    "type": "n",
+    "phonetic": "/ˈven.dɚ/",
+    "meaning": "người bán",
+    "page": 22
+  },
+  {
+    "stt": 968,
+    "word": "venture",
+    "type": "n",
+    "phonetic": "/ˈven.tʃɚ/",
+    "meaning": "liên doanh",
+    "page": 22
+  },
+  {
+    "stt": 969,
+    "word": "venue",
+    "type": "n",
+    "phonetic": "/ˈven.juː/",
+    "meaning": "địa điểm",
+    "page": 22
+  },
+  {
+    "stt": 970,
+    "word": "virus",
+    "type": "n",
+    "phonetic": "/ˈvaɪ.rəs/",
+    "meaning": "virus",
+    "page": 22
+  },
+  {
+    "stt": 971,
+    "word": "vital",
+    "type": "adj",
+    "phonetic": "/ˈvaɪ.t̬əl/",
+    "meaning": "thiết yếu",
+    "page": 22
+  },
+  {
+    "stt": 972,
+    "word": "vivid",
+    "type": "adj",
+    "phonetic": "/ˈvɪv.ɪd/",
+    "meaning": "chói sáng, rực rỡ, sống động",
+    "page": 22
+  },
+  {
+    "stt": 973,
+    "word": "wage",
+    "type": "n",
+    "phonetic": "/weɪdʒ/",
+    "meaning": "tiền công",
+    "page": 22
+  },
+  {
+    "stt": 974,
+    "word": "walkway",
+    "type": "n",
+    "phonetic": "/ˈwɑː.kweɪ/",
+    "meaning": "lối đi",
+    "page": 22
+  },
+  {
+    "stt": 975,
+    "word": "warehouse",
+    "type": "n",
+    "phonetic": "/ˈwer.haʊs/",
+    "meaning": "kho hàng",
+    "page": 22
+  },
+  {
+    "stt": 976,
+    "word": "warn",
+    "type": "v",
+    "phonetic": "/wɔːrn/",
+    "meaning": "cảnh báo",
+    "page": 22
+  },
+  {
+    "stt": 977,
+    "word": "warning",
+    "type": "n",
+    "phonetic": "/ˈwɔːr.nɪŋ/",
+    "meaning": "sự cảnh báo",
+    "page": 22
+  },
+  {
+    "stt": 978,
+    "word": "warrant",
+    "type": "v",
+    "phonetic": "/ˈwɔːr.ənt/",
+    "meaning": "bảo đảm",
+    "page": 22
+  },
+  {
+    "stt": 979,
+    "word": "warranty",
+    "type": "n",
+    "phonetic": "/ˈwɔːr.ən.t̬i/",
+    "meaning": "sự bảo đảm",
+    "page": 22
+  },
+  {
+    "stt": 980,
+    "word": "wastage",
+    "type": "adj",
+    "phonetic": "/ˈweɪ.stɪdʒ/",
+    "meaning": "lãng phí",
+    "page": 22
+  },
+  {
+    "stt": 981,
+    "word": "waterproof",
+    "type": "adj",
+    "phonetic": "/ˈwɑː.t̬ɚ.pruːf/",
+    "meaning": "chống nước",
+    "page": 22
+  },
+  {
+    "stt": 982,
+    "word": "wealth",
+    "type": "adj",
+    "phonetic": "/welθ/",
+    "meaning": "giàu có",
+    "page": 22
+  },
+  {
+    "stt": 983,
+    "word": "website",
+    "type": "n",
+    "phonetic": "/ˈweb.saɪt/",
+    "meaning": "trang web",
+    "page": 22
+  },
+  {
+    "stt": 984,
+    "word": "weight",
+    "type": "n",
+    "phonetic": "/weɪt/",
+    "meaning": "cân nặng",
+    "page": 22
+  },
+  {
+    "stt": 985,
+    "word": "welfare",
+    "type": "n",
+    "phonetic": "/ˈwel.fer/",
+    "meaning": "phúc lợi",
+    "page": 22
+  },
+  {
+    "stt": 986,
+    "word": "wholesale",
+    "type": "v",
+    "phonetic": "/ˈhoʊl.seɪl/",
+    "meaning": "bán sỉ, bán buôn",
+    "page": 22
+  },
+  {
+    "stt": 987,
+    "word": "win",
+    "type": "v",
+    "phonetic": "/wɪn/",
+    "meaning": "thắng, chiến thắng",
+    "page": 22
+  },
+  {
+    "stt": 988,
+    "word": "withdraw",
+    "type": "v",
+    "phonetic": "/wɪðˈdrɑː/",
+    "meaning": "rút",
+    "page": 22
+  },
+  {
+    "stt": 989,
+    "word": "withdrawal",
+    "type": "n",
+    "phonetic": "/wɪðˈdrɑː.əl/",
+    "meaning": "sự rút ra (tiền)",
+    "page": 22
+  },
+  {
+    "stt": 990,
+    "word": "workplace",
+    "type": "n",
+    "phonetic": "/ˈwɝːk.pleɪs/",
+    "meaning": "nơi làm việc",
+    "page": 22
+  },
+  {
+    "stt": 991,
+    "word": "workshop",
+    "type": "n",
+    "phonetic": "/ˈwɝːk.ʃɑːp/",
+    "meaning": "hội thảo",
+    "page": 22
+  },
+  {
+    "stt": 992,
+    "word": "worth",
+    "type": "adj",
+    "phonetic": "/wɝːθ/",
+    "meaning": "giá trị",
+    "page": 22
+  },
+  {
+    "stt": 993,
+    "word": "worthless",
+    "type": "adj",
+    "phonetic": "/ˈwɝːθ.ləs/",
+    "meaning": "không có giá trị, vô giá trị",
+    "page": 22
+  },
+  {
+    "stt": 994,
+    "word": "wrap",
+    "type": "v",
+    "phonetic": "/ræp/",
+    "meaning": "gói, bọc lại",
+    "page": 22
+  },
+  {
+    "stt": 995,
+    "word": "write",
+    "type": "v",
+    "phonetic": "/raɪt/",
+    "meaning": "viết, sáng tác",
+    "page": 22
+  },
+  {
+    "stt": 996,
+    "word": "yearly",
+    "type": "adv",
+    "phonetic": "/ˈjɪr.li/",
+    "meaning": "hằng năm",
+    "page": 22
+  },
+  {
+    "stt": 997,
+    "word": "yield",
+    "type": "v",
+    "phonetic": "/jiːld/",
+    "meaning": "sản xuất, cung cấp",
+    "page": 22
+  },
+  {
+    "stt": 998,
+    "word": "youth",
+    "type": "n",
+    "phonetic": "/juːθ/",
+    "meaning": "tuổi trẻ, thời thanh xuân",
+    "page": 23
+  },
+  {
+    "stt": 999,
+    "word": "zero",
+    "type": "n",
+    "phonetic": "/ˈzɪr.oʊ/",
+    "meaning": "số 0",
+    "page": 23
+  },
+  {
+    "stt": 1000,
+    "word": "zone",
+    "type": "n",
+    "phonetic": "/zoʊn/",
+    "meaning": "vùng, khu vực",
+    "page": 23
+  }
+]
