@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server'
 import connectDB from '@/lib/mongodb'
-import Word from '@/models/Word'
+import Word, { type IWord } from '@/models/Word'
 import { getCurrentUser } from '@/lib/auth'
 import vocabularyData from '@/data/toeic1000.json'
+
+type ImportWordInput = Pick<IWord, 'word' | 'type' | 'phonetic' | 'meaning' | 'page'>
 
 // GET all words
 export async function GET(request: Request) {
@@ -71,7 +73,7 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: 'Dữ liệu JSON trống!' }, { status: 400 })
       }
 
-      let wordsArray: Omit<Word, 'stt'>[]
+      let wordsArray: ImportWordInput[]
       try {
         wordsArray = typeof jsonData === 'string' ? JSON.parse(jsonData) : jsonData
         if (!Array.isArray(wordsArray)) {

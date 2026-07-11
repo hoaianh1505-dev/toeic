@@ -1,690 +1,434 @@
-'use client'
-import { useEffect, useState, useRef } from 'react'
+﻿'use client'
+
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/components/AuthContext'
-import Link from 'next/link'
 
 interface ToeicQuestion {
   _id: string
   part: number
   category: string
   passage?: string
-  imageUrl?: string
-  audioUrl?: string
   questionText: string
   choices: string[]
   correctAnswer: string
   explanation?: string
+  sourcePdf?: string
 }
 
 const PART_INFO = [
-  { part: 1, title: 'Part 1: Photographs', type: 'Listening', desc: 'Mô tả hình ảnh bằng âm thanh. Chọn phương án mô tả chính xác nhất bức tranh.', icon: '📸' },
-  { part: 2, title: 'Part 2: Question-Response', type: 'Listening', desc: 'Hỏi - Đáp. Nghe một câu hỏi/phát biểu và chọn câu trả lời phù hợp nhất.', icon: '💬' },
-  { part: 5, title: 'Part 5: Incomplete Sentences', type: 'Reading', desc: 'Hoàn thành câu đơn. Chọn từ loại, thì, từ vựng chính xác để điền vào chỗ trống.', icon: '✏️' },
-  { part: 6, title: 'Part 6: Text Completion', type: 'Reading', desc: 'Hoàn thành đoạn văn. Điền từ loại, liên từ hoặc câu thích hợp vào đoạn văn ngắn.', icon: '📄' },
-  { part: 7, title: 'Part 7: Reading Comprehension', type: 'Reading', desc: 'Đọc hiểu đoạn văn đơn hoặc đoạn văn kép, trả lời các câu hỏi thông tin liên quan.', icon: '📚' },
-]
+  {
+    part: 5,
+    title: 'Part 5: Incomplete Sentences',
+    desc: 'Luyen cac cau dien tu va ngu phap tu bo noi dung trong folder pdf.',
+    icon: '✏️',
+  },
+  {
+    part: 6,
+    title: 'Part 6: Text Completion',
+    desc: 'Lam bai theo doan van trich tu file dap an trong folder pdf.',
+    icon: '📄',
+  },
+  {
+    part: 7,
+    title: 'Part 7: Reading Comprehension',
+    desc: 'Doc hieu va tra loi cau hoi tu bo reading practice trich tu pdf.',
+    icon: '📚',
+  },
+] as const
 
 export default function PracticePage() {
   const { user, loading: authLoading } = useAuth()
   const router = useRouter()
 
-  // State Management
   const [activePart, setActivePart] = useState<number | null>(null)
   const [questions, setQuestions] = useState<ToeicQuestion[]>([])
-  const [currentIdx, setCurrentIdx] = useState<number>(0)
-  const [answers, setAnswers] = useState<Record<string, string>>({}) // questionId -> selectedChoice ('A' | 'B' | 'C' | 'D')
-  const [isTesting, setIsTesting] = useState<boolean>(false)
-  const [isFinished, setIsFinished] = useState<boolean>(false)
-  const [loading, setLoading] = useState<boolean>(false)
-  
-  // Audio Player State
-  const [isPlayingTTS, setIsPlayingTTS] = useState<boolean>(false)
-  
-  // Timer State
-  const [timeElapsed, setTimeElapsed] = useState<number>(0)
+  const [currentIdx, setCurrentIdx] = useState(0)
+  const [answers, setAnswers] = useState<Record<string, string>>({})
+  const [loading, setLoading] = useState(false)
+  const [isTesting, setIsTesting] = useState(false)
+  const [isFinished, setIsFinished] = useState(false)
+  const [timeElapsed, setTimeElapsed] = useState(0)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     if (!authLoading && !user) {
       router.push('/login')
     }
-  }, [user, authLoading, router])
+  }, [authLoading, router, user])
 
-  // Stop TTS speech when switching questions or exiting
   useEffect(() => {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      setIsPlayingTTS(false)
+    if (!isTesting || isFinished) {
+      if (timerRef.current) clearInterval(timerRef.current)
+      return
     }
-  }, [currentIdx, activePart])
 
-  // Handle Timer
-  useEffect(() => {
-    if (isTesting && !isFinished) {
-      timerRef.current = setInterval(() => {
-        setTimeElapsed((prev) => prev + 1)
-      }, 1000)
-    } else {
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-      }
-    }
+    timerRef.current = setInterval(() => {
+      setTimeElapsed((prev) => prev + 1)
+    }, 1000)
 
     return () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-      }
+      if (timerRef.current) clearInterval(timerRef.current)
     }
-  }, [isTesting, isFinished])
+  }, [isFinished, isTesting])
 
-  // Load Questions for Selected Part
   async function startPractice(part: number) {
     setLoading(true)
     setActivePart(part)
-    setAnswers({})
     setCurrentIdx(0)
-    setTimeElapsed(0)
+    setAnswers({})
     setIsFinished(false)
-    
+    setTimeElapsed(0)
+
     try {
       const res = await fetch(`/api/toeic-questions?part=${part}`)
       const data = await res.json()
-      if (data.error) {
-        alert(data.error)
-        setActivePart(null)
-      } else {
-        setQuestions(data.questions || [])
-        setIsTesting(true)
+      if (!res.ok) {
+        throw new Error(data.error || 'Khong the tai du lieu luyen thi')
       }
-    } catch (e) {
-      console.error(e)
-      alert('Không thể tải đề thi. Vui lòng kiểm tra kết nối cơ sở dữ liệu.')
+
+      setQuestions(data.questions || [])
+      setIsTesting(true)
+    } catch (error) {
+      console.error(error)
+      alert('Khong the tai bo cau hoi tu folder pdf.')
       setActivePart(null)
+      setIsTesting(false)
     } finally {
       setLoading(false)
     }
   }
 
-  // Play Native TTS voice for listening tests
-  function playQuestionTTS() {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel() // Stop any ongoing speech
-      
-      const question = questions[currentIdx]
-      if (!question) return
-
-      let textToSpeak = ''
-      if (question.part === 1) {
-        // Read options A, B, C, D aloud for Part 1
-        textToSpeak = "Look at the picture and listen to the options. " + question.choices.map((c, i) => `Option ${String.fromCharCode(65 + i)}: ${c.replace(/^\([A-D]\)\s*/, '')}`).join(". ")
-      } else if (question.part === 2) {
-        // Read question then choices for Part 2
-        const cleanPrompt = question.questionText.replace(/^Listen to the question:\s*"/, '').replace(/"$/, '')
-        textToSpeak = "Question: " + cleanPrompt + ". " + question.choices.map((c, i) => `Option ${String.fromCharCode(65 + i)}: ${c.replace(/^\([A-D]\)\s*/, '')}`).join(". ")
-      } else {
-        textToSpeak = question.questionText
-      }
-
-      const utterance = new SpeechSynthesisUtterance(textToSpeak)
-      utterance.lang = 'en-US'
-      utterance.rate = 0.88 // Slightly slower native rate for TOEIC clarity
-      
-      utterance.onstart = () => setIsPlayingTTS(true)
-      utterance.onend = () => setIsPlayingTTS(false)
-      utterance.onerror = () => setIsPlayingTTS(false)
-      
-      window.speechSynthesis.speak(utterance)
-    } else {
-      alert('Trình duyệt của bạn không hỗ trợ phát âm tự động (SpeechSynthesis).')
-    }
-  }
-
-  // Stop TTS playback
-  function stopTTS() {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      setIsPlayingTTS(false)
-    }
-  }
-
-  // Auto seed database if empty
-  async function forceSeed() {
-    setLoading(true)
-    try {
-      const res = await fetch('/api/toeic-questions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'seed' })
-      })
-      const data = await res.json()
-      alert(data.message || 'Seed database thành công!')
-    } catch {
-      alert('Có lỗi xảy ra khi seed cơ sở dữ liệu.')
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  // Format time (seconds -> MM:SS)
-  function formatTime(sec: number): string {
-    const mins = Math.floor(sec / 60)
-    const secs = sec % 60
-    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
-  }
-
-  // Handle answer selection during test
-  function selectAnswer(questionId: string, choice: string) {
+  function chooseAnswer(questionId: string, answer: string) {
     if (isFinished) return
-    setAnswers(prev => ({
-      ...prev,
-      [questionId]: choice
-    }))
+    setAnswers((prev) => ({ ...prev, [questionId]: answer }))
   }
 
-  // Submit test
   function submitTest() {
-    // Check if there are unanswered questions
-    const unansweredCount = questions.length - Object.keys(answers).length
-    if (unansweredCount > 0) {
-      const confirmSubmit = confirm(`Bạn còn ${unansweredCount} câu chưa trả lời. Bạn vẫn muốn nộp bài?`)
-      if (!confirmSubmit) return
+    const unanswered = questions.length - Object.keys(answers).length
+    if (unanswered > 0) {
+      const confirmed = confirm(`Ban con ${unanswered} cau chua tra loi. Ban van muon nop bai?`)
+      if (!confirmed) return
     }
     setIsFinished(true)
   }
 
-  // Reset page
-  function exitPractice() {
-    setIsTesting(false)
-    setIsFinished(false)
+  function resetPractice() {
     setActivePart(null)
     setQuestions([])
+    setCurrentIdx(0)
     setAnswers({})
+    setIsTesting(false)
+    setIsFinished(false)
+    setTimeElapsed(0)
   }
 
-  // Get choice styling for standard choices
-  function getChoiceLabel(idx: number): string {
-    return String.fromCharCode(65 + idx)
+  function formatTime(totalSeconds: number) {
+    const minutes = Math.floor(totalSeconds / 60)
+    const seconds = totalSeconds % 60
+    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
   }
+
+  const currentQuestion = questions[currentIdx]
+
+  const score = useMemo(
+    () => questions.filter((question) => answers[question._id] === question.correctAnswer).length,
+    [answers, questions]
+  )
+  const percent = questions.length ? Math.round((score / questions.length) * 100) : 0
 
   if (authLoading) {
     return (
       <div className="loading-center">
         <div className="spinner" />
-        <p>Đang tải trang luyện thi...</p>
+        <p>Dang tai trang luyen thi...</p>
       </div>
     )
   }
 
   if (!user) return null
 
-  // Loading Screen
   if (loading) {
     return (
       <div className="loading-center">
         <div className="spinner" />
-        <p>Đang chuẩn bị đề thi...</p>
+        <p>Dang doc du lieu tu folder pdf...</p>
       </div>
     )
   }
 
-  // SCREEN 1: PART SELECTION
   if (!isTesting) {
     return (
-      <div className="vocab-container animate-fade-up" style={{ maxWidth: '1250px', width: '100%', margin: '0 auto' }}>
-        
-        {/* Header Title */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
-          <div>
-            <span style={{ fontSize: '0.78rem', fontWeight: '800', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-              LUYỆN TẬP TOÀN DIỆN
-            </span>
-            <h1 className="section-title" style={{ marginTop: '4px', marginBottom: '8px', fontSize: '1.8rem' }}>
-              📊 Thi Thử TOEIC Theo Từng Part
-            </h1>
-            <p className="section-sub" style={{ margin: 0 }}>Lựa chọn các Part nghe/đọc dưới đây để kiểm tra trình độ và xem lời giải ngữ pháp chi tiết.</p>
+      <div className="vocab-container animate-fade-up" style={{ maxWidth: '1180px', margin: '0 auto' }}>
+        <div className="card" style={{ padding: '28px', marginBottom: '24px' }}>
+          <div style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            PDF Reading Mode
           </div>
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <button className="btn btn-ghost" onClick={forceSeed} style={{ padding: '10px 18px', fontSize: '0.85rem' }}>
-              🔄 Reset / Seed Lại Đề Thi
-            </button>
-          </div>
+          <h1 style={{ margin: '8px 0 12px', fontSize: '1.8rem' }}>Luyen thi TOEIC Part 5, 6, 7</h1>
+          <p style={{ margin: 0, color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+            Tinh nang nay da duoc lam lai de bo phan luyen thi chi dung noi dung trich tu folder <code>pdf/</code>.
+            Hien tai bo cau hoi dang lay tu <code>DA2.pdf</code> va tap trung vao phan Reading.
+          </p>
         </div>
 
-        {/* Part Selection Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '20px' }}>
-          {PART_INFO.map(part => (
-            <div key={part.part} className="card" style={{ display: 'flex', flexDirection: 'column', gap: '16px', padding: '28px', justifyContent: 'space-between' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontSize: '2.5rem' }}>{part.icon}</span>
-                  <span style={{
-                    fontSize: '0.75rem',
-                    fontWeight: '800',
-                    textTransform: 'uppercase',
-                    padding: '4px 10px',
-                    borderRadius: '4px',
-                    background: part.type === 'Listening' ? 'rgba(59, 130, 246, 0.15)' : 'rgba(16, 185, 129, 0.15)',
-                    color: part.type === 'Listening' ? '#3b82f6' : '#10b981'
-                  }}>
-                    {part.type}
-                  </span>
-                </div>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: '800', color: 'var(--text-primary)', margin: 0 }}>
-                  {part.title}
-                </h3>
-                <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: '1.6', margin: 0 }}>
-                  {part.desc}
-                </p>
-              </div>
-              <button className="btn btn-primary" onClick={() => startPractice(part.part)} style={{ width: '100%', padding: '12px 0', borderRadius: '8px', marginTop: '8px' }}>
-                🚀 Vào Thi Ngay
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+          {PART_INFO.map((part) => (
+            <div key={part.part} className="card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div style={{ fontSize: '2.2rem' }}>{part.icon}</div>
+              <h2 style={{ margin: 0, fontSize: '1.15rem' }}>{part.title}</h2>
+              <p style={{ margin: 0, color: 'var(--text-secondary)', lineHeight: 1.6 }}>{part.desc}</p>
+              <button className="btn btn-primary" onClick={() => startPractice(part.part)} style={{ marginTop: 'auto' }}>
+                Vao luyen Part {part.part}
               </button>
             </div>
           ))}
         </div>
-
       </div>
     )
   }
 
-  // SCREEN 2: ACTIVE MOCK TEST (OR RESULTS INTERFACE)
-  const currentQuestion = questions[currentIdx]
-
-  // Calculate score for final screen
-  const score = questions.filter(q => answers[q._id] === q.correctAnswer).length
-  const passPercent = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0
-
   return (
-    <div className="vocab-container animate-fade-up" style={{ maxWidth: '1250px', width: '100%', margin: '0 auto' }}>
-      
-      {/* Header Info */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '16px' }}>
+    <div className="vocab-container animate-fade-up" style={{ maxWidth: '1240px', margin: '0 auto' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '20px' }}>
         <div>
-          <span style={{ fontSize: '0.78rem', fontWeight: '800', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            {isFinished ? 'KẾT QUẢ THI THỬ' : 'HỆ THỐNG THI THỬ TRỰC TUYẾN'}
-          </span>
-          <h2 style={{ fontSize: '1.45rem', fontWeight: '800', color: 'var(--text-primary)', margin: '4px 0 0 0' }}>
-            {PART_INFO.find(p => p.part === activePart)?.title}
+          <div style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            PDF Practice Set
+          </div>
+          <h2 style={{ margin: '6px 0 0', fontSize: '1.4rem' }}>
+            {PART_INFO.find((item) => item.part === activePart)?.title}
           </h2>
         </div>
-        
-        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-          {/* Timer Card */}
-          <div style={{
-            background: 'var(--bg-card)',
-            border: '1px solid var(--border)',
-            padding: '10px 18px',
-            borderRadius: '8px',
-            fontFamily: 'monospace',
-            fontSize: '1rem',
-            fontWeight: '700',
-            color: 'var(--accent)'
-          }}>
-            ⏱️ {formatTime(timeElapsed)}
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div
+            style={{
+              padding: '10px 16px',
+              borderRadius: '8px',
+              border: '1px solid var(--border)',
+              background: 'var(--bg-card)',
+              fontFamily: 'monospace',
+              fontWeight: 700,
+            }}
+          >
+            {formatTime(timeElapsed)}
           </div>
-          
-          <button className="btn btn-ghost" onClick={exitPractice} style={{ padding: '10px 18px' }}>
-            🚪 Thoát chế độ thi
+          <button className="btn btn-ghost" onClick={resetPractice}>
+            Quay lai
           </button>
         </div>
       </div>
 
-      {/* Main Grid: Passage/Question Area (Left) and Answer Grid (Right) */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '24px', alignItems: 'start' }} className="tips-layout">
-        
-        {/* LEFT PANE: QUESTIONS */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          
-          {/* Results Overview if Finished */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '24px' }} className="tips-layout">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {isFinished && (
-            <div className="card animate-fade-up" style={{ padding: '28px', textAlign: 'center', background: 'rgba(108, 99, 255, 0.05)', borderColor: 'var(--primary)' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--primary)', marginBottom: '8px' }}>
-                🎉 Bạn Đã Hoàn Thành Bài Thi!
-              </h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', margin: '0 0 20px 0' }}>
-                Kết quả thống kê chính xác bài làm của bạn.
+            <div className="card" style={{ padding: '24px', background: 'rgba(16,185,129,0.06)', borderColor: 'rgba(16,185,129,0.25)' }}>
+              <h3 style={{ margin: 0, fontSize: '1.35rem' }}>Ket qua</h3>
+              <p style={{ margin: '8px 0 0', color: 'var(--text-secondary)' }}>
+                Ban dung {score}/{questions.length} cau ({percent}%). Thoi gian lam bai: {formatTime(timeElapsed)}.
               </p>
-              
-              <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', marginBottom: '8px' }}>
-                <div style={{ background: 'var(--bg-card)', padding: '16px 28px', borderRadius: '12px', border: '1px solid var(--border)' }}>
-                  <div style={{ fontSize: '1.8rem', fontWeight: '900', color: '#10b981' }}>{score} / {questions.length}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '700', marginTop: '4px' }}>Số câu đúng</div>
-                </div>
-                <div style={{ background: 'var(--bg-card)', padding: '16px 28px', borderRadius: '12px', border: '1px solid var(--border)' }}>
-                  <div style={{ fontSize: '1.8rem', fontWeight: '900', color: 'var(--accent)' }}>{passPercent}%</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '700', marginTop: '4px' }}>Tỷ lệ đạt</div>
-                </div>
-                <div style={{ background: 'var(--bg-card)', padding: '16px 28px', borderRadius: '12px', border: '1px solid var(--border)' }}>
-                  <div style={{ fontSize: '1.8rem', fontWeight: '900', color: 'var(--text-primary)' }}>{formatTime(timeElapsed)}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '700', marginTop: '4px' }}>Thời gian làm bài</div>
-                </div>
-              </div>
             </div>
           )}
 
-          {/* Passage Container (For Part 6 and 7) */}
-          {currentQuestion && currentQuestion.passage && (
-            <div className="card" style={{ padding: '24px', background: 'var(--bg-card)' }}>
-              <span style={{ fontSize: '0.72rem', fontWeight: '800', background: 'var(--primary)', color: 'white', padding: '3px 8px', borderRadius: '4px', textTransform: 'uppercase' }}>
-                Đoạn văn đọc hiểu (Passage)
-              </span>
-              <pre style={{
-                fontFamily: 'var(--font)',
-                whiteSpace: 'pre-wrap',
-                fontSize: '0.92rem',
-                color: 'var(--text-primary)',
-                lineHeight: '1.7',
-                marginTop: '12px',
-                margin: '12px 0 0 0'
-              }}>
+          {currentQuestion?.passage && (
+            <div className="card" style={{ padding: '24px' }}>
+              <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--primary)', textTransform: 'uppercase', marginBottom: '10px' }}>
+                Passage
+              </div>
+              <pre
+                style={{
+                  margin: 0,
+                  whiteSpace: 'pre-wrap',
+                  fontFamily: 'inherit',
+                  lineHeight: 1.7,
+                  color: 'var(--text-primary)',
+                }}
+              >
                 {currentQuestion.passage}
               </pre>
             </div>
           )}
 
-          {/* Active Question Details */}
           {currentQuestion ? (
-            <div className="card" style={{ padding: '32px', minHeight: '300px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              
-              {/* Question Indicator */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.88rem', fontWeight: '800', color: 'var(--primary)' }}>
-                  CÂU HỎI {currentIdx + 1} / {questions.length}
-                </span>
-                <span style={{
-                  fontSize: '0.75rem',
-                  fontWeight: '700',
-                  padding: '3px 8px',
-                  borderRadius: '4px',
-                  background: 'var(--border)',
-                  color: 'var(--text-muted)'
-                }}>
-                  Chuyên đề: {currentQuestion.category}
+            <div className="card" style={{ padding: '28px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '18px' }}>
+                <strong>
+                  Cau {currentIdx + 1}/{questions.length}
+                </strong>
+                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  Nguon: {currentQuestion.sourcePdf || 'pdf/'}
                 </span>
               </div>
 
-              {/* DYNAMIC AUDIO AND TTS PLAYER PANEL (For Listening Sections) */}
-              {(currentQuestion.audioUrl || currentQuestion.category === 'Listening') && (
-                <div style={{
-                  background: 'rgba(59, 130, 246, 0.06)',
-                  border: '1px solid rgba(59, 130, 246, 0.15)',
-                  padding: '16px 20px',
-                  borderRadius: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  gap: '16px',
-                  flexWrap: 'wrap'
-                }} className="animate-fade">
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span style={{ fontSize: '1.8rem' }}>🎧</span>
-                    <div>
-                      <strong style={{ fontSize: '0.92rem', color: 'var(--text-primary)' }}>
-                        Băng nghe câu hỏi (Audio Track)
-                      </strong>
-                      <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-                        {currentQuestion.audioUrl ? 'Đang sử dụng file ghi âm gốc' : 'Đang sử dụng giọng đọc bản xứ US/UK chất lượng cao'}
-                      </div>
-                    </div>
-                  </div>
+              <h3 style={{ margin: '0 0 18px', lineHeight: 1.6, fontSize: '1.05rem' }}>
+                {currentQuestion.questionText}
+              </h3>
 
-                  <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                    {currentQuestion.audioUrl ? (
-                      <audio src={currentQuestion.audioUrl} controls style={{ height: '36px', borderRadius: '4px' }} />
-                    ) : (
-                      <>
-                        <button
-                          onClick={playQuestionTTS}
-                          className="btn btn-primary btn-sm"
-                          style={{
-                            padding: '8px 16px',
-                            fontSize: '0.82rem',
-                            borderRadius: '6px',
-                            background: isPlayingTTS ? '#10b981' : 'var(--primary)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '6px'
-                          }}
-                        >
-                          {isPlayingTTS ? '🔊 Đang Phát...' : '▶️ Phát Audio'}
-                        </button>
-                        {isPlayingTTS && (
-                          <button
-                            onClick={stopTTS}
-                            className="btn btn-ghost btn-sm"
-                            style={{ padding: '8px 16px', fontSize: '0.82rem', borderRadius: '6px' }}
-                          >
-                            ⏹️ Dừng
-                          </button>
-                        )}
-                      </>
-                    )}
-                  </div>
-                </div>
-              )}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {currentQuestion.choices.map((choice, index) => {
+                  const label = String.fromCharCode(65 + index)
+                  const selected = answers[currentQuestion._id] === label
+                  const isCorrect = currentQuestion.correctAnswer === label
 
-              {/* Part 1 Picture display */}
-              {currentQuestion.imageUrl && (
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <img
-                    src={currentQuestion.imageUrl}
-                    alt="TOEIC Part 1 Photograph"
-                    style={{
-                      maxWidth: '100%',
-                      maxHeight: '350px',
-                      borderRadius: '8px',
-                      border: '1px solid var(--border)',
-                      boxShadow: 'var(--shadow-card)'
-                    }}
-                  />
-                </div>
-              )}
+                  let border = '1px solid var(--border)'
+                  let background = 'transparent'
+                  let color = 'var(--text-primary)'
 
-              {/* Question Prompt */}
-              <div style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-primary)', lineHeight: '1.5' }}>
-                {currentQuestion.category === 'Listening' && currentQuestion.part === 1
-                  ? 'Look at the image and select the option that best describes it.'
-                  : currentQuestion.questionText
-                }
-              </div>
-
-              {/* Answers Grid/List */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '10px' }}>
-                {currentQuestion.choices.map((choice, i) => {
-                  const letter = getChoiceLabel(i)
-                  const isSelected = answers[currentQuestion._id] === letter
-                  
-                  // Styles for review mode
-                  let borderStyle = '1px solid var(--border)'
-                  let bgStyle = 'transparent'
-                  let textColor = 'var(--text-primary)'
-                  
                   if (isFinished) {
-                    const isCorrect = letter === currentQuestion.correctAnswer
-                    const wasSelected = answers[currentQuestion._id] === letter
-                    
                     if (isCorrect) {
-                      borderStyle = '2px solid #10b981'
-                      bgStyle = 'rgba(16, 185, 129, 0.08)'
-                      textColor = '#10b981'
-                    } else if (wasSelected) {
-                      borderStyle = '2px solid #ef4444'
-                      bgStyle = 'rgba(239, 68, 68, 0.08)'
-                      textColor = '#ef4444'
+                      border = '2px solid #10b981'
+                      background = 'rgba(16,185,129,0.08)'
+                      color = '#10b981'
+                    } else if (selected) {
+                      border = '2px solid #ef4444'
+                      background = 'rgba(239,68,68,0.08)'
+                      color = '#ef4444'
                     }
-                  } else {
-                    if (isSelected) {
-                      borderStyle = '2px solid var(--primary)'
-                      bgStyle = 'rgba(108, 99, 255, 0.08)'
-                      textColor = 'var(--primary)'
-                    }
+                  } else if (selected) {
+                    border = '2px solid var(--primary)'
+                    background = 'rgba(108,99,255,0.08)'
+                    color = 'var(--primary)'
                   }
 
                   return (
                     <button
-                      key={letter}
-                      onClick={() => selectAnswer(currentQuestion._id, letter)}
+                      key={label}
+                      type="button"
+                      onClick={() => chooseAnswer(currentQuestion._id, label)}
                       disabled={isFinished}
                       style={{
-                        padding: '16px 20px',
-                        borderRadius: '8px',
-                        border: borderStyle,
-                        background: bgStyle,
-                        color: textColor,
                         textAlign: 'left',
-                        fontSize: '0.92rem',
-                        fontWeight: isSelected || (isFinished && letter === currentQuestion.correctAnswer) ? '700' : '500',
-                        cursor: isFinished ? 'default' : 'pointer',
+                        padding: '15px 18px',
+                        borderRadius: '10px',
+                        border,
+                        background,
+                        color,
                         display: 'flex',
                         alignItems: 'center',
                         gap: '12px',
-                        transition: 'all 0.15s ease'
+                        cursor: isFinished ? 'default' : 'pointer',
                       }}
-                      className={!isFinished ? 'quiz-choice-hover' : ''}
                     >
-                      <span style={{
-                        width: '26px',
-                        height: '26px',
-                        borderRadius: '50%',
-                        border: isSelected || (isFinished && letter === currentQuestion.correctAnswer) ? 'none' : '1px solid var(--border)',
-                        background: isSelected ? 'var(--primary)' : (isFinished && letter === currentQuestion.correctAnswer ? '#10b981' : 'transparent'),
-                        color: isSelected || (isFinished && letter === currentQuestion.correctAnswer) ? 'white' : 'var(--text-muted)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        fontWeight: '800',
-                        fontSize: '0.85rem'
-                      }}>
-                        {letter}
+                      <span
+                        style={{
+                          width: '28px',
+                          height: '28px',
+                          borderRadius: '50%',
+                          border: '1px solid currentColor',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontWeight: 800,
+                          flexShrink: 0,
+                        }}
+                      >
+                        {label}
                       </span>
-                      {choice}
+                      <span>{choice}</span>
                     </button>
                   )
                 })}
               </div>
 
-              {/* Explanations shown only when finished */}
               {isFinished && currentQuestion.explanation && (
-                <div style={{
-                  marginTop: '16px',
-                  background: 'var(--bg-card)',
-                  borderLeft: '4px solid var(--accent)',
-                  padding: '20px',
-                  borderRadius: '8px'
-                }} className="animate-fade-up">
-                  <h4 style={{ color: 'var(--accent)', fontWeight: '800', margin: '0 0 8px 0', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <span>💡</span> Giải thích chi tiết:
-                  </h4>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-primary)', lineHeight: '1.6', margin: 0 }}>
+                <div
+                  style={{
+                    marginTop: '20px',
+                    padding: '18px',
+                    borderRadius: '10px',
+                    background: 'rgba(14,165,233,0.08)',
+                    borderLeft: '4px solid #0ea5e9',
+                  }}
+                >
+                  <div style={{ fontWeight: 800, marginBottom: '8px' }}>
+                    Dap an dung: {currentQuestion.correctAnswer}
+                  </div>
+                  <p style={{ margin: 0, color: 'var(--text-primary)', lineHeight: 1.7 }}>
                     {currentQuestion.explanation}
                   </p>
                 </div>
               )}
 
-              {/* Prev/Next buttons */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px solid var(--border)', paddingTop: '20px', marginTop: '12px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '22px', paddingTop: '18px', borderTop: '1px solid var(--border)' }}>
                 <button
                   className="btn btn-ghost"
-                  onClick={() => setCurrentIdx(prev => Math.max(0, prev - 1))}
+                  onClick={() => setCurrentIdx((prev) => Math.max(prev - 1, 0))}
                   disabled={currentIdx === 0}
-                  style={{ padding: '8px 16px', fontSize: '0.85rem' }}
                 >
-                  ◀️ Câu trước
+                  Cau truoc
                 </button>
                 <button
                   className="btn btn-ghost"
-                  onClick={() => setCurrentIdx(prev => Math.min(questions.length - 1, prev + 1))}
+                  onClick={() => setCurrentIdx((prev) => Math.min(prev + 1, questions.length - 1))}
                   disabled={currentIdx === questions.length - 1}
-                  style={{ padding: '8px 16px', fontSize: '0.85rem' }}
                 >
-                  Câu tiếp theo ▶️
+                  Cau tiep
                 </button>
               </div>
-
             </div>
           ) : (
-            <div className="card" style={{ padding: '40px', textAlign: 'center' }}>
-              <p style={{ color: 'var(--text-secondary)' }}>Không có câu hỏi hợp lệ trong phần thi này.</p>
+            <div className="card" style={{ padding: '24px' }}>
+              Khong co cau hoi hop le cho part nay.
             </div>
           )}
-
         </div>
 
-        {/* RIGHT PANE: TIMER & ANSWER GRID SHEET */}
-        <div className="card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px', position: 'sticky', top: '20px' }}>
-          
-          <h3 style={{ fontSize: '0.95rem', fontWeight: '800', color: 'var(--text-primary)', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-            Bảng Trả Lời (Answer Sheet)
-          </h3>
-
-          {/* Grid circles mapping questions */}
+        <div className="card" style={{ padding: '20px', position: 'sticky', top: '20px', height: 'fit-content' }}>
+          <h3 style={{ marginTop: 0, fontSize: '1rem' }}>Bang cau hoi</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px' }}>
-            {questions.map((q, idx) => {
-              const isAnswered = !!answers[q._id]
-              const isCurrent = currentIdx === idx
-              
-              let bg = 'transparent'
+            {questions.map((question, index) => {
+              const active = currentIdx === index
+              const answered = Boolean(answers[question._id])
+              const correct = answers[question._id] === question.correctAnswer
+
+              let background = 'transparent'
               let border = '1px solid var(--border)'
-              let color = 'var(--text-muted)'
-              
+              let color = 'var(--text-secondary)'
+
               if (isFinished) {
-                const wasCorrect = answers[q._id] === q.correctAnswer
-                bg = wasCorrect ? 'rgba(16, 185, 129, 0.2)' : 'rgba(239, 68, 68, 0.2)'
-                border = wasCorrect ? '1px solid #10b981' : '1px solid #ef4444'
-                color = wasCorrect ? '#10b981' : '#ef4444'
-              } else {
-                if (isCurrent) {
-                  border = '2px solid var(--primary)'
-                  color = 'var(--primary)'
-                } else if (isAnswered) {
-                  bg = 'var(--primary)'
-                  border = '1px solid var(--primary)'
-                  color = 'white'
-                }
+                background = correct ? 'rgba(16,185,129,0.18)' : 'rgba(239,68,68,0.18)'
+                border = correct ? '1px solid #10b981' : '1px solid #ef4444'
+                color = correct ? '#10b981' : '#ef4444'
+              } else if (active) {
+                border = '2px solid var(--primary)'
+                color = 'var(--primary)'
+              } else if (answered) {
+                background = 'var(--primary)'
+                border = '1px solid var(--primary)'
+                color = 'white'
               }
 
               return (
                 <button
-                  key={q._id}
-                  onClick={() => setCurrentIdx(idx)}
+                  key={question._id}
+                  onClick={() => setCurrentIdx(index)}
                   style={{
                     height: '42px',
                     borderRadius: '8px',
-                    background: bg,
-                    border: border,
-                    color: color,
-                    fontWeight: '800',
-                    fontSize: '0.9rem',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    transition: 'all 0.15s ease'
+                    background,
+                    border,
+                    color,
+                    fontWeight: 800,
                   }}
                 >
-                  {idx + 1}
+                  {index + 1}
                 </button>
               )
             })}
           </div>
 
-          <div style={{ borderTop: '1px solid var(--border)', paddingTop: '16px', marginTop: '8px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <div style={{ marginTop: '18px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {!isFinished ? (
-              <button className="btn btn-primary" onClick={submitTest} style={{ width: '100%', padding: '12px 0', borderRadius: '8px', fontWeight: '800' }}>
-                📥 Nộp bài thi
+              <button className="btn btn-primary" onClick={submitTest}>
+                Nop bai
               </button>
             ) : (
-              <button className="btn btn-primary" onClick={exitPractice} style={{ width: '100%', padding: '12px 0', borderRadius: '8px', fontWeight: '800' }}>
-                ↩️ Làm bài thi khác
+              <button className="btn btn-primary" onClick={resetPractice}>
+                Lam bo khac
               </button>
             )}
           </div>
-
         </div>
-
       </div>
-
     </div>
   )
 }

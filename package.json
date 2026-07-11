@@ -6,11 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint app components lib models --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "mongoose": "^8.16.0",
     "next": "^16.2.10",
+    "pdf-parse": "^2.4.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
