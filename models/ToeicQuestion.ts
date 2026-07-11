@@ -10,6 +10,8 @@ export interface IToeicQuestion extends Document {
   choices: string[] // [A, B, C, D]
   correctAnswer: string // 'A' | 'B' | 'C' | 'D'
   explanation?: string
+  blockId?: string
+  sourcePdf?: string
 }
 
 const ToeicQuestionSchema = new Schema<IToeicQuestion>({
@@ -21,7 +23,9 @@ const ToeicQuestionSchema = new Schema<IToeicQuestion>({
   questionText: { type: String, required: true },
   choices: [{ type: String, required: true }],
   correctAnswer: { type: String, required: true, enum: ['A', 'B', 'C', 'D'] },
-  explanation: { type: String }
+  explanation: { type: String },
+  blockId: { type: String },
+  sourcePdf: { type: String }
 }, {
   timestamps: true
 })
