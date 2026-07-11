@@ -267,6 +267,13 @@ async function parsePdfFile(pdfjs, filePath) {
         
         // Parse prompt
         let prompt = qContent.split(/\(A\)/i)[0].replace(/Câu\s+\d+\s*/i, '').trim();
+        if (q.qNum >= 131) {
+          const qNumStr = q.qNum.toString();
+          const numIndex = prompt.indexOf(qNumStr);
+          if (numIndex !== -1) {
+            prompt = prompt.substring(numIndex).trim();
+          }
+        }
         prompt = cleanVietnameseSpacing(prompt);
         
         // Parse explanation & translation
