@@ -46,12 +46,8 @@ if (!MONGODB_URI) {
   process.exit(1);
 }
 
-// Spacing cleanup for Vietnamese
 function cleanVietnameseSpacing(text) {
-  let cleaned = text.replace(/ {2,}/g, ' | ');
-  cleaned = cleaned.replace(/([a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđĐ])\s(?=[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđĐ])/g, '$1');
-  cleaned = cleaned.replace(/ \| /g, ' ');
-  return cleaned;
+  return text.trim();
 }
 
 async function parsePdfFile(pdfjs, filePath) {
@@ -294,31 +290,51 @@ async function main() {
     await mongoose.connect(MONGODB_URI, { dbName: MONGODB_DB });
     console.log('Connected to MongoDB!');
     
-    // Find PDF files to parse
+    // Find PDF files to parse (match all DA1.pdf to DA20.pdf)
     const files = fs.readdirSync(pdfDir)
-      .filter(f => f.endsWith('.pdf'))
-      // Parse the first 3 files to build a rich initial database
-      .slice(0, 3);
+      .filter(f => /^DA\d+\.pdf$/.test(f))
+      // Sort them numerically so they are processed in order
+      .sort((a, b) => {
+        const numA = parseInt(a.match(/\d+/)[0]);
+        const numB = parseInt(b.match(/\d+/)[0]);
+        return numA - numB;
+      });
       
-    console.log(`Will parse ${files.length} files:`, files);
+    const filesToParse = files.slice(0, 2);
+    console.log(`Will parse ${filesToParse.length} files for quick check:`, filesToParse);
     
     let totalImported = 0;
+    const allParsedQuestions = [];
     // Clear existing collection
     await ToeicQuestion.deleteMany({});
     console.log('Cleared existing ToeicQuestion collection.');
     
-    for (const file of files) {
-      const filePath = path.join(pdfDir, file);
-      const questions = await parsePdfFile(pdfjs, filePath);
-      
-      if (questions.length > 0) {
-        await ToeicQuestion.insertMany(questions);
-        totalImported += questions.length;
-        console.log(`Successfully imported ${questions.length} questions from ${file}`);
-      } else {
-        console.log(`No questions imported from ${file}`);
+    for (const file of filesToParse) {
+      try {
+        const filePath = path.join(pdfDir, file);
+        const questions = await parsePdfFile(pdfjs, filePath);
+        
+        if (questions.length > 0) {
+          // Tag questions with source file name
+          questions.forEach(q => {
+            q.sourcePdf = file;
+          });
+          allParsedQuestions.push(...questions);
+          await ToeicQuestion.insertMany(questions);
+          totalImported += questions.length;
+          console.log(`Successfully imported ${questions.length} questions from ${file}`);
+        } else {
+          console.log(`No questions imported from ${file}`);
+        }
+      } catch (fileErr) {
+        console.error(`❌ Error parsing file ${file}:`, fileErr.message);
       }
     }
+    
+    // Save to local JSON file
+    const jsonPath = path.join(__dirname, 'pdf_questions.json');
+    fs.writeFileSync(jsonPath, JSON.stringify(allParsedQuestions, null, 2), 'utf8');
+    console.log(`Saved parsed questions to local JSON: ${jsonPath}`);
     
     console.log(`\n🎉 DONE! Imported a total of ${totalImported} questions for Part 5, 6, 7.`);
     process.exit(0);

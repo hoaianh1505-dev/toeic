@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -49,6 +49,7 @@ export default function PracticePage() {
   const [isTesting, setIsTesting] = useState(false)
   const [isFinished, setIsFinished] = useState(false)
   const [timeElapsed, setTimeElapsed] = useState(0)
+  const [questionLimit, setQuestionLimit] = useState<number>(20)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
@@ -81,7 +82,7 @@ export default function PracticePage() {
     setTimeElapsed(0)
 
     try {
-      const res = await fetch(`/api/toeic-questions?part=${part}`)
+      const res = await fetch(`/api/toeic-questions?part=${part}&limit=${questionLimit}`)
       const data = await res.json()
       if (!res.ok) {
         throw new Error(data.error || 'Khong the tai du lieu luyen thi')
@@ -169,6 +170,28 @@ export default function PracticePage() {
             Tinh nang nay da duoc lam lai de bo phan luyen thi chi dung noi dung trich tu folder <code>pdf/</code>.
             Hien tai bo cau hoi dang lay tu <code>DA2.pdf</code> va tap trung vao phan Reading.
           </p>
+        </div>
+
+        <div className="card" style={{ padding: '20px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <h3 style={{ margin: 0, fontSize: '1rem' }}>Số lượng câu hỏi mỗi lượt luyện</h3>
+            <p style={{ margin: '4px 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+              Chọn số lượng câu hỏi bạn muốn làm trong bài test này.
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            {[10, 20, 30, 50].map((num) => (
+              <button
+                key={num}
+                type="button"
+                onClick={() => setQuestionLimit(num)}
+                className={`btn ${questionLimit === num ? 'btn-primary' : 'btn-ghost'}`}
+                style={{ minWidth: '70px', padding: '8px 12px', fontSize: '0.9rem' }}
+              >
+                {num} câu
+              </button>
+            ))}
+          </div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>

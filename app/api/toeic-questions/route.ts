@@ -16,13 +16,19 @@ export async function GET(request: Request) {
       )
     }
 
-    // Query questions from MongoDB
-    const questions = await ToeicQuestion.find({ part })
+    const limitParam = searchParams.get('limit')
+    const limit = limitParam ? Number(limitParam) : 20
+
+    // Get a random sample of questions for the specified part from MongoDB
+    const questions = await ToeicQuestion.aggregate([
+      { $match: { part } },
+      { $sample: { size: limit } }
+    ])
     
     return NextResponse.json({
       part,
       total: questions.length,
-      source: 'MongoDB Collection (pdf/ import)',
+      source: 'MongoDB Collection (Random Sample)',
       questions,
     })
   } catch (error) {
