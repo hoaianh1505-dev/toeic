@@ -300,8 +300,8 @@ async function main() {
         return numA - numB;
       });
       
-    const filesToParse = files.slice(0, 2);
-    console.log(`Will parse ${filesToParse.length} files for quick check:`, filesToParse);
+    const filesToParse = files;
+    console.log(`Will parse all ${filesToParse.length} files:`, filesToParse);
     
     let totalImported = 0;
     const allParsedQuestions = [];
